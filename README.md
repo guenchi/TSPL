@@ -17,7 +17,7 @@ Scheme 程序设计语言 翻译
 | Chapter 1. Introduction                       ||||
 | Chapter 2. Getting Started                    ||||
 | Chapter 3. Going Further                      ||||
-| Chapter 4. Procedures and Variable Bindings   |ch|30%|2019.1.3|
+| Chapter 4. Procedures and Variable Bindings   |ch|100%|2019.1.3|
 | Chapter 5. Control Operations                 ||||
 | Chapter 6. Operations on Objects              ||||
 | Chapter 7. Input and Output                   ||||
