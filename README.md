@@ -18,7 +18,7 @@ Scheme 程序设计语言 翻译
 | Chapter 2. Getting Started                    ||||
 | Chapter 3. Going Further                      ||||
 | Chapter 4. Procedures and Variable Bindings   |ch|100%|2019.1.3|
-| Chapter 5. Control Operations                 |tclfs|进行中|2019.1.26|
+| Chapter 5. Control Operations                 |tclfs|100%|2019.1.26|
 | Chapter 6. Operations on Objects              |xashes|initial|2019.1.23|
 | Chapter 7. Input and Output                   ||||
 | Chapter 8. Syntactic Extension                ||||
