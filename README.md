@@ -19,8 +19,8 @@ Scheme 程序设计语言 翻译
 | Chapter 3. Going Further                      ||||
 | Chapter 4. Procedures and Variable Bindings   |ch|100%|2019.1.3|
 | Chapter 5. Control Operations                 |tclfs|100%|2019.1.26|
-| Chapter 6. Operations on Objects              |xashes|校订|2019.1.23|
-| Chapter 7. Input and Output                   |xashes|initial|2019.2.2|
+| Chapter 6. Operations on Objects              |xashes|完成|2019.1.23|
+| Chapter 7. Input and Output                   |xashes|初步完成|2019.2.2|
 | Chapter 8. Syntactic Extension                ||||
 | Chapter 9. Records                            ||||
 | Chapter 10. Libraries and Top-Level Programs  ||||
