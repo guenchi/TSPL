@@ -22,7 +22,7 @@ Scheme 程序设计语言 翻译
 | Chapter 6. Operations on Objects              |xashes|完成|2019.1.23|
 | Chapter 7. Input and Output                   |xashes|完成|2019.2.2|
 | Chapter 8. Syntactic Extension                ||||
-| Chapter 9. Records                            ||||
+| Chapter 9. Records                            |xashes|initial|2019.4.9|
 | Chapter 10. Libraries and Top-Level Programs  ||||
 | Chapter 11. Exceptions and Conditions         ||||
 | Chapter 12. Extended Examples                 ||||
