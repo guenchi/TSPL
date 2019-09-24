@@ -18,11 +18,27 @@
 
 ### [04. 过程和变量绑定](04.ProceduresAndVariableBindings.md)
 
+```
+译者：chclock（完成）
+```
+
 ### [05. 控制操作](05.ControlOperations.md)
+
+```
+译者：tclfs（完成）
+```
 
 ### [06. 对象操作](06.OperationsOnObjects.md)
 
+```
+译者：xashes（完成）
+```
+
 ### [07. 输入输出](07.InputAndOutput.md)
+
+```
+译者：xashes（完成）
+```
 
 ### [08. 语法扩展](08.SyntacticExtension.md)
 
