@@ -50,5 +50,19 @@
 
 ### [12. 例子](12.ExtendedExamples.md)
 
+### 授权
+
+```
+R. Kent Dybvig / The Scheme Programming Language, Fourth Edition
+Copyright © 2009 The MIT Press. Electronically reproduced by permission.
+Illustrations © 2009 Jean-Pierre Hébert
+ISBN 978-0-262-51298-5 / LOC QA76.73.S34D93
+```
+[http://www.scheme.com](http://www.scheme.com)
 
 
+### 译文授权
+
+```
+可用于**非商业用途**的自由存储，修改与传播，但必须包含版权文件与译者姓名。
+```
