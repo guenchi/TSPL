@@ -1,6 +1,6 @@
 # Summary
 
-* [术语表](00.Terminology.md)
+* [00. 术语表](00.Terminology.md)
 
 * [01. 介绍](01.Introduction.md)
 
