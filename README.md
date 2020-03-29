@@ -1,8 +1,6 @@
 # Scheme程序设计语言（中文版）
 
-请访问 https://guenchi.github.io/TSPL 获得最佳阅读体验
-
-GitHub Pages镜像 https://guenchi.github.io/TSPL
+[GitBook电子书](https://guenchi.gitlab.io/TSPL) [GitHubPages镜像](https://guenchi.github.io/TSPL)
 
 翻译活动经费由@guenchi出资赞助： 1000字/100元
 
@@ -28,3 +26,6 @@ GitHub Pages镜像 https://guenchi.github.io/TSPL
 | Chapter 10. Libraries and Top-Level Programs  ||||
 | Chapter 11. Exceptions and Conditions         ||||
 | Chapter 12. Extended Examples                 ||||
+
+
+***本译文严禁用于商业用途***
