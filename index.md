@@ -1,5 +1,7 @@
 # Scheme编程语言 第4版（中文）
 
+[GitLab Pages镜像](https://guenchi.gitlab.io/TSPL)
+
 ```
 原著：Kent R. Dybvig
 编辑：guenchi
