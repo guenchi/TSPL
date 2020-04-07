@@ -14,7 +14,7 @@
 | 章节                                          | 认领人 | 完成情况 | 开始时间 |
 | --------------------------------------------- | ----- | ------ | ------- |
 | Preface                                       ||||
-| Chapter 1. Introduction                       |WongRuoran|80%|2020.4.7|
+| Chapter 1. Introduction                       |WongRuoran|100%|2020.4.7|
 | Chapter 2. Getting Started                    ||||
 | Chapter 3. Going Further                      ||||
 | Chapter 4. Procedures and Variable Bindings   |ch|100%|2019.1.3|
