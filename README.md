@@ -1,10 +1,12 @@
 # Scheme程序设计语言(第4版)
 
-[GitHub镜像](https://guenchi.github.io/TSPL) [GitLab镜像](https://guenchi.gitlab.io/TSPL)
+电子书: [GitHub镜像](https://guenchi.github.io/TSPL) [GitLab镜像](https://guenchi.gitlab.io/TSPL)
+
+项目: [GitHub(主要)](https://github.com/guenchi/TSPL) [GitLab(仅镜像)](https://gitlab.com/guenchi/TSPL/)
 
 翻译活动经费由@guenchi出资赞助： 1000字/100元
 
-### [翻译任务清单](work.md)
+### [翻译任务清单](https://github.com/guenchi/TSPL/blob/master/work.md)
 
 ```
 原著：Kent R. Dybvig
