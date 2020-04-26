@@ -1,14 +1,15 @@
-# Scheme编程语言 第4版（中文）
+# Scheme程序设计语言(第4版)
 
-[GitLab Pages镜像](https://guenchi.gitlab.io/TSPL)
+[GitHub镜像](https://guenchi.github.io/TSPL) [GitLab镜像](https://guenchi.gitlab.io/TSPL)
+
+翻译活动经费由@guenchi出资赞助： 1000字/100元
+
+### [翻译任务清单](work.md)
 
 ```
 原著：Kent R. Dybvig
 编辑：guenchi
 ```
-
-
-
 
 ### [00. 术语](00.Terminology.md)
 
