@@ -1,0 +1,1012 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>07. 输入输出 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="08.SyntacticExtension.html" />
+    
+    
+    <link rel="prev" href="06.OperationsOnObjects.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="00.Terminology.html">
+            
+                <a href="00.Terminology.html">
+            
+                    
+                    00. 术语表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01.Introduction.html">
+            
+                <a href="01.Introduction.html">
+            
+                    
+                    01. 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02.GettingStarted.html">
+            
+                <a href="02.GettingStarted.html">
+            
+                    
+                    02. 开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03.GoingFurther.html">
+            
+                <a href="03.GoingFurther.html">
+            
+                    
+                    03. 更进一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04.ProceduresAndVariableBindings.html">
+            
+                <a href="04.ProceduresAndVariableBindings.html">
+            
+                    
+                    04. 过程和变量绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05.ControlOperations.html">
+            
+                <a href="05.ControlOperations.html">
+            
+                    
+                    05. 控制操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06.OperationsOnObjects.html">
+            
+                <a href="06.OperationsOnObjects.html">
+            
+                    
+                    06. 对象操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="07.InputAndOutput.html">
+            
+                <a href="07.InputAndOutput.html">
+            
+                    
+                    07. 输入输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08.SyntacticExtension.html">
+            
+                <a href="08.SyntacticExtension.html">
+            
+                    
+                    08. 语法扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09.Records.html">
+            
+                <a href="09.Records.html">
+            
+                    
+                    09. 记录类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10.LibrariesAndTop-LevelPrograms.html">
+            
+                <a href="10.LibrariesAndTop-LevelPrograms.html">
+            
+                    
+                    10. 库和顶层程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11.ExceptionsAndConditions.html">
+            
+                <a href="11.ExceptionsAndConditions.html">
+            
+                    
+                    11. 异常和状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12.ExtendedExamples.html">
+            
+                <a href="12.ExtendedExamples.html">
+            
+                    
+                    12. 例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >07. 输入输出</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="7-&#x8F93;&#x5165;&#x8F93;&#x51FA;">7. &#x8F93;&#x5165;&#x8F93;&#x51FA;</h1>
+<p>&#x6240;&#x6709;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x7AEF;&#x53E3;&#x8FDB;&#x884C;&#x7684;&#x3002;&#x7AEF;&#x53E3;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x6570;&#x636E;&#xFF08;&#x5E38;&#x5E38;&#x662F;&#x6587;&#x4EF6;&#xFF09;&#x6D41;&#xFF08;&#x53EF;&#x80FD;&#x65E0;&#x7A77;&#xFF09;&#x7684;&#x6307;&#x9488;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x901A;&#x9053;&#xFF0C;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x4ECE;&#x6D41;&#x4E2D;&#x8BFB;&#x53D6;&#x5B57;&#x8282;&#x6216;&#x5B57;&#x7B26;&#xFF0C;&#x6216;&#x5411;&#x6D41;&#x4E2D;&#x5199;&#x5165;&#x5B57;&#x8282;&#x6216;&#x5B57;&#x7B26;&#x3002;&#x7AEF;&#x53E3;&#x53EF;&#x4EE5;&#x662F;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x6216;&#x53CC;&#x5411;&#x7AEF;&#x53E3;&#x3002;</p>
+<p>&#x7AEF;&#x53E3;&#x662F;&#x7B2C;&#x4E00;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x548C; Scheme &#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x5176;&#x5B83;&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x3002;&#x548C;&#x8FC7;&#x7A0B;&#x76F8;&#x4F3C;&#xFF0C;&#x7AEF;&#x53E3;&#x4E5F;&#x6CA1;&#x6709;&#x50CF;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;&#x90A3;&#x6837;&#x7684;&#x6253;&#x5370;&#x5F62;&#x5F0F;&#x3002;&#x539F;&#x59CB;&#x7684;&#x7AEF;&#x53E3;&#x6709;&#x4E09;&#x79CD;&#xFF1A;&#x5F53;&#x524D;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x5F53;&#x524D;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x53CA;&#x5F53;&#x524D;&#x9519;&#x8BEF;&#x7AEF;&#x53E3;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x8FDE;&#x63A5;&#x5230;&#x8FDB;&#x7A0B;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x5165;&#xFF0C;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF0C;&#x548C;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x6D41;&#x7684;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#x3002;Scheme &#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x79CD;&#x6253;&#x5F00;&#x65B0;&#x7AEF;&#x53E3;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x901A;&#x5E38;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x6709;&#x9650;&#x7684;&#x6D41;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x50A8;&#x5B58;&#x5728;&#x786C;&#x76D8;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C; <code>get-u8</code>, <code>get-char</code>, &#x6216; <code>get-datum</code>, &#x8BF7;&#x6C42;&#x8BFB;&#x53D6;&#x7684;&#x90E8;&#x5206;&#x5230;&#x8FBE;&#x4E86;&#x6709;&#x9650;&#x6D41;&#x7684;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684; <em>eof</em> &#xFF08;&#x6587;&#x4EF6;&#x7ED3;&#x5C3E;&#xFF09;&#x5BF9;&#x8C61;&#x3002;&#x8C13;&#x8BCD; <code>eof-object?</code> &#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5224;&#x5B9A;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x662F;&#x5426;&#x662F; eof &#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x7AEF;&#x53E3;&#x6216;&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#xFF0C;&#x6216;&#x662F;&#x6587;&#x672C;&#x7684;&#x3002;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#x652F;&#x6301;&#x7A0B;&#x5E8F;&#x4ECE;&#x5176;&#x6240;&#x4EE3;&#x8868;&#x7684;&#x6D41;&#x4E2D;&#xFF0C;&#x8BFB;&#x53D6;&#x6216;&#x5199;&#x5165; 8 &#x4F4D;&#x65E0;&#x7B26;&#x53F7;&#x5B57;&#x8282;&#xFF0C;&#x6216;&#x79F0; &quot;octets&quot;&#x3002;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#x652F;&#x6301;&#x7A0B;&#x5E8F;&#x8BFB;&#x53D6;&#x6216;&#x5199;&#x5165;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x5F88;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E95;&#x5C42;&#x7684;&#x6D41;&#x88AB;&#x7EC4;&#x7EC7;&#x4E3A;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#xFF0C;&#x4F46;&#x8FD9;&#x4E9B;&#x5B57;&#x8282;&#x5E94;&#x5F53;&#x88AB;&#x4F5C;&#x4E3A;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x5904;&#x7406;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#xFF0C;&#x628A;&#x5B57;&#x8282;&#x89E3;&#x7801;&#x4E3A;&#x5B57;&#x7B26;&#xFF08;&#x5BF9;&#x4E8E;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF09;&#xFF0C;&#x6216;&#x628A;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x4E3A;&#x5B57;&#x8282;&#xFF08;&#x5BF9;&#x4E8E;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF09;&#x3002;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E2A;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#xFF0C;&#x5B83;&#x51B3;&#x5B9A;&#x4E86;&#x5B57;&#x7B26;&#x5982;&#x4F55;&#x8868;&#x793A;&#x4E3A;&#x5B57;&#x8282;&#x3002;Scheme &#x63D0;&#x4F9B;&#x4E86;&#x4E09;&#x79CD;&#x6807;&#x51C6;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#xFF1A; <em>latin-1</em> &#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#xFF0C;Unicode <em>utf-8</em> &#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#xFF0C;&#x4EE5;&#x53CA; Unicode <em>utf-16</em> &#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#x3002;&#x5728; <em>latin-1</em> &#x7F16;&#x7801;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x4EE5;&#x6B63;&#x597D;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x8868;&#x793A;&#x3002;&#x5728; <em>utf-8</em> &#x7F16;&#x7801;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x4EE5;&#x4E00;&#x81F3;&#x56DB;&#x4E2A;&#x5B57;&#x8282;&#x8868;&#x793A;&#xFF0C;&#x800C;&#x5728; <em>utf-16</em> &#x7F16;&#x7801;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x4EE5;&#x4E8C;&#x6216;&#x56DB;&#x4E2A;&#x5B57;&#x8282;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x540C;&#x65F6;&#x5C01;&#x88C5;&#x4E86; eol &#x98CE;&#x683C;&#xFF0C;&#x5B83;&#x51B3;&#x5B9A;&#x4E86;&#x662F;&#x5426;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x8BC6;&#x522B;&#x884C;&#x5C3E;&#x3002;&#x5982;&#x679C; eol &#x98CE;&#x683C;&#x4E3A; <code>none</code> &#xFF0C;&#x5219;&#x4E0D;&#x8BC6;&#x522B;&#x884C;&#x5C3E;&#x3002;&#x53E6;&#x5916;&#x516D;&#x79CD;&#x6807;&#x51C6; eol &#x98CE;&#x683C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<blockquote>
+<p>lf:     line-feed character&#xFF08;&#x6362;&#x884C;&#x5B57;&#x7B26;&#xFF09;
+cr:     carriage-return character&#xFF08;&#x56DE;&#x8F66;&#x5B57;&#x7B26;&#xFF09;
+nel:     Unicode next-line character&#xFF08;Unicode &#x65B0;&#x884C;&#x5B57;&#x7B26;&#xFF09;
+ls:     Unicode line-separator character&#xFF08;Unicode &#x884C;&#x5206;&#x9694;&#x5B57;&#x7B26;&#xFF09;
+crlf:     carriage return followed by line feed&#xFF08;&#x56DE;&#x8F66;&#x52A0;&#x6362;&#x884C;&#x5B57;&#x7B26;&#xFF09;
+crnel:     carriage return followed by next line&#xFF08;&#x56DE;&#x8F66;&#x52A0;&#x65B0;&#x884C;&#x5B57;&#x7B26;&#xFF09;</p>
+</blockquote>
+<p>eol &#x98CE;&#x683C;&#x5BF9;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x7684;&#x5F71;&#x54CD;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;&#x5BF9;&#x4E8E;&#x8F93;&#x5165;&#xFF0C;&#x9664;&#x4E86; <code>none</code> &#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x4F55; eol &#x98CE;&#x683C;&#xFF0C;&#x4F1A;&#x628A;&#x6BCF;&#x79CD;&#x884C;&#x5C3E;&#x5B57;&#x7B26;&#x6216;&#x53CC;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x5355;&#x4E2A;&#x7684;&#x6362;&#x884C;&#x5B57;&#x7B26;&#x3002;&#x5BF9;&#x4E8E;&#x8F93;&#x51FA;&#xFF0C;&#x9664;&#x4E86; <code>none</code> &#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x4F55; eol &#x98CE;&#x683C;&#xFF0C;&#x4F1A;&#x628A;&#x6362;&#x884C;&#x5B57;&#x7B26;&#x8F6C;&#x6362;&#x4E3A;&#x4E0E; eol &#x98CE;&#x683C;&#x76F8;&#x5173;&#x8054;&#x7684;&#x7279;&#x5B9A;&#x5355;&#x4E2A;&#x5B57;&#x7B26;&#x6216;&#x53CC;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x3002;&#x5728;&#x8F93;&#x5165;&#x65B9;&#x5411;&#x4E0A;&#xFF0C;&#x9664;&#x4E86; <code>none</code> &#x4EE5;&#x5916;&#x7684;&#x6240;&#x6709; eol &#x98CE;&#x683C;&#x90FD;&#x662F;&#x7B49;&#x4EF7;&#x7684;&#xFF0C;&#x800C;&#x5728;&#x8F93;&#x51FA;&#x65B9;&#x5411;&#x4E0A;&#xFF0C;eol &#x98CE;&#x683C; <code>none</code> &#x548C; <code>lf</code> &#x662F;&#x7B49;&#x4EF7;&#x7684;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#x548C; eol &#x98CE;&#x683C;&#xFF0C;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x53EA;&#x5C01;&#x88C5;&#x4E86;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x4FE1;&#x606F;&#xFF1A;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x51B3;&#x5B9A;&#x4E86;&#x5728;&#x89E3;&#x7801;&#x6216;&#x7F16;&#x7801;&#x9519;&#x8BEF;&#x51FA;&#x73B0;&#x65F6;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF0C;&#x5373;&#xFF0C;&#x5982;&#x679C;&#x901A;&#x8FC7;&#x5C01;&#x88C5;&#x7684;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#xFF0C;&#x5728;&#x8F93;&#x5165;&#x65B9;&#x5411;&#x4E0A;&#xFF0C;&#x65E0;&#x6CD5;&#x628A;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x6216;&#x5728;&#x8F93;&#x51FA;&#x65B9;&#x5411;&#x4E0A;&#xFF0C;&#x65E0;&#x6CD5;&#x628A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x3002;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x4E3A; <code>ignore</code> , <code>raise</code> , &#x6216; <code>replace</code> . &#x5982;&#x679C;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x4E3A; <code>ignore</code> , &#x5219;&#x5FFD;&#x7565;&#x51FA;&#x9519;&#x7684;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x6216;&#x5B57;&#x7B26;&#x3002;&#x5982;&#x679C;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x4E3A; <code>raise</code> , &#x5219;&#x629B;&#x51FA;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x7684; <code>i/o-decoding</code> &#x6216; <code>i/o-encoding</code> &#x5F02;&#x5E38;&#xFF1B;&#x5728;&#x8F93;&#x5165;&#x65B9;&#x5411;&#x4E0A;&#xFF0C;&#x7AEF;&#x53E3;&#x7684;&#x4F4D;&#x7F6E;&#x5728;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x524D;&#x9762;&#x3002;&#x5982;&#x679C;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x4E3A; <code>replace</code> , &#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x6216;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF1A;&#x5728;&#x8F93;&#x5165;&#x65B9;&#x5411;&#x4E0A;&#xFF0C;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x662F; U+FFFD, &#x800C;&#x5728;&#x8F93;&#x51FA;&#x65B9;&#x5411;&#x4E0A;&#xFF0C;&#x5219;&#x66FF;&#x6362;&#x7F16;&#x7801;&#x4E3A; <code>utf-8</code> &#x548C; <code>utf-16</code> &#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#x7684; U+FFFD &#x7684;&#x7F16;&#x7801;&#xFF0C;&#x6216;&#x662F; <code>latin-1</code> &#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#x7684;&#x95EE;&#x53F7;&#x5B57;&#x7B26;&#xFF08;?&#xFF09;&#x7684;&#x7F16;&#x7801;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#xFF0C;&#x53EF;&#x4EE5;&#x7F13;&#x51B2;&#x7AEF;&#x53E3;&#xFF0C;&#x4EE5;&#x51CF;&#x5C11;&#x4E3A;&#x6BCF;&#x4E2A;&#x5B57;&#x8282;&#x6216;&#x5B57;&#x7B26;&#x8FDB;&#x884C;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x7684;&#x5F00;&#x9500;&#x3002;Scheme &#x652F;&#x6301;&#x4E09;&#x79CD;&#x6807;&#x51C6;&#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#xFF1A; <code>block</code> , <code>line</code> , &#x548C; <code>none</code> . &#x5728; <code>block</code> &#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x662F;&#x4EE5;&#x5757;&#x7684;&#x5F62;&#x5F0F;&#x4ECE;&#x6D41;&#x4E2D;&#x8BFB;&#x53D6;&#x8F93;&#x5165;&#x6216;&#x5411;&#x6D41;&#x53D1;&#x9001;&#x8F93;&#x51FA;&#xFF0C;&#x5757;&#x7684;&#x5927;&#x5C0F;&#x4E0E;&#x5B9E;&#x73B0;&#x76F8;&#x5173;&#x3002;&#x5728; <code>line</code> &#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x7F13;&#x51B2;&#x4EE5;&#x884C;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x6216;&#x4EE5;&#x5176;&#x5B83;&#x67D0;&#x4E9B;&#x5B9E;&#x73B0;&#x76F8;&#x5173;&#x7684;&#x57FA;&#x7840;&#x8FDB;&#x884C;&#x3002; <code>Line</code> &#x7F13;&#x51B2;&#x901A;&#x5E38;&#x53EA;&#x5728;&#x6587;&#x672C;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x4E2D;&#x4E0E; <code>block</code> &#x7F13;&#x51B2;&#x6709;&#x533A;&#x522B;&#xFF1B;&#x5728;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#x4E2D;&#x6CA1;&#x6709;&#x884C;&#x5212;&#x5206;&#xFF0C;&#x800C;&#x8F93;&#x5165;&#x5E38;&#x5E38;&#x662F;&#x5728;&#x5B83;&#x53EF;&#x7528;&#x65F6;&#x5373;&#x4ECE;&#x6D41;&#x4E2D;&#x8BFB;&#x53D6;&#x3002;&#x5728; <code>none</code> &#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x4E0D;&#x8FDB;&#x884C;&#x7F13;&#x51B2;&#xFF0C;&#x6240;&#x4EE5;&#x8F93;&#x51FA;&#x4F1A;&#x7ACB;&#x5373;&#x53D1;&#x9001;&#x5230;&#x6D41;&#xFF0C;&#x800C;&#x8F93;&#x5165;&#x5219;&#x53EA;&#x5728;&#x9700;&#x8981;&#x65F6;&#x8BFB;&#x53D6;&#x3002;</p>
+<p>&#x672C;&#x7AE0;&#x7684;&#x5176;&#x4F59;&#x90E8;&#x5206;&#x5305;&#x542B;&#x4E86;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x64CD;&#x4F5C;&#xFF0C;&#x6587;&#x4EF6;&#x7AEF;&#x53E3;&#xFF0C;&#x6807;&#x51C6;&#x7AEF;&#x53E3;&#xFF0C;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#xFF0C;&#x5FEB;&#x6377; I/O, &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x64CD;&#x4F5C;&#xFF0C;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#x3002;</p>
+<h2 id="71-&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;">7.1. &#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;</h2>
+<p>&#x5982;&#x4E0A;&#x6240;&#x8FF0;&#xFF0C;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x5C01;&#x88C5;&#x4E86;&#x4E09;&#x4E2A;&#x503C;&#xFF1A;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#xFF0C;eol &#x98CE;&#x683C;&#xFF0C;&#x548C;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x3002;&#x672C;&#x8282;&#x4ECB;&#x7ECD;&#x4E86;&#x521B;&#x5EFA;&#x548C;&#x64CD;&#x4F5C;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x4EE5;&#x53CA;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x5C01;&#x88C5;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(make-transcoder codec)</code>
+&#x8FC7;&#x7A0B;: <code>(make-transcoder codec eol-style)</code>
+&#x8FC7;&#x7A0B;: <code>(make-transcoder codec eol-style error-handling-mode)</code>
+&#x8FD4;&#x56DE;: &#x5C01;&#x88C5;&#x4E86;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;&#xFF0C;eol &#x98CE;&#x683C;&#xFF0C;&#x548C;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>eol-style</em> &#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684; eol &#x98CE;&#x683C;&#x7B26;&#x53F7; (<code>lf</code>, <code>cr</code> , <code>nel</code> , <code>ls</code> , <code>crlf</code> , <code>crnel</code> , &#x6216; <code>none</code>); &#x5B83;&#x9ED8;&#x8BA4;&#x4E3A;&#x5E73;&#x53F0;&#x7684;&#x539F;&#x751F; eol &#x98CE;&#x683C;&#x3002; <em>error-handling-mode</em> &#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x7B26;&#x53F7; (<code>ignore</code>, <code>raise</code> , &#x6216; <code>replace</code>)&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; <code>replace</code> .</p>
+<p>&#x8FC7;&#x7A0B;: <code>(transcoder-codec transcoder)</code>
+&#x8FD4;&#x56DE;: transcoder &#x5C01;&#x88C5;&#x7684;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;
+&#x8FC7;&#x7A0B;: <code>(transcoder-eol-style transcoder)</code>
+&#x8FD4;&#x56DE;: transcoder &#x5C01;&#x88C5;&#x7684; eol &#x98CE;&#x683C;&#x7B26;&#x53F7;
+&#x8FC7;&#x7A0B;: <code>(transcoder-error-handling-mode transcoder)</code>
+&#x8FD4;&#x56DE;: transcoder &#x5C01;&#x88C5;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x7B26;&#x53F7;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FC7;&#x7A0B;: <code>(native-transcoder)</code>
+&#x8FD4;&#x56DE;: &#x539F;&#x751F;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x539F;&#x751F;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x662F;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x4E14;&#x53EF;&#x80FD;&#x6839;&#x636E;&#x5E73;&#x53F0;&#x6216;&#x533A;&#x57DF;&#x8BBE;&#x7F6E;&#x6709;&#x6240;&#x53D8;&#x5316;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(latin-1-codec)</code>
+&#x8FD4;&#x56DE;: ISO 8859-1 (Latin 1) &#x5B57;&#x7B26;&#x7F16;&#x7801;&#x7684;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;
+&#x8FC7;&#x7A0B;: <code>(utf-8-codec)</code>
+&#x8FD4;&#x56DE;: Unicode UTF-8 &#x5B57;&#x7B26;&#x7F16;&#x7801;&#x7684;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;
+&#x8FC7;&#x7A0B;: <code>(utf-16-codec)</code>
+&#x8FD4;&#x56DE;: Unicode UTF-16 &#x5B57;&#x7B26;&#x7F16;&#x7801;&#x7684;&#x7F16;&#x7801;&#x89E3;&#x7801;&#x5668;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>syntax: <code>(eol-style symbol)</code>
+&#x8FD4;&#x56DE;: <em>symbol</em>
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>symbol</em> &#x5FC5;&#x987B;&#x662F;&#x4EE5;&#x4E0B;&#x7B26;&#x53F7;&#x4E4B;&#x4E00;&#xFF1A; <code>lf</code> , <code>cr</code> , <code>nel</code> , <code>ls</code> , <code>crlf</code> , <code>crnel</code> , &#x6216; <code>none</code> . &#x8868;&#x8FBE;&#x5F0F; <code>(eol-style symbol)</code> &#x7B49;&#x4EF7;&#x4E8E;&#x8868;&#x8FBE;&#x5F0F; <code>(quote symbol)</code>, &#x53EA;&#x662F;&#x524D;&#x8005;&#x5728;&#x5C55;&#x5F00;&#x671F;&#x4F1A;&#x68C0;&#x67E5; <em>symbol</em> &#x662F;&#x5426;&#x662F; eol &#x98CE;&#x683C;&#x7B26;&#x53F7;&#x4E4B;&#x4E00;&#x3002; <code>eol-style</code> &#x8BED;&#x6CD5;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x6709;&#x7528;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<pre><code>(eol-style crlf) =&gt; crlf
+(eol-style lfcr) =&gt; syntax violation
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(native-eol-style)</code>
+&#x8FD4;&#x56DE;: &#x539F;&#x751F;&#x7684; eol &#x98CE;&#x683C;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x539F;&#x751F;&#x7684; eol &#x98CE;&#x683C;&#x662F;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x4E14;&#x53EF;&#x80FD;&#x6839;&#x636E;&#x5E73;&#x53F0;&#x6216;&#x533A;&#x57DF;&#x8BBE;&#x7F6E;&#x6709;&#x6240;&#x53D8;&#x5316;&#x3002;</p>
+<p>syntax: <code>(error-handling-mode symbol)</code>
+&#x8FD4;&#x56DE;: <em>symbol</em>
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>symbol</em> &#x5FC5;&#x987B;&#x662F;&#x4EE5;&#x4E0B;&#x7B26;&#x53F7;&#x4E4B;&#x4E00;&#xFF1A; <code>ignore</code> , <code>raise</code> , &#x6216; <code>replace</code> . &#x8868;&#x8FBE;&#x5F0F; <code>(error-handling-mode symbol)</code> &#x7B49;&#x4EF7;&#x4E8E;&#x8868;&#x8FBE;&#x5F0F; <code>(quote symbol)</code>, &#x9664;&#x4E86;&#x524D;&#x8005;&#x5728;&#x5C55;&#x5F00;&#x671F;&#x4F1A;&#x68C0;&#x67E5; <em>symbol</em> &#x662F;&#x5426;&#x662F;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x7B26;&#x53F7;&#x4E4B;&#x4E00;&#x3002; <code>error-handling-mode</code> &#x8BED;&#x6CD5;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x6709;&#x7528;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<pre><code>(error-handling-mode replace) =&gt; replace
+(error-handling-mode relpace) =&gt; syntax violation
+</code></pre><h2 id="72-&#x6253;&#x5F00;&#x6587;&#x4EF6;">7.2. &#x6253;&#x5F00;&#x6587;&#x4EF6;</h2>
+<p>&#x672C;&#x8282;&#x4E2D;&#x7684;&#x8FC7;&#x7A0B;&#x7528;&#x4E8E;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x7AEF;&#x53E3;&#x3002;&#x7528;&#x4E8E;&#x6253;&#x5F00;&#x5176;&#x5B83;&#x7C7B;&#x578B;&#x7AEF;&#x53E3;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x7AEF;&#x53E3;&#xFF0C;&#x6216;&#x81EA;&#x5B9A;&#x4E49;&#x7AEF;&#x53E3;&#xFF0C;&#x5C06;&#x5728;&#x540E;&#x9762;&#x51E0;&#x8282;&#x4E2D;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x7684;&#x64CD;&#x4F5C;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x5B9E;&#x53C2;&#xFF0C;&#x6307;&#x5B9A;&#x4E86;&#x8981;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x547D;&#x540D;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5176;&#x5B83;&#x67D0;&#x4E9B;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x67D0;&#x4E9B;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x64CD;&#x4F5C;&#x63A5;&#x53D7;&#x53EF;&#x9009;&#x7684; <em>options</em>, <em>b-mode</em>, &#x548C; <em>?transcoder</em> &#x5B9E;&#x53C2;&#x3002; <em>options</em> &#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x679A;&#x4E3E;&#x96C6;&#x5408;&#xFF0C;&#x7531;&#x4E0B;&#x6587; <code>file-options</code> &#x6761;&#x76EE;&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#x6709;&#x6548;&#x6587;&#x4EF6;&#x9009;&#x9879;&#x7B26;&#x53F7;&#x7EC4;&#x6210;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; <code>(file-options)</code> &#x7684;&#x503C;&#x3002; <em>b-mode</em> &#x5FC5;&#x987B;&#x662F;&#x4E0B;&#x6587; <code>buffer-mode</code> &#x6761;&#x76EE;&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#x6709;&#x6548;&#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; <code>block</code> . <em>?transcoder</em> &#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x6216; <code>#f</code> ; &#x5982;&#x679C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x5219;&#x6253;&#x5F00;&#x64CD;&#x4F5C;&#x8FD4;&#x56DE;&#x5E95;&#x5C42;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x662F; <code>#f</code> &#xFF08;&#x9ED8;&#x8BA4;&#x503C;&#xFF09;&#xFF0C;&#x5219;&#x6253;&#x5F00;&#x64CD;&#x4F5C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#x3002;</p>
+<p>&#x7531;&#x672C;&#x8282;&#x4E2D;&#x7684;&#x8FC7;&#x7A0B;&#x521B;&#x5EFA;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#xFF0C;&#x652F;&#x6301; <code>port-position</code> &#x548C; <code>set-port-position!</code> &#x64CD;&#x4F5C;&#x3002;&#x800C;&#x7531;&#x672C;&#x8282;&#x4E2D;&#x7684;&#x8FC7;&#x7A0B;&#x521B;&#x5EFA;&#x7684;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#xFF0C;&#x662F;&#x5426;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x5219;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>syntax: <code>(file-options symbol ...)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x9009;&#x9879;&#x7684;&#x679A;&#x4E3E;&#x96C6;&#x5408;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x6587;&#x4EF6;&#x9009;&#x9879;&#x679A;&#x4E3E;&#x96C6;&#x5408;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x4ECE;&#x591A;&#x65B9;&#x9762;&#x63A7;&#x5236;&#x6253;&#x5F00;&#x64CD;&#x4F5C;&#x3002;&#x6709;&#x4E09;&#x79CD;&#x6807;&#x51C6;&#x6587;&#x4EF6;&#x9009;&#x9879;&#xFF1A; <code>no-create</code> , <code>no-fail</code> , &#x4EE5;&#x53CA; <code>no-truncate</code> , &#x8FD9;&#x4E9B;&#x9009;&#x9879;&#x53EA;&#x5F71;&#x54CD;&#x521B;&#x5EFA;&#x8F93;&#x51FA;&#xFF08;&#x5305;&#x62EC;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#xFF09;&#x7AEF;&#x53E3;&#x7684;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x6587;&#x4EF6;&#x9009;&#x9879;&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#x65F6;&#xFF0C;&#x5373; <code>(file-option)</code> &#x7684;&#x503C;&#xFF0C;&#x5F53;&#x7A0B;&#x5E8F;&#x5C1D;&#x8BD5;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x8F93;&#x51FA;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x6B64;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x7684; <code>i/o-file-already-exists</code> &#x5F02;&#x5E38;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x4F1A;&#x521B;&#x5EFA;&#x6B64;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x5305;&#x542B; <code>no-fail</code> &#x9009;&#x9879;&#xFF0C;&#x5219;&#x5728;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x65F6;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF1B;&#x800C;&#x662F;&#x6253;&#x5F00;&#x6B64;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x628A;&#x5B83;&#x7684;&#x957F;&#x5EA6;&#x622A;&#x77ED;&#x4E3A; 0. &#x5982;&#x679C;&#x5305;&#x542B; <code>no-create</code> &#x9009;&#x9879;&#xFF0C;&#x5219;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;&#x6B64;&#x6587;&#x4EF6;&#xFF1B;&#x800C;&#x662F;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x7684; <code>i/o-file-dose-not-exist</code> &#x5F02;&#x5E38;&#x3002; <code>no-create</code> &#x9009;&#x9879;&#x6697;&#x542B;&#x4E86; <code>no-fail</code> &#x9009;&#x9879;&#x3002;&#x53EA;&#x5728;&#x5305;&#x542B;&#x6216;&#x6697;&#x542B; <code>no-fail</code> &#x9009;&#x9879;&#x65F6;&#xFF0C; <code>no-truncate</code> &#x9009;&#x9879;&#x624D;&#x6709;&#x610F;&#x4E49;&#xFF0C;&#x6B64;&#x65F6;&#x5982;&#x679C;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x4E0D;&#x4F1A;&#x88AB;&#x622A;&#x77ED;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x7AEF;&#x53E3;&#x7684;&#x4F4D;&#x7F6E;&#x4ECD;&#x7136;&#x88AB;&#x8BBE;&#x5B9A;&#x4E8E;&#x6587;&#x4EF6;&#x7684;&#x8D77;&#x59CB;&#x5904;&#x3002;</p>
+<p>&#x53EF;&#x80FD;&#x4E0D;&#x96BE;&#x60F3;&#x8C61;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x6587;&#x4EF6;&#x9009;&#x9879;&#x662F;&#x865A;&#x6784;&#x7684;&#x9009;&#x9879;&#x7B26;&#x53F7; <code>create</code> , <code>fail-if-exists</code> , &#x548C; <code>truncate</code> ; <code>no-create</code> &#x79FB;&#x9664; <code>create</code> , <code>no-fail</code> &#x79FB;&#x9664; <code>fail-if-exists</code> , &#x800C; <code>no-truncate</code> &#x79FB;&#x9664; <code>truncate</code> .</p>
+<p>&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x652F;&#x6301;&#x989D;&#x5916;&#x7684;&#x6587;&#x4EF6;&#x9009;&#x9879;&#x7B26;&#x53F7;&#x3002;&#x4F8B;&#x5982;&#xFF0C;Chez Scheme &#x652F;&#x6301;&#x9009;&#x9879;&#x63A7;&#x5236;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5E94;&#x88AB;&#x538B;&#x7F29;&#xFF0C;&#x662F;&#x5426;&#x88AB;&#x9501;&#x5B9A;&#x4EE5;&#x8FDB;&#x884C;&#x72EC;&#x5360;&#x8BBF;&#x95EE;&#xFF0C;&#x4EE5;&#x53CA;&#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x65F6;&#x88AB;&#x7ED9;&#x4E88;&#x4EC0;&#x4E48;&#x6743;&#x9650;[9]&#x3002;</p>
+<p>syntax: <code>(buffer-mode symbol)</code>
+&#x8FD4;&#x56DE;: <em>symbol</em>
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>symbol</em> &#x5FC5;&#x987B;&#x662F;&#x4EE5;&#x4E0B;&#x7B26;&#x53F7;&#x4E4B;&#x4E00;&#xFF1A; <code>block</code> , <code>line</code> , &#x6216; <code>none</code> . &#x8868;&#x8FBE;&#x5F0F; <code>(buffer-mode symbol)</code> &#x7B49;&#x4EF7;&#x4E8E;&#x8868;&#x8FBE;&#x5F0F; <code>(quote symbol)</code>, &#x53EA;&#x662F;&#x524D;&#x8005;&#x5728;&#x5C55;&#x5F00;&#x671F;&#x4F1A;&#x68C0;&#x67E5; <em>symbol</em> &#x662F;&#x5426;&#x662F;&#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#x7B26;&#x53F7;&#x4E4B;&#x4E00;&#x3002; <code>buffer-mode</code> &#x8BED;&#x6CD5;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x6709;&#x7528;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<pre><code>(buffer-mode block) =&gt; block
+(buffer-mode cushion) =&gt; syntax violation
+</code></pre><p>syntax: <code>(buffer-mode? obj)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <code>obj</code> &#x662F;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<pre><code>(buffer-mode? &apos;block) =&gt; #t
+(buffer-mode? &apos;line) =&gt; #t
+(buffer-mode? &apos;none) =&gt; #t
+(buffer-mode? &apos;something-else) =&gt; #f
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(open-file-input-port path)</code>
+&#x8FC7;&#x7A0B;: <code>(open-file-input-port path options)</code>
+&#x8FC7;&#x7A0B;: <code>(open-file-input-port path options b-mode)</code>
+&#x8FC7;&#x7A0B;: <code>(open-file-input-port path options b-mode ?transcoder)</code>
+&#x8FD4;&#x56DE;: &#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x65B0;&#x8F93;&#x5165;&#x7AEF;&#x53E3;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86; <em>?transcoder</em>, &#x4E14;&#x4E0D;&#x4E3A; <code>#f</code>, &#x5219;&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x5B83;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x4E3A; <em>?transcoder</em>. &#x5426;&#x5219;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x3002;&#x5173;&#x4E8E;&#x5176;&#x5B83;&#x5B9E;&#x53C2;&#x7684;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x548C;&#x5F71;&#x54CD;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#x672C;&#x8282;&#x5F15;&#x8A00;&#x4E2D;&#x7684;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(open-file-output-port path)</code>
+&#x8FC7;&#x7A0B;: <code>(open-file-output-port path options)</code>
+&#x8FC7;&#x7A0B;: <code>(open-file-output-port path options b-mode)</code>
+&#x8FC7;&#x7A0B;: <code>(open-file-output-port path options b-mode ?transcoder)</code>
+&#x8FD4;&#x56DE;: &#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x65B0;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86; <em>?transcoder</em>, &#x4E14;&#x4E0D;&#x4E3A; <code>#f</code>, &#x5219;&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x5B83;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x4E3A; <em>?transcoder</em>. &#x5426;&#x5219;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002;&#x5173;&#x4E8E;&#x5176;&#x5B83;&#x5B9E;&#x53C2;&#x7684;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x548C;&#x5F71;&#x54CD;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#x672C;&#x8282;&#x5F15;&#x8A00;&#x4E2D;&#x7684;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(open-file-input/output-port path)</code>
+&#x8FC7;&#x7A0B;: <code>(open-file-input/output-port path options)</code>
+&#x8FC7;&#x7A0B;: <code>(open-file-input/output-port path options b-mode)</code>
+&#x8FC7;&#x7A0B;: <code>(open-file-input/output-port path options b-mode ?transcoder)</code>
+&#x8FD4;&#x56DE;: a new input/output port for the named file
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86; <em>?transcoder</em>, &#x4E14;&#x4E0D;&#x4E3A; <code>#f</code>, &#x5219;&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x5B83;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x4E3A; <em>?transcoder</em>. &#x5426;&#x5219;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002;&#x5173;&#x4E8E;&#x5176;&#x5B83;&#x5B9E;&#x53C2;&#x7684;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x548C;&#x5F71;&#x54CD;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#x672C;&#x8282;&#x5F15;&#x8A00;&#x4E2D;&#x7684;&#x4ECB;&#x7ECD;&#x3002;</p>
+<h2 id="73-&#x6807;&#x51C6;&#x7AEF;&#x53E3;">7.3. &#x6807;&#x51C6;&#x7AEF;&#x53E3;</h2>
+<p>&#x672C;&#x8282;&#x4ECB;&#x7ECD;&#x7684;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x9644;&#x52A0;&#x5230;&#x8FDB;&#x7A0B;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x5165;&#xFF0C;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF0C;&#x548C;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x6D41;&#x4E0A;&#x7684;&#x7AEF;&#x53E3;&#x3002;&#x7B2C;&#x4E00;&#x7EC4;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x201C;&#x73B0;&#x6210;&#x7684;&#x201D;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#xFF0C;&#x5E26;&#x6709;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF08;&#x5982;&#x679C;&#x5B58;&#x5728;&#x7684;&#x8BDD;&#xFF09;&#x548C;&#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#x3002;&#x7B2C;&#x4E8C;&#x7EC4;&#x8FC7;&#x7A0B;&#x96C6;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#xFF0C;&#x6216;&#x5728; <code>transcoded-port</code> &#x7684;&#x5E2E;&#x52A9;&#x4E0B;&#xFF0C;&#x7528;&#x4E8E;&#x5E26;&#x6709;&#x7A0B;&#x5E8F;&#x63D0;&#x4F9B;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x548C;&#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#x7684;&#x6587;&#x672C;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(current-input-port)</code>
+&#x8FD4;&#x56DE;: &#x5F53;&#x524D;&#x8F93;&#x5165;&#x7AEF;&#x53E3;
+&#x8FC7;&#x7A0B;: <code>(current-output-port)</code>
+&#x8FD4;&#x56DE;: &#x5F53;&#x524D;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;
+&#x8FC7;&#x7A0B;: <code>(current-error-port)</code>
+&#x8FD4;&#x56DE;: &#x5F53;&#x524D;&#x9519;&#x8BEF;&#x7AEF;&#x53E3;
+&#x5E93;: (rnrs io ports), (rnrs io simple), (rnrs)</p>
+<p>&#x5F53;&#x524D;&#x8F93;&#x5165;&#xFF0C;&#x5F53;&#x524D;&#x8F93;&#x51FA;&#xFF0C;&#x548C;&#x5F53;&#x524D;&#x9519;&#x8BEF;&#x7AEF;&#x53E3;&#x8FD4;&#x56DE;&#x9884;&#x8BBE;&#x7684;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#xFF0C;&#x8FD9;&#x4E9B;&#x7AEF;&#x53E3;&#x6700;&#x521D;&#x4E0E;&#x8FDB;&#x7A0B;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x5165;&#xFF0C;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF0C;&#x548C;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x6D41;&#x76F8;&#x5173;&#x8054;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5FEB;&#x6377; I/O &#x8FC7;&#x7A0B; <code>with-input-from-file</code> &#x548C; <code>with-output-to-file</code> &#xFF08;7.9 &#x8282;&#xFF09;&#x4E34;&#x65F6;&#x66FF;&#x4EE3; <code>current-input-port</code> &#x548C; <code>current-output-port</code> &#x8FD4;&#x56DE;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(standard-input-port)</code>
+&#x8FD4;&#x56DE;: &#x8FDE;&#x63A5;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x6D41;&#x7684;&#x4E00;&#x4E2A;&#x5168;&#x65B0;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x5165;&#x7AEF;&#x53E3;
+&#x8FC7;&#x7A0B;: <code>(standard-output-port)</code>
+&#x8FD4;&#x56DE;: &#x8FDE;&#x63A5;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x6D41;&#x7684;&#x4E00;&#x4E2A;&#x5168;&#x65B0;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;
+&#x8FC7;&#x7A0B;: <code>(standard-error-port)</code>
+&#x8FD4;&#x56DE;: &#x8FDE;&#x63A5;&#x5230;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x6D41;&#x7684;&#x4E00;&#x4E2A;&#x5168;&#x65B0;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x7531;&#x4E8E;&#x7AEF;&#x53E3;&#x53EF;&#x80FD;&#x662F;&#x7F13;&#x51B2;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x5982;&#x679C;&#x8FDE;&#x63A5;&#x5230;&#x67D0;&#x4E2A;&#x8FDB;&#x7A0B;&#x6807;&#x51C6;&#x6D41;&#x7684;&#x591A;&#x4E2A;&#x7AEF;&#x53E3;&#x4E0A;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x4EA4;&#x9519;&#x7684;&#xFF0C;&#x5219;&#x4F1A;&#x5BFC;&#x81F4;&#x6DF7;&#x6DC6;&#x3002; &#x56E0;&#x6B64;&#xFF0C;&#x8FD9;&#x4E9B;&#x8FC7;&#x7A0B;&#x901A;&#x5E38;&#x4EC5;&#x5728;&#x7A0B;&#x5E8F;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x9644;&#x52A0;&#x5230;&#x6807;&#x51C6;&#x6D41;&#x7684;&#x4EFB;&#x4F55;&#x73B0;&#x6709;&#x7AEF;&#x53E3;&#x65F6;&#x624D;&#x9002;&#x7528;&#x3002;</p>
+<h2 id="74-&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x7AEF;&#x53E3;">7.4. &#x5B57;&#x7B26;&#x4E32;&#x548C;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x7AEF;&#x53E3;</h2>
+<p>&#x672C;&#x8282;&#x4E2D;&#x7684;&#x8FC7;&#x7A0B;&#x5141;&#x8BB8;&#x628A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x7528;&#x4F5C;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x6D41;&#x3002;</p>
+<p>&#x672C;&#x8282;&#x4E2D;&#x7684;&#x8FC7;&#x7A0B;&#x521B;&#x5EFA;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#xFF0C;&#x652F;&#x6301; <code>port-position</code> &#x548C; <code>set-port-position!</code> &#x64CD;&#x4F5C;&#x3002;&#x672C;&#x8282;&#x4E2D;&#x7684;&#x8FC7;&#x7A0B;&#x521B;&#x5EFA;&#x7684;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#x662F;&#x5426;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x5219;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(open-bytevector-input-port bytevector)</code>
+&#x8FC7;&#x7A0B;: <code>(open-bytevector-input-port bytevector ?transcoder)</code>
+&#x8FD4;&#x56DE;: &#x4ECE; <em>bytevector</em> &#x83B7;&#x53D6;&#x8F93;&#x5165;&#x7684;&#x65B0;&#x8F93;&#x5165;&#x7AEF;&#x53E3;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x4F20;&#x5165; <em>?transcoder</em>, &#x4E14;&#x5176;&#x503C;&#x4E0D;&#x662F; <code>#f</code>, &#x5219;&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x800C;&#x6B64;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x7AEF;&#x53E3;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x4E3A; <em>?transcoder</em>. &#x5426;&#x5219;&#xFF0C;&#x6B64;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x3002;</p>
+<p>&#x5728;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E4B;&#x540E;&#x4FEE;&#x6539; <em>bytevector</em> &#x7684;&#x6548;&#x679C;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x3002;</p>
+<pre><code>(let ([ip (open-bytevector-input-port #vu8(1 2))])
+  (let* ([x1 (get-u8 ip)] [x2 (get-u8 ip)] [x3 (get-u8 ip)])
+    (list x1 x2 (eof-object? x3)))) =&gt; (1 2 #t)
+</code></pre><p>&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x5173;&#x95ED;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x7AEF;&#x53E3;&#xFF1B;&#x5F53;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x5B58;&#x50A8;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x56DE;&#x6536;&#xFF0C;&#x548C;&#x5BF9;&#x4EFB;&#x4F55;&#x5176;&#x5B83;&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x4E00;&#x4E2A;&#x6253;&#x5F00;&#x7684;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x7AEF;&#x53E3;&#x4E0D;&#x4F1A;&#x7ED1;&#x5B9A;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(open-string-input-port string)</code>
+&#x8FD4;&#x56DE;: &#x4ECE; <em>string</em> &#x83B7;&#x53D6;&#x8F93;&#x5165;&#x7684;&#x65B0;&#x6587;&#x672C;&#x8F93;&#x5165;&#x7AEF;&#x53E3;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5728;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E4B;&#x540E;&#x4FEE;&#x6539; string &#x7684;&#x6548;&#x679C;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x65B0;&#x7AEF;&#x53E3;&#x53EF;&#x80FD;&#x6709;&#x4E5F;&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x800C;&#x5982;&#x679C;&#x5B83;&#x6709;&#x7684;&#x8BDD;&#xFF0C;&#x6B64;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x662F;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x867D;&#x7136;&#x4E0D;&#x662F;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#xFF0C;&#x4F46;&#x5B9E;&#x73B0;&#x6700;&#x597D;&#x652F;&#x6301;&#x5B57;&#x7B26;&#x4E32;&#x7AEF;&#x53E3;&#x7684; <code>port-position</code> &#x548C; <code>set-port-position!</code> &#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code>(get-line (open-string-input-port &quot;hi.\nwhat&apos;s up?\n&quot;)) =&gt; &quot;hi.&quot;
+</code></pre><p>&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x5173;&#x95ED;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7AEF;&#x53E3;&#xFF1B;&#x5F53;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x5B58;&#x50A8;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x56DE;&#x6536;&#xFF0C;&#x548C;&#x5BF9;&#x4EFB;&#x4F55;&#x5176;&#x5B83;&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x4E00;&#x4E2A;&#x6253;&#x5F00;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7AEF;&#x53E3;&#x4E0D;&#x4F1A;&#x7ED1;&#x5B9A;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(open-bytevector-output-port)</code>
+&#x8FC7;&#x7A0B;: <code>(open-bytevector-output-port ?transcoder)</code>
+&#x8FD4;&#x56DE;: &#x4E24;&#x4E2A;&#x503C;&#x2014;&#x2014;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x548C;&#x4E00;&#x4E2A;&#x63D0;&#x53D6;&#x8FC7;&#x7A0B;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x4F20;&#x5165; <em>?transcoder</em>, &#x4E14;&#x5176;&#x503C;&#x4E0D;&#x662F; <code>#f</code>, &#x5219;&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x4E14;&#x7AEF;&#x53E3;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x5176;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x4E3A; <em>?transcoder</em>. &#x5426;&#x5219;&#xFF0C;&#x7AEF;&#x53E3;&#x503C;&#x4E3A;&#x4E00;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002;</p>
+<p>&#x63D0;&#x53D6;&#x8FC7;&#x7A0B;&#x662F;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x5F53;&#x4E0D;&#x5E26;&#x5B9E;&#x53C2;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x7AEF;&#x53E3;&#x4E2D;&#x7D2F;&#x79EF;&#x7684;&#x5B57;&#x8282;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x7AEF;&#x53E3;&#x7D2F;&#x79EF;&#x7684;&#x5B57;&#x8282;&#x6E05;&#x7A7A;&#xFF0C;&#x628A;&#x5B83;&#x7684;&#x4F4D;&#x7F6E;&#x91CD;&#x7F6E;&#x4E3A; 0, &#x5E76;&#x8FD4;&#x56DE;&#x5B83;&#x521B;&#x5EFA;&#x7684;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x3002;&#x5982;&#x679C;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x88AB;&#x8BBE;&#x56DE;&#x5B83;&#x7684;&#x6700;&#x5927;&#x8303;&#x56F4;&#x4EE5;&#x5185;&#xFF0C;&#x7D2F;&#x79EF;&#x7684;&#x5B57;&#x8282;&#x4E5F;&#x5305;&#x62EC;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x540E;&#x9762;&#x5199;&#x5165;&#x7684;&#x6240;&#x6709;&#x5B57;&#x8282;&#x3002;</p>
+<pre><code>(let-values ([(op g) (open-bytevector-output-port)])
+  (put-u8 op 15)
+  (put-u8 op 73)
+  (put-u8 op 115)
+  (set-port-position! op 2)
+  (let ([bv1 (g)])
+    (put-u8 op 27)
+    (list bv1 (g)))) =&gt; (#vu8(15 73 115) #vu8(27))
+</code></pre><p>&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x5173;&#x95ED;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x7AEF;&#x53E3;&#xFF1B;&#x5F53;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x5B58;&#x50A8;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x56DE;&#x6536;&#xFF0C;&#x548C;&#x5BF9;&#x4EFB;&#x4F55;&#x5176;&#x5B83;&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x4E00;&#x4E2A;&#x6253;&#x5F00;&#x7684;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x7AEF;&#x53E3;&#x4E0D;&#x4F1A;&#x7ED1;&#x5B9A;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(open-string-output-port)</code>
+&#x8FD4;&#x56DE;: &#x4E24;&#x4E2A;&#x503C;&#x2014;&#x2014;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x672C;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x548C;&#x4E00;&#x4E2A;&#x63D0;&#x53D6;&#x8FC7;&#x7A0B;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x63D0;&#x53D6;&#x8FC7;&#x7A0B;&#x662F;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x5F53;&#x4E0D;&#x5E26;&#x5B9E;&#x53C2;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x7AEF;&#x53E3;&#x4E2D;&#x7D2F;&#x79EF;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x7AEF;&#x53E3;&#x7D2F;&#x79EF;&#x7684;&#x5B57;&#x7B26;&#x6E05;&#x7A7A;&#xFF0C;&#x628A;&#x5B83;&#x7684;&#x4F4D;&#x7F6E;&#x91CD;&#x7F6E;&#x4E3A; 0, &#x5E76;&#x8FD4;&#x56DE;&#x5B83;&#x521B;&#x5EFA;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x88AB;&#x8BBE;&#x56DE;&#x5B83;&#x7684;&#x6700;&#x5927;&#x8303;&#x56F4;&#x4EE5;&#x5185;&#xFF0C;&#x7D2F;&#x79EF;&#x7684;&#x5B57;&#x7B26;&#x4E5F;&#x5305;&#x62EC;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x540E;&#x9762;&#x5199;&#x5165;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x3002;&#x867D;&#x7136;&#x4E0D;&#x662F;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#xFF0C;&#x4F46;&#x5B9E;&#x73B0;&#x6700;&#x597D;&#x652F;&#x6301;&#x5B57;&#x7B26;&#x4E32;&#x7AEF;&#x53E3;&#x7684; <code>port-position</code> &#x548C; <code>set-port-position!</code> &#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code>(let-values ([(op g) (open-string-output-port)])
+  (put-string op &quot;some data&quot;)
+  (let ([str1 (g)])
+    (put-string op &quot;new stuff&quot;)
+    (list str1 (g)))) =&gt; (&quot;some data&quot; &quot;new stuff&quot;)
+</code></pre><p>&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x5173;&#x95ED;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7AEF;&#x53E3;&#xFF1B;&#x5F53;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x5B58;&#x50A8;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x56DE;&#x6536;&#xFF0C;&#x548C;&#x5BF9;&#x4EFB;&#x4F55;&#x5176;&#x5B83;&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x4E00;&#x4E2A;&#x6253;&#x5F00;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7AEF;&#x53E3;&#x4E0D;&#x4F1A;&#x7ED1;&#x5B9A;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(call-with-bytevector-output-port procedure)</code>
+&#x8FC7;&#x7A0B;: <code>(call-with-bytevector-output-port procedure ?transcoder)</code>
+&#x8FD4;&#x56DE;: &#x5305;&#x542B;&#x7D2F;&#x79EF;&#x5B57;&#x8282;&#x7684;&#x5B57;&#x8282;&#x5411;&#x91CF;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x4F20;&#x5165; <em>?transcoder</em>, &#x4E14;&#x5176;&#x503C;&#x4E0D;&#x4E3A; <code>#f</code>, &#x5219;&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x800C; <em>procedure</em> &#x7531;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x8C03;&#x7528;&#xFF0C;&#x5B83;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x4E3A; <em>?transcoder</em>. &#x5426;&#x5219;&#xFF0C; <em>procedure</em> &#x7531;&#x4E00;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x8C03;&#x7528;&#x3002;&#x5982;&#x679C; <em>procedure</em> &#x8FD4;&#x56DE;&#xFF0C;&#x5219;&#x521B;&#x5EFA;&#x5305;&#x542B;&#x7AEF;&#x53E3;&#x4E2D;&#x7D2F;&#x79EF;&#x7684;&#x5B57;&#x8282;&#x7684;&#x5B57;&#x8282;&#x5411;&#x91CF;&#xFF0C;&#x4ECE;&#x7AEF;&#x53E3;&#x6E05;&#x9664;&#x7D2F;&#x79EF;&#x7684;&#x5B57;&#x8282;&#xFF0C;&#x5C06;&#x7AEF;&#x53E3;&#x7684;&#x4F4D;&#x7F6E;&#x91CD;&#x7F6E;&#x4E3A;&#x96F6;&#xFF0C;&#x5E76;&#x7531; <code>call-with-bytevector-output-port</code> &#x8FD4;&#x56DE;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x3002;&#x5982;&#x679C;&#x7531;&#x4E8E;&#x5728; <em>procedure</em> &#x5904;&#x4E8E;&#x6D3B;&#x52A8;&#x72B6;&#x6001;&#x65F6;&#x8C03;&#x7528;&#x521B;&#x5EFA;&#x7684; continuation &#x800C;&#x591A;&#x6B21;&#x8FD4;&#x56DE;&#xFF0C;&#x5219;&#x6BCF;&#x6B21; procedure &#x8FD4;&#x56DE;&#x65F6;&#x90FD;&#x4F1A;&#x53D1;&#x751F;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code>(let ([tx (make-transcoder (latin-1-codec) (eol-style lf)
+            (error-handling-mode replace))])
+  (call-with-bytevector-output-port
+    (lambda (p) (put-string p &quot;abc&quot;))
+    tx)) =&gt; #vu8(97 98 99)
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(call-with-string-output-port procedure)</code>
+&#x8FD4;&#x56DE;&#xFF1A;&#x5305;&#x542B;&#x7D2F;&#x79EF;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>procedure is called with one argument, a string output port. If procedure returns, a string containing the characters accumulated in the port is created, the accumulated characters are cleared from the port, the port&apos;s position is reset to zero, and the string is returned from call-with-string-output-port. These actions occur each time procedure returns, if it returns multiple times due to the invocation of a continuation created while procedure is active.
+<em>procedure</em> &#x8C03;&#x7528;&#x65F6;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x2014;&#x2014;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002;&#x5982;&#x679C; <em>procedure</em> &#x8FD4;&#x56DE;&#xFF0C;&#x5219;&#x521B;&#x5EFA;&#x5305;&#x542B;&#x7AEF;&#x53E3;&#x4E2D;&#x7D2F;&#x79EF;&#x7684;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4ECE;&#x7AEF;&#x53E3;&#x6E05;&#x9664;&#x7D2F;&#x79EF;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x5C06;&#x7AEF;&#x53E3;&#x7684;&#x4F4D;&#x7F6E;&#x91CD;&#x7F6E;&#x4E3A;&#x96F6;&#xFF0C;&#x5E76;&#x4ECE; <code>call-with-string-output-port</code> &#x8FD4;&#x56DE;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C;&#x7531;&#x4E8E;&#x5728; <em>procedure</em> &#x5904;&#x4E8E;&#x6D3B;&#x52A8;&#x72B6;&#x6001;&#x65F6;&#x8C03;&#x7528;&#x521B;&#x5EFA;&#x7684; continuation &#x800C;&#x591A;&#x6B21;&#x8FD4;&#x56DE;&#xFF0C;&#x5219;&#x6BCF;&#x6B21; <em>procedure</em> &#x8FD4;&#x56DE;&#x65F6;&#x90FD;&#x4F1A;&#x53D1;&#x751F;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>call-with-string-output-port can be used along with put-datum to define a procedure, object-&gt;string, that returns a string containing the printed representation of an object.
+<code>call-with-string-output-port</code> &#x53EF;&#x4EE5;&#x4E0E; <code>put-datum</code> &#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B; <code>object-&gt;string</code>, &#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5BF9;&#x8C61;&#x6253;&#x5370;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code>(define (object-&gt;string x)
+  (call-with-string-output-port
+    (lambda (p) (put-datum p x))))
+
+(object-&gt;string (cons &apos;a &apos;(b c))) =&gt; &quot;(a b c)&quot;
+</code></pre><h2 id="75-&#x6253;&#x5F00;&#x81EA;&#x5B9A;&#x4E49;&#x7AEF;&#x53E3;">7.5. &#x6253;&#x5F00;&#x81EA;&#x5B9A;&#x4E49;&#x7AEF;&#x53E3;</h2>
+<p>&#x8FC7;&#x7A0B;: <code>(make-custom-binary-input-port id r! gp sp! close)</code>
+&#x8FD4;&#x56DE;: &#x65B0;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x5165;&#x7AEF;&#x53E3;
+&#x8FC7;&#x7A0B;: <code>(make-custom-binary-output-port id w! gp sp! close)</code>
+&#x8FD4;&#x56DE;: &#x65B0;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;
+&#x8FC7;&#x7A0B;: <code>(make-custom-binary-input/output-port id r! w! gp sp! close)</code>
+&#x8FD4;&#x56DE;: &#x65B0;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E9B;&#x8FC7;&#x7A0B;&#x5141;&#x8BB8;&#x7A0B;&#x5E8F;&#x901A;&#x8FC7;&#x4EFB;&#x610F;&#x5B57;&#x8282;&#x6D41;&#x521B;&#x5EFA;&#x7AEF;&#x53E3;&#x3002; <em>id</em> &#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x65B0;&#x7AEF;&#x53E3;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x540D;&#x5B57;&#x53EA;&#x662F;&#x7528;&#x4E8E;&#x4FE1;&#x606F;&#x7528;&#x9014;&#xFF0C;&#x800C;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x628A;&#x5B83;&#x5305;&#x542B;&#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x7AEF;&#x53E3;&#x7684;&#x6253;&#x5370;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#xFF08;&#x5982;&#x679C;&#x5B58;&#x5728;&#x7684;&#x8BDD;&#xFF09;&#x4E2D;&#x3002; <em>r!</em> &#x548C; <em>w!</em> &#x5FC5;&#x987B;&#x662F;&#x8FC7;&#x7A0B;&#xFF0C;&#x800C; <em>gp</em>, <em>sp!</em> &#x548C; <em>close</em> &#x5747;&#x5FC5;&#x987B;&#x4E3A;&#x8FC7;&#x7A0B;&#x6216; <code>#f</code>. &#x8FD9;&#x4E9B;&#x5B9E;&#x53C2;&#x4ECB;&#x7ECD;&#x5982;&#x4E0B;&#x3002;</p>
+<p><em>r!</em>
+    &#x4E3A;&#x4E86;&#x4ECE;&#x81EA;&#x5B9A;&#x4E49;&#x7AEF;&#x53E3;&#x83B7;&#x53D6;&#x8F93;&#x5165;&#x800C;&#x8C03;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x4E3A;&#x4E86;&#x652F;&#x6301; <code>get-u8</code> &#x6216; <code>get-bytevector-n</code>. &#x8C03;&#x7528;&#x65F6;&#x4F20;&#x5165;&#x4E09;&#x4E2A;&#x5B9E;&#x53C2;&#xFF1A; <em>bytevector</em>, <em>start</em>, &#x548C; <em>n</em>. <em>start</em> &#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x8D1F;&#x7CBE;&#x786E;&#x6574;&#x6570;&#xFF0C; <em>n</em> &#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x6B63;&#x7684;&#x7CBE;&#x786E;&#x6574;&#x6570;&#xFF0C;&#x800C; <em>start</em> &#x548C; <em>n</em> &#x7684;&#x548C;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7; <em>bytevector</em> &#x7684;&#x957F;&#x5EA6;&#x3002;&#x5982;&#x679C;&#x5B57;&#x8282;&#x6D41;&#x5728;&#x6587;&#x4EF6;&#x7684;&#x7ED3;&#x5C3E;&#xFF0C; <em>r!</em> &#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x7CBE;&#x786E;&#x7684; 0. &#x5426;&#x5219;&#xFF0C;&#x5B83;&#x5E94;&#x8BE5;&#x4ECE;&#x6D41;&#x4E2D;&#x8BFB;&#x5165;&#x6700;&#x5C11; 1 &#x4E2A;&#xFF0C;&#x6700;&#x591A; <em>n</em> &#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x628A;&#x8FD9;&#x4E9B;&#x5B57;&#x8282;&#x5B58;&#x50A8;&#x5728; <em>bytevector</em> &#x8D77;&#x59CB;&#x4E8E; <em>start</em> &#x7684;&#x8FDE;&#x7EED;&#x4F4D;&#x7F6E;&#x4E0A;&#xFF0C;&#x5E76;&#x628A;&#x5B9E;&#x9645;&#x8BFB;&#x5165;&#x7684;&#x5B57;&#x8282;&#x6570;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x6B63;&#x6574;&#x6570;&#x8FD4;&#x56DE;&#x3002;</p>
+<p><em>w!</em>
+    &#x4E3A;&#x4E86;&#x5411;&#x7AEF;&#x53E3;&#x53D1;&#x9001;&#x8F93;&#x51FA;&#x800C;&#x8C03;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x4E3A;&#x4E86;&#x652F;&#x6301; <code>put-u8</code> &#x6216; <code>put-bytevector</code>. &#x8C03;&#x7528;&#x65F6;&#x4F20;&#x5165;&#x4E09;&#x4E2A;&#x5B9E;&#x53C2;&#xFF1A; <em>bytevector</em>, <em>start</em>, &#x548C; <em>n</em>. <em>start</em> &#x548C; <em>n</em> &#x4F1A;&#x662F;&#x975E;&#x8D1F;&#x7CBE;&#x786E;&#x6574;&#x6570;&#xFF0C;&#x800C; <em>start</em> &#x548C; <em>n</em> &#x7684;&#x548C;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7; <em>bytevector</em> &#x7684;&#x957F;&#x5EA6;&#x3002; <em>w!</em> &#x5E94;&#x5F53;&#x5199;&#x5165; <em>bytevector</em> &#x4E2D;&#x59CB;&#x4E8E; <em>start</em> &#x7684;&#x81F3;&#x591A; <em>n</em> &#x4E2A;&#x8FDE;&#x7EED;&#x5B57;&#x8282;&#xFF0C;&#x5E76;&#x628A;&#x5B9E;&#x9645;&#x5199;&#x5165;&#x7684;&#x5B57;&#x8282;&#x6570;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x8FD4;&#x56DE;&#x3002;</p>
+<p><em>gp</em>
+    &#x4E3A;&#x4E86;&#x67E5;&#x8BE2;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x800C;&#x8C03;&#x7528;&#x3002;&#x5982;&#x662F;&#x5B83;&#x4E3A; <code>#f</code>, &#x5219;&#x7AEF;&#x53E3;&#x4E0D;&#x4F1A;&#x652F;&#x6301; <code>port-position</code>. &#x5982;&#x679C;&#x5B83;&#x4E0D;&#x4E3A; <code>#f</code>, &#x5B83;&#x5C06;&#x88AB;&#x4F20;&#x5165; 0 &#x4E2A;&#x5B9E;&#x53C2;&#xFF0C;&#x5E76;&#x628A;&#x5B57;&#x8282;&#x6D41;&#x4ECE;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#x8D77;&#x7684;&#x5B57;&#x8282;&#x504F;&#x79FB;&#x91CF;&#x4F5C;&#x4E3A;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD4;&#x56DE;&#x4E3A;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x3002;</p>
+<p><em>sp!</em>
+    &#x4E3A;&#x4E86;&#x8BBE;&#x7F6E;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x800C;&#x8C03;&#x7528;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4E3A; <code>#f</code>, &#x5219;&#x7AEF;&#x53E3;&#x4E0D;&#x4F1A;&#x652F;&#x6301; <code>set-port-position!</code>. &#x5982;&#x679C;&#x5B83;&#x4E0D;&#x4E3A; <code>#f</code>, &#x5B83;&#x5C06;&#x88AB;&#x4F20;&#x5165; 1 &#x4E2A;&#x5B9E;&#x53C2;&#x2014;&#x2014;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x975E;&#x8D1F;&#x6574;&#x6570;&#xFF0C;&#x4EE5;&#x5B57;&#x8282;&#x6D41;&#x4ECE;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#x8D77;&#x7684;&#x5B57;&#x8282;&#x504F;&#x79FB;&#x91CF;&#x8868;&#x793A;&#x7684;&#x65B0;&#x4F4D;&#x7F6E;&#xFF0C;&#x800C;&#x5B83;&#x5E94;&#x5F53;&#x628A;&#x4F4D;&#x7F6E;&#x8BBE;&#x4E3A;&#x8FD9;&#x4E2A;&#x503C;&#x3002;</p>
+<p><em>close</em>
+    &#x4E3A;&#x4E86;&#x5173;&#x95ED;&#x5B57;&#x8282;&#x6D41;&#x800C;&#x8C03;&#x7528;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4E3A; <code>#f</code>, &#x5F53;&#x65B0;&#x7AEF;&#x53E3;&#x5173;&#x95ED;&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x91C7;&#x53D6;&#x4EFB;&#x4F55;&#x52A8;&#x4F5C;&#x4EE5;&#x5173;&#x95ED;&#x5B57;&#x8282;&#x6D41;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4E0D;&#x4E3A; <code>#f</code>, &#x5B83;&#x4F1A;&#x88AB;&#x4F20;&#x5165; 0 &#x4E2A;&#x5B9E;&#x53C2;&#xFF0C; &#x5E76;&#x4F1A;&#x91C7;&#x53D6;&#x4E00;&#x5207;&#x5FC5;&#x8981;&#x7684;&#x52A8;&#x4F5C;&#x4EE5;&#x5173;&#x95ED;&#x5B57;&#x8282;&#x6D41;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x65B0;&#x7AEF;&#x53E3;&#x662F;&#x4E00;&#x4E2A;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x800C;&#x4E14;&#x672A;&#x63D0;&#x4F9B; <em>gp</em> &#x6216; <em>sp!</em> &#x8FC7;&#x7A0B;&#xFF0C;&#x5219;&#x5F53;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x53D1;&#x751F;&#x5728;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#x65F6;&#xFF0C;&#x5B9E;&#x73B0;&#x5F88;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x6B63;&#x786E;&#x5B9A;&#x4F4D;&#x7AEF;&#x53E3;&#xFF0C;&#x56E0;&#x4E3A;&#xFF0C;&#x4E3A;&#x4E86;&#x652F;&#x6301; <code>lookahead-u8</code> &#x800C;&#x5FC5;&#x987B;&#x5B8C;&#x6210;&#x7684;&#x8F93;&#x5165;&#x7F13;&#x51B2;&#xFF0C;&#x4E3A;&#x4E86;&#x6548;&#x7387;&#x7ECF;&#x5E38;&#x4F1A;&#x65E0;&#x6761;&#x4EF6;&#x5B8C;&#x6210;&#x3002;&#x57FA;&#x4E8E;&#x540C;&#x6837;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#x8C03;&#x7528; <code>port-position</code> &#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B; <em>sp!</em> &#x8FC7;&#x7A0B;&#xFF0C;&#x5219;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x901A;&#x5E38;&#x5E94;&#x5F53;&#x63D0;&#x4F9B; <em>gp</em> &#x548C; <em>sp!</em> &#x8FC7;&#x7A0B;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(make-custom-textual-input-port id r! gp sp! close)</code>
+&#x8FD4;&#x56DE;: &#x65B0;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x672C;&#x8F93;&#x5165;&#x7AEF;&#x53E3;
+&#x8FC7;&#x7A0B;: <code>(make-custom-textual-output-port id w! gp sp! close)</code>
+&#x8FD4;&#x56DE;: &#x65B0;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x672C;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;
+&#x8FC7;&#x7A0B;: <code>(make-custom-textual-input/output-port id r! w! gp sp! close)</code>
+&#x8FD4;&#x56DE;: &#x65B0;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x672C;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E9B;&#x8FC7;&#x7A0B;&#x5141;&#x8BB8;&#x7A0B;&#x5E8F;&#x901A;&#x8FC7;&#x4EFB;&#x610F;&#x5B57;&#x7B26;&#x6D41;&#x521B;&#x5EFA;&#x7AEF;&#x53E3;&#x3002; <em>id</em> &#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x65B0;&#x7AEF;&#x53E3;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x540D;&#x5B57;&#x53EA;&#x662F;&#x7528;&#x4E8E;&#x4FE1;&#x606F;&#x7528;&#x9014;&#xFF0C;&#x800C;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x628A;&#x5B83;&#x5305;&#x542B;&#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x7AEF;&#x53E3;&#x7684;&#x6253;&#x5370;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#xFF08;&#x5982;&#x679C;&#x5B58;&#x5728;&#x7684;&#x8BDD;&#xFF09;&#x4E2D;&#x3002; <em>r!</em> &#x548C; <em>w!</em> &#x5FC5;&#x987B;&#x662F;&#x8FC7;&#x7A0B;&#xFF0C;&#x800C; <em>gp</em>, <em>sp!</em> &#x548C; <em>close</em> &#x5747;&#x5FC5;&#x987B;&#x4E3A;&#x8FC7;&#x7A0B;&#x6216; <code>#f</code>. &#x8FD9;&#x4E9B;&#x5B9E;&#x53C2;&#x4ECB;&#x7ECD;&#x5982;&#x4E0B;&#x3002;</p>
+<p><em>r!</em>
+    &#x4E3A;&#x4E86;&#x4ECE;&#x7AEF;&#x53E3;&#x83B7;&#x53D6;&#x8F93;&#x5165;&#x800C;&#x8C03;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x4E3A;&#x4E86;&#x652F;&#x6301; <code>get-char</code> &#x6216; <code>get-string-n</code>. &#x8C03;&#x7528;&#x65F6;&#x4F20;&#x5165;&#x4E09;&#x4E2A;&#x5B9E;&#x53C2;&#xFF1A; <em>string</em>, <em>start</em>, &#x548C; <em>n</em>. <em>start</em> &#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x8D1F;&#x7CBE;&#x786E;&#x6574;&#x6570;&#xFF0C; <em>n</em> &#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x6B63;&#x7684;&#x7CBE;&#x786E;&#x6574;&#x6570;&#xFF0C;&#x800C; <em>start</em> &#x548C; <em>n</em> &#x7684;&#x548C;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7; <em>string</em> &#x7684;&#x957F;&#x5EA6;&#x3002;&#x5982;&#x679C;&#x5B57;&#x7B26;&#x6D41;&#x5728;&#x6587;&#x4EF6;&#x7684;&#x7ED3;&#x5C3E;&#xFF0C; <em>r!</em> &#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x7CBE;&#x786E;&#x7684; 0. &#x5426;&#x5219;&#xFF0C;&#x5B83;&#x5E94;&#x8BE5;&#x4ECE;&#x6D41;&#x4E2D;&#x8BFB;&#x5165;&#x6700;&#x5C11; 1 &#x4E2A;&#xFF0C;&#x6700;&#x591A; <em>n</em> &#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x628A;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x5B58;&#x50A8;&#x5728; <em>string</em> &#x8D77;&#x59CB;&#x4E8E; <em>start</em> &#x7684;&#x8FDE;&#x7EED;&#x4F4D;&#x7F6E;&#x4E0A;&#xFF0C;&#x5E76;&#x628A;&#x5B9E;&#x9645;&#x8BFB;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x6B63;&#x6574;&#x6570;&#x8FD4;&#x56DE;&#x3002;</p>
+<p><em>w!</em>
+    &#x4E3A;&#x4E86;&#x5411;&#x7AEF;&#x53E3;&#x53D1;&#x9001;&#x8F93;&#x51FA;&#x800C;&#x8C03;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x4E3A;&#x4E86;&#x652F;&#x6301; <code>put-char</code> &#x6216; <code>put-string</code>. &#x8C03;&#x7528;&#x65F6;&#x4F20;&#x5165;&#x4E09;&#x4E2A;&#x5B9E;&#x53C2;&#xFF1A; <em>string</em>, <em>start</em>, &#x548C; <em>n</em>. <em>start</em> &#x548C; <em>n</em> &#x4F1A;&#x662F;&#x975E;&#x8D1F;&#x7CBE;&#x786E;&#x6574;&#x6570;&#xFF0C;&#x800C; <em>start</em> &#x548C; <em>n</em> &#x7684;&#x548C;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7; <em>string</em> &#x7684;&#x957F;&#x5EA6;&#x3002; <em>w!</em> &#x5E94;&#x5F53;&#x5199;&#x5165; <em>string</em> &#x4E2D;&#x59CB;&#x4E8E; <em>start</em> &#x7684;&#x81F3;&#x591A; <em>n</em> &#x4E2A;&#x8FDE;&#x7EED;&#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x628A;&#x5B9E;&#x9645;&#x5199;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x8FD4;&#x56DE;&#x3002;</p>
+<p><em>gp</em>
+    &#x4E3A;&#x4E86;&#x67E5;&#x8BE2;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x800C;&#x8C03;&#x7528;&#x3002;&#x5982;&#x662F;&#x5B83;&#x4E3A; <code>#f</code>, &#x5219;&#x7AEF;&#x53E3;&#x4E0D;&#x4F1A;&#x652F;&#x6301; <code>port-position</code>. &#x5982;&#x679C;&#x5B83;&#x4E0D;&#x4E3A; <code>#f</code>, &#x5B83;&#x4F1A;&#x88AB;&#x4F20;&#x5165; 0 &#x4E2A;&#x5B9E;&#x53C2;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#xFF0C;&#x5176;&#x53EF;&#x80FD;&#x4E3A;&#x4EFB;&#x610F;&#x503C;&#x3002;</p>
+<p><em>sp!</em>
+    &#x4E3A;&#x4E86;&#x8BBE;&#x7F6E;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x800C;&#x8C03;&#x7528;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4E3A; <code>#f</code>, &#x5219;&#x7AEF;&#x53E3;&#x4E0D;&#x4F1A;&#x652F;&#x6301; <code>set-port-position!</code>. &#x5982;&#x679C;&#x5B83;&#x4E0D;&#x4E3A; <code>#f</code>, &#x5B83;&#x4F1A;&#x88AB;&#x4F20;&#x5165; 1 &#x4E2A;&#x5B9E;&#x53C2;&#x2014;&#x2014; <em>pos</em>, &#x4E00;&#x4E2A;&#x8868;&#x793A;&#x65B0;&#x4F4D;&#x7F6E;&#x7684;&#x503C;&#x3002;&#x5982;&#x679C; <em>pos</em> &#x662F;&#x4E4B;&#x524D;&#x5BF9; <em>gp</em> &#x7684;&#x4E00;&#x4E2A;&#x8C03;&#x7528;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5219; <em>sp!</em> &#x5E94;&#x5F53;&#x628A;&#x4F4D;&#x7F6E;&#x8BBE;&#x4E3A; <em>pos</em>.</p>
+<p><em>close</em>
+    &#x4E3A;&#x4E86;&#x5173;&#x95ED;&#x5B57;&#x7B26;&#x6D41;&#x800C;&#x8C03;&#x7528;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4E3A; <code>#f</code>, &#x5F53;&#x65B0;&#x7AEF;&#x53E3;&#x5173;&#x95ED;&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x91C7;&#x53D6;&#x4EFB;&#x4F55;&#x52A8;&#x4F5C;&#x4EE5;&#x5173;&#x95ED;&#x5B57;&#x7B26;&#x6D41;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4E0D;&#x4E3A; <code>#f</code>, &#x5B83;&#x4F1A;&#x88AB;&#x4F20;&#x5165; 0 &#x4E2A;&#x5B9E;&#x53C2;&#xFF0C; &#x5E76;&#x4F1A;&#x91C7;&#x53D6;&#x4E00;&#x5207;&#x5FC5;&#x8981;&#x7684;&#x52A8;&#x4F5C;&#x4EE5;&#x5173;&#x95ED;&#x5B57;&#x7B26;&#x6D41;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x65B0;&#x7AEF;&#x53E3;&#x662F;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x5F53;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x53D1;&#x751F;&#x5728;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#x65F6;&#xFF0C;&#x5373;&#x4F7F;&#x63D0;&#x4F9B;&#x4E86; <em>gp</em> &#x6216; <em>sp!</em> &#x8FC7;&#x7A0B;&#xFF0C;&#x5B9E;&#x73B0;&#x4E5F;&#x5F88;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x6B63;&#x786E;&#x5B9A;&#x4F4D;&#x7AEF;&#x53E3;&#xFF0C;&#x56E0;&#x4E3A;&#xFF0C;&#x4E3A;&#x4E86;&#x652F;&#x6301; <code>lookahead-char</code> &#x800C;&#x5FC5;&#x987B;&#x5B8C;&#x6210;&#x7684;&#x8F93;&#x5165;&#x7F13;&#x51B2;&#xFF0C;&#x4E3A;&#x4E86;&#x6548;&#x7387;&#x7ECF;&#x5E38;&#x4F1A;&#x65E0;&#x6761;&#x4EF6;&#x5B8C;&#x6210;&#x3002;&#x7531;&#x4E8E;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x7684;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#xFF0C;&#x5B9E;&#x73B0;&#x65E0;&#x6CD5;&#x8C03;&#x6574; <em>gp</em> &#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x4EE5;&#x8BA1;&#x5165;&#x7F13;&#x51B2;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x3002;&#x57FA;&#x4E8E;&#x540C;&#x6837;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#x8C03;&#x7528; <code>port-position</code> &#xFF0C;&#x5373;&#x4F7F;&#x63D0;&#x4F9B;&#x4E86; <em>sp!</em> &#x8FC7;&#x7A0B;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x7136;&#x800C;&#xFF0C;&#x5982;&#x679C;&#x4F4D;&#x7F6E;&#x88AB;&#x91CD;&#x7F6E;&#x4E3A;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x5728;&#x8BFB;&#x53D6;&#x540E;&#x53EF;&#x9760;&#x5730;&#x6267;&#x884C;&#x8F93;&#x51FA;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x672C;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x901A;&#x5E38;&#x5E94;&#x5F53;&#x63D0;&#x4F9B; <em>gp</em> &#x548C; <em>sp!</em> &#x8FC7;&#x7A0B;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x7AEF;&#x53E3;&#x7684;&#x4F7F;&#x7528;&#x8005;&#x5E94;&#x5F53;&#x5728;&#x4EFB;&#x4F55;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x4E4B;&#x524D;&#xFF0C;&#x901A;&#x8FC7; <code>port-position</code> &#x83B7;&#x53D6;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#xFF0C;&#x5E76;&#x5728;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x4E4B;&#x524D;&#xFF0C;&#x628A;&#x4F4D;&#x7F6E;&#x91CD;&#x7F6E;&#x56DE;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x3002;</p>
+<h2 id="76-&#x7AEF;&#x53E3;&#x64CD;&#x4F5C;">7.6. &#x7AEF;&#x53E3;&#x64CD;&#x4F5C;</h2>
+<p>&#x672C;&#x8282;&#x4ECB;&#x7ECD;&#x4E86;&#x591A;&#x79CD;&#x4E0D;&#x76F4;&#x63A5;&#x6D89;&#x53CA;&#x8BFB;&#x5199;&#x7AEF;&#x53E3;&#x7684;&#x7AEF;&#x53E3;&#x64CD;&#x4F5C;&#x3002;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x4F1A;&#x5728;&#x540E;&#x7EED;&#x7AE0;&#x8282;&#x4E2D;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(port? obj)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <code>obj</code> &#x662F;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FC7;&#x7A0B;: <code>(input-port? obj)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <code>obj</code> &#x662F;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x6216;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x8FC7;&#x7A0B;: <code>(output-port? obj)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <code>obj</code> &#x662F;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x6216;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x5E93;: (rnrs io ports), (rnrs io simple), (rnrs)</p>
+<p>&#x8FC7;&#x7A0B;: <code>(binary-port? obj)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <code>obj</code> &#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x8FC7;&#x7A0B;: <code>(textual-port? obj)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <code>obj</code> &#x662F;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FC7;&#x7A0B;: <code>(close-port port)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x7AEF;&#x53E3;&#x5C1A;&#x672A;&#x5173;&#x95ED;&#xFF0C;&#x5219; <code>close-port</code> &#x4F1A;&#x5173;&#x95ED;&#x5B83;&#xFF0C;&#x5982;&#x679C;&#x7AEF;&#x53E3;&#x662F;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x9996;&#x5148;&#x8981;&#x628A;&#x6240;&#x6709;&#x7F13;&#x5B58;&#x7684;&#x5B57;&#x8282;&#x6216;&#x5B57;&#x7B26;&#x5199;&#x5165;&#x5E95;&#x5C42;&#x6D41;&#x3002;&#x4E00;&#x65E6;&#x7AEF;&#x53E3;&#x88AB;&#x5173;&#x95ED;&#xFF0C;&#x5C31;&#x4E0D;&#x53EF;&#x4EE5;&#x5728;&#x7AEF;&#x53E3;&#x4E0A;&#x518D;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x7684;&#x8F93;&#x5165;&#x6216;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x3002;&#x7531;&#x4E8E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53EF;&#x80FD;&#x4F1A;&#x5BF9;&#x540C;&#x65F6;&#x5F00;&#x542F;&#x7684;&#x6587;&#x4EF6;&#x7AEF;&#x53E3;&#x6570;&#x91CF;&#x8BBE;&#x9650;&#xFF0C;&#x6216;&#x5BF9;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x7684;&#x8BBF;&#x95EE;&#x8BBE;&#x9650;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5173;&#x95ED;&#x4EFB;&#x4F55;&#x4E0D;&#x518D;&#x7528;&#x4E8E;&#x8F93;&#x5165;&#x6216;&#x8F93;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x7AEF;&#x53E3;&#x662F;&#x4E2A;&#x597D;&#x7684;&#x4E60;&#x60EF;&#x3002;&#x5982;&#x679C;&#x7AEF;&#x53E3;&#x662F;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x663E;&#x5F0F;&#x5173;&#x95ED;&#x7AEF;&#x53E3;&#x540C;&#x6837;&#x786E;&#x4FDD;&#x4E86;&#x7F13;&#x51B2;&#x6570;&#x636E;&#x4F1A;&#x88AB;&#x5199;&#x5165;&#x5E95;&#x5C42;&#x6D41;&#x3002;&#x67D0;&#x4E9B; Scheme &#x5B9E;&#x73B0;&#xFF0C;&#x5728;&#x6587;&#x4EF6;&#x7AEF;&#x53E3;&#x5BF9;&#x7A0B;&#x5E8F;&#x53D8;&#x5F97;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;&#x65F6;&#xFF0C;&#x6216;&#x5728; Scheme &#x7A0B;&#x5E8F;&#x9000;&#x51FA;&#x540E;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x7AEF;&#x53E3;&#xFF0C;&#x4F46;&#x6700;&#x597D;&#x8FD8;&#x662F;&#x5C3D;&#x53EF;&#x80FD;&#x663E;&#x5F0F;&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x7AEF;&#x53E3;&#x3002;&#x5173;&#x95ED;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5173;&#x95ED;&#x7684;&#x7AEF;&#x53E3;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x4EFB;&#x4F55;&#x5F71;&#x54CD;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(transcoded-port binary-port transcoder)</code>
+&#x8FD4;&#x56DE;: &#x65B0;&#x7684;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#xFF0C;&#x6709;&#x7740;&#x548C; <em>binary-port</em> &#x4E00;&#x6837;&#x7684;&#x5B57;&#x8282;&#x6D41;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#xFF0C;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x4E3A; <em>transcoder</em>, &#x5E95;&#x5C42;&#x5B57;&#x8282;&#x6D41;&#x548C; <em>binary-port</em> &#x4E00;&#x6837;&#xFF0C;&#x5B9A;&#x4F4D;&#x4E8E; <em>binary-port</em> &#x7684;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x4F5C;&#x4E3A;&#x521B;&#x5EFA;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#x7684;&#x526F;&#x4F5C;&#x7528;&#xFF0C; <em>binary-port</em> &#x4F1A;&#x88AB;&#x5173;&#x95ED;&#xFF0C;&#x4EE5;&#x9632;&#x6B62;&#x5728; <em>binary-port</em> &#x4E0A;&#x7684;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#x548C;&#x5728;&#x65B0;&#x7684;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#x4E0A;&#x7684;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#x4F1A;&#x4E92;&#x76F8;&#x5E72;&#x6270;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5E95;&#x5C42;&#x5B57;&#x8282;&#x6D41;&#x4F1A;&#x4FDD;&#x6301;&#x5F00;&#x542F;&#xFF0C;&#x76F4;&#x5230;&#x6B64;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#x88AB;&#x5173;&#x95ED;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(port-transcoder port)</code>
+&#x8FD4;&#x56DE;: &#x4E0E; <em>port</em> &#x76F8;&#x5173;&#x8054;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#xFF08;&#x5982;&#x679C;&#x5B58;&#x5728;&#x7684;&#x8BDD;&#xFF09;&#xFF0C;&#x5426;&#x5219;&#x4E3A; <code>#f</code>
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5BF9;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#x603B;&#x662F;&#x8FD4;&#x56DE; <code>#f</code>, &#x800C;&#x5BF9;&#x67D0;&#x4E9B;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#x53EF;&#x80FD;&#x8FD4;&#x56DE; <code>#f</code>.</p>
+<p>&#x8FC7;&#x7A0B;: <code>(port-position port)</code>
+&#x8FD4;&#x56DE;: <em>port</em> &#x7684;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;
+&#x8FC7;&#x7A0B;: <code>(port-has-port-position? port)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <em>port</em> &#x652F;&#x6301; <code>port-position</code> &#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x7AEF;&#x53E3;&#x53EF;&#x80FD;&#x652F;&#x6301;&#x67E5;&#x8BE2;&#x4EE5;&#x786E;&#x5B9A;&#x5B83;&#x7684;&#x5E95;&#x5C42;&#x5B57;&#x8282;&#x6216;&#x5B57;&#x7B26;&#x6D41;&#x4E2D;&#x7684;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x662F;&#x8FD9;&#x6837;&#xFF0C;&#x8FC7;&#x7A0B; <code>port-has-port-position?</code> &#x8FD4;&#x56DE; <code>#t</code>, &#x800C; <code>port-position</code> &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x3002;&#x5BF9;&#x4E8E;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#xFF0C;&#x4F4D;&#x7F6E;&#x603B;&#x662F;&#x4E00;&#x4E2A;&#x4ECE;&#x5B57;&#x8282;&#x6D41;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x8D77;&#x7684;&#x7CBE;&#x786E;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x7684;&#x5B57;&#x8282;&#x504F;&#x79FB;&#x91CF;&#x3002;&#x5BF9;&#x4E8E;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#xFF0C;&#x4F4D;&#x7F6E;&#x7684;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#xFF1B;&#x5B83;&#x53EF;&#x80FD;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x975E;&#x8D1F;&#x6574;&#x6570;&#xFF0C;&#x800C;&#x5373;&#x4F7F;&#x5B83;&#x662F;&#xFF0C;&#x5B83;&#x53EF;&#x80FD;&#x4E5F;&#x4E0D;&#x8868;&#x793A;&#x5E95;&#x5C42;&#x6D41;&#x7684;&#x5B57;&#x8282;&#x6216;&#x5B57;&#x7B26;&#x504F;&#x79FB;&#x91CF;&#x3002;&#x5982;&#x679C;&#x7AEF;&#x53E3;&#x652F;&#x6301; <code>set-port-position!</code>, &#x4F4D;&#x7F6E;&#x53EF;&#x4EE5;&#x5728;&#x4E4B;&#x540E;&#x7528;&#x4E8E;&#x91CD;&#x7F6E;&#x4F4D;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x5728;&#x4E00;&#x4E2A;&#x4E0D;&#x652F;&#x6301; <code>port-position</code> &#x7684;&#x7AEF;&#x53E3;&#x4E0A;&#x8C03;&#x7528;&#x5B83;&#xFF0C;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x7684; <code>&amp;assertion</code> &#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(set-port-position! port pos)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x8FC7;&#x7A0B;: <code>(port-has-set-port-position!? port)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <em>port</em> &#x652F;&#x6301; <code>set-port-position!</code> &#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#x53EF;&#x80FD;&#x5141;&#x8BB8;&#x628A;&#x5B83;&#x7684;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x76F4;&#x63A5;&#x79FB;&#x52A8;&#x5230;&#x5E95;&#x5C42;&#x5B57;&#x8282;&#x6216;&#x5B57;&#x7B26;&#x6D41;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x4F4D;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x8FC7;&#x7A0B; <code>port-has-set-port-position!?</code> &#x8FD4;&#x56DE; <code>#t</code>, &#x800C; <code>set-port-position!</code> &#x6539;&#x53D8;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x3002;&#x5BF9;&#x4E8E;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#xFF0C;&#x4F4D;&#x7F6E; <em>pos</em> &#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x7684;&#xFF0C;&#x4ECE;&#x5B57;&#x8282;&#x6D41;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x8D77;&#x7684;&#x5B57;&#x8282;&#x504F;&#x79FB;&#x91CF;&#x3002;&#x5BF9;&#x4E8E;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#xFF0C;&#x4F4D;&#x7F6E;&#x7684;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x5982;&#x540C;&#x4E0A;&#x9762; <code>port-position</code> &#x6761;&#x76EE;&#x4E2D;&#x6240;&#x4ECB;&#x7ECD;&#x7684;&#xFF0C;&#x4F46; <em>pos</em> &#x5FC5;&#x987B;&#x662F;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#x7684;&#x4E00;&#x4E2A;&#x9002;&#x5F53;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x901A;&#x5E38;&#x53EA;&#x6709;&#x5728;&#x5B83;&#x662F;&#x4ECE;&#x76F8;&#x540C;&#x7AEF;&#x53E3;&#x4E0A;&#x5BF9; <code>port-position</code> &#x7684;&#x8C03;&#x7528;&#x4E2D;&#x83B7;&#x5F97;&#x65F6;&#xFF0C;&#x624D;&#x80FD;&#x786E;&#x4FDD;&#x5982;&#x6B64;&#x3002;&#x5982;&#x679C;&#x5728;&#x4E0D;&#x652F;&#x6301; <code>set-port-position!</code> &#x7684;&#x7AEF;&#x53E3;&#x4E0A;&#x8C03;&#x7528;&#x5B83;&#xFF0C;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x7684; <code>&amp;assertion</code> &#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7AEF;&#x53E3;&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x800C;&#x8BBE;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;&#x8D85;&#x8FC7;&#x4E86;&#x5E95;&#x5C42;&#x6D41;&#x4E2D;&#x6570;&#x636E;&#x7684;&#x5F53;&#x524D;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x76F4;&#x5230;&#x5411;&#x90A3;&#x4E2A;&#x4F4D;&#x7F6E;&#x5199;&#x5165;&#x65B0;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x6D41;&#x624D;&#x4F1A;&#x6269;&#x5C55;&#x3002;&#x5982;&#x679C;&#x5411;&#x90A3;&#x4E2A;&#x4F4D;&#x7F6E;&#x5199;&#x5165;&#x65B0;&#x6570;&#x636E;&#xFF0C;&#x5219;&#x6BCF;&#x4E2A;&#x4E2D;&#x95F4;&#x4F4D;&#x7F6E;&#x7684;&#x5185;&#x5BB9;&#x5747;&#x4E3A;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x901A;&#x8FC7; <code>open-file-output-port</code> &#x548C; <code>open-file-input/output-port</code> &#x521B;&#x5EFA;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x7AEF;&#x53E3;&#xFF0C;&#x603B;&#x662F;&#x80FD;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x6269;&#x5C55;&#xFF0C;&#x53EA;&#x8981;&#x4E0D;&#x8D85;&#x51FA;&#x5E95;&#x5C42;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x9650;&#x5236;&#x3002;&#x5728;&#x5176;&#x5B83;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5C1D;&#x8BD5;&#x628A;&#x7AEF;&#x53E3;&#x8BBE;&#x5B9A;&#x5230;&#x8D85;&#x51FA;&#x5E95;&#x5C42;&#x5BF9;&#x8C61;&#x4E2D;&#x6570;&#x636E;&#x7684;&#x5F53;&#x524D;&#x672B;&#x5C3E;&#x7684;&#x4F4D;&#x7F6E;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x8D77;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x7684; <code>&amp;i/o-invalid-position</code> &#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(call-with-port port procedure)</code>
+&#x8FD4;&#x56DE;: <em>procedure</em> &#x8FD4;&#x56DE;&#x7684;&#x503C;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><code>call-with-port</code> &#x4EE5; <em>port</em> &#x4F5C;&#x4E3A;&#x552F;&#x4E00;&#x5B9E;&#x53C2;&#x8C03;&#x7528; <em>procedure</em>. &#x5982;&#x679C; <em>procedure</em> &#x8FD4;&#x56DE;&#xFF0C; &#x5219; <code>call-with-port</code> &#x5173;&#x95ED;&#x7AEF;&#x53E3;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE; <em>procedure</em> &#x8FD4;&#x56DE;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x4E8E; <em>procedure</em> &#x4E4B;&#x5916;&#x7684; continuation &#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5219; <code>call-with-port</code> &#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x5173;&#x95ED;&#x7AEF;&#x53E3;&#xFF0C;&#x56E0;&#x4E3A;&#x4E4B;&#x540E;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x53E6;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x4E8E; <em>procedure</em> &#x4E4B;&#x5185;&#x7684; continuation &#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x628A;&#x63A7;&#x5236;&#x6743;&#x8FD4;&#x8FD8;&#x7ED9; <em>procedure</em>. &#x5982;&#x679C; <em>procedure</em> &#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x5728;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x786E;&#x8BA4;&#x6B64;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x4E0D;&#x518D;&#x53EF;&#x4EE5;&#x88AB;&#x8BBF;&#x95EE;&#x65F6;&#xFF0C;&#x624D;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x5730;&#x5173;&#x95ED;&#x6B64;&#x7AEF;&#x53E3;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x628A;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x5230;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x5DF2;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x88AB;&#x8986;&#x76D6;&#x3002;&#x9664;&#x975E;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#xFF0C;&#x4E0D;&#x7136;&#x5728;&#x590D;&#x5236;&#x7ED3;&#x675F;&#x540E;&#x7AEF;&#x53E3;&#x5373;&#x88AB;&#x5173;&#x95ED;&#x3002;</p>
+<pre><code>(call-with-port (open-file-input-port &quot;infile&quot; (file-options)
+                  (buffer-mode block) (native-transcoder))
+  (lambda (ip)
+    (call-with-port (open-file-output-port &quot;outfile&quot;
+                      (file-options no-fail)
+                      (buffer-mode block)
+                      (native-transcoder)) 
+      (lambda (op)
+        (do ([c (get-char ip) (get-char ip)])
+            ((eof-object? c))
+          (put-char op c))))))
+</code></pre><p><code>call-with-port</code> &#x7684;&#x5B9A;&#x4E49;&#x5728; 135 &#x9875;&#x7ED9;&#x51FA;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(output-port-buffer-mode port)</code>
+&#x8FD4;&#x56DE;: &#x8868;&#x793A; <em>port</em> &#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#x7684;&#x7B26;&#x53F7;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<h2 id="77-&#x8F93;&#x5165;&#x64CD;&#x4F5C;">7.7. &#x8F93;&#x5165;&#x64CD;&#x4F5C;</h2>
+<p>&#x672C;&#x8282;&#x4ECB;&#x7ECD;&#x4E86;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x4ECE;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x4EE5;&#x53CA;&#x8BC6;&#x522B;&#x6216;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x7ED3;&#x5C3E;&#xFF08;eof&#xFF09;&#x5BF9;&#x8C61;&#x7684;&#x76F8;&#x5173;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(eof-object? obj)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <em>obj</em> &#x662F; eof &#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x5E93;: (rnrs io ports), (rnrs io simple), (rnrs)</p>
+<p>&#x5F53;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x5230;&#x8FBE;&#x8F93;&#x5165;&#x672B;&#x5C3E;&#x65F6;&#xFF0C;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#xFF08;&#x4F8B;&#x5982;&#xFF0C; <code>get-datum</code> &#xFF09;&#x8FD4;&#x56DE;&#x6587;&#x4EF6;&#x7ED3;&#x675F;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(eof-object)</code>
+&#x8FD4;&#x56DE;: eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs io simple), (rnrs)</p>
+<pre><code>(eof-object? (eof-object)) =&gt; #t
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(get-u8 binary-input-port)</code>
+&#x8FD4;&#x56DE;: <em>binary-input-port</em> &#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C; <code>binary-input-port</code> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x4F1A;&#x628A;&#x4E0B;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x5B57;&#x8282;&#x4F5C;&#x4E3A;&#x65E0;&#x7B26;&#x53F7; 8 &#x4F4D;&#x6570;&#x8FD4;&#x56DE;&#xFF0C;&#x5373;&#xFF0C;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 255&#xFF0C;&#x800C;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x4F1A;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(lookahead-u8 binary-input-port)</code>
+&#x8FD4;&#x56DE;: <em>binary-input-port</em> &#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C; <em>binary-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x4F1A;&#x628A;&#x4E0B;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x5B57;&#x8282;&#x4F5C;&#x4E3A;&#x65E0;&#x7B26;&#x53F7; 8 &#x4F4D;&#x6570;&#x8FD4;&#x56DE;&#xFF0C;&#x5373;&#xFF0C;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 255. &#x4E0E; <code>get-u8</code> &#x76F8;&#x6BD4;&#xFF0C; <code>lookahead-u8</code> &#x4E0D;&#x6D88;&#x8017;&#x5B83;&#x4ECE;&#x7AEF;&#x53E3;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x8282;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;&#x4E0B;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#x4E0A;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x5BF9; <code>lookahead-u8</code> &#x6216; <code>get-u8</code> &#x7684;&#x8C03;&#x7528;&#xFF0C;&#x5219;&#x4F1A;&#x8FD4;&#x56DE;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(get-bytevector-n binary-input-port n)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x975E;&#x7A7A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#xFF0C;&#x5305;&#x542B;&#x81F3;&#x591A; <em>n</em> &#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>n</em> &#x5FC5;&#x987B;&#x662F;&#x7CBE;&#x786E;&#x7684;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x3002;&#x5982;&#x679C; <em>binary-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C; <code>get-bytevector-n</code> &#x8BFB;&#x53D6;&#xFF08;&#x548C; <code>get-u8</code> &#x4E00;&#x6837;&#xFF09;&#x5728;&#x7AEF;&#x53E3;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x524D;&#x53EF;&#x7528;&#x7684;&#x5C3D;&#x53EF;&#x80FD;&#x591A;&#x7684;&#xFF0C;&#x81F3;&#x591A; <em>n</em> &#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#xFF08;&#x975E;&#x7A7A;&#xFF09;&#x7684;&#x5305;&#x542B;&#x8FD9;&#x4E9B;&#x5B57;&#x8282;&#x7684;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x3002;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x79FB;&#x52A8;&#x5230;&#x6240;&#x8BFB;&#x5B57;&#x8282;&#x7684;&#x540E;&#x9762;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(get-bytevector-n! binary-input-port bytevector start n)</code>
+&#x8FD4;&#x56DE;: &#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x8282;&#x6570;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>start</em> &#x548C; <em>n</em> &#x5FC5;&#x987B;&#x662F;&#x7CBE;&#x786E;&#x7684;&#x975E;&#x8D1F;&#x6574;&#x6570;&#xFF0C;&#x4E14; <em>start</em> &#x548C; <em>n</em> &#x7684;&#x548C;&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7; <em>bytevector</em> &#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<p>&#x5982;&#x679C; <em>binary-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C; <code>get-bytevector-n!</code> &#x8BFB;&#x53D6;&#xFF08;&#x548C; <code>get-u8</code> &#x4E00;&#x6837;&#xFF09;&#x5728;&#x7AEF;&#x53E3;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x524D;&#x53EF;&#x7528;&#x7684;&#x5C3D;&#x53EF;&#x80FD;&#x591A;&#x7684;&#xFF0C;&#x81F3;&#x591A; <em>n</em> &#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x628A;&#x8FD9;&#x4E9B;&#x5B57;&#x8282;&#x5B58;&#x50A8;&#x5728; <em>bytevector</em> &#x8D77;&#x59CB;&#x4E8E; <em>start</em> &#x7684;&#x8FDE;&#x7EED;&#x4F4D;&#x7F6E;&#x4E0A;&#xFF0C;&#x5E76;&#x628A;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x8282;&#x6570;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x6B63;&#x6574;&#x6570;&#x8FD4;&#x56DE;&#x3002;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x8282;&#x4E4B;&#x540E;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(get-bytevector-some binary-input-port)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x975E;&#x7A7A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C; <em>binary-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C; <code>get-bytevector-some</code> &#x8BFB;&#x53D6;&#xFF08;&#x548C; <code>get-u8</code> &#x4E00;&#x6837;&#xFF09;&#x81F3;&#x5C11;&#x4E00;&#x4E2A;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x591A;&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8FD9;&#x4E9B;&#x5B57;&#x8282;&#x7684;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x3002;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x8282;&#x4E4B;&#x540E;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x8BFB;&#x53D6;&#x7684;&#x6700;&#x5927;&#x5B57;&#x8282;&#x6570;&#x662F;&#x4E0E;&#x5B9E;&#x73B0;&#x76F8;&#x5173;&#x7684;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(get-bytevector-all binary-input-port)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x975E;&#x7A7A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C; <em>binary-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C; <code>get-bytevector-all</code> &#x8BFB;&#x53D6;&#xFF08;&#x548C; <code>get-u8</code> &#x4E00;&#x6837;&#xFF09;&#x5728;&#x7AEF;&#x53E3;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x524D;&#x53EF;&#x7528;&#x7684;&#x6240;&#x6709;&#x5B57;&#x8282;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8FD9;&#x4E9B;&#x5B57;&#x8282;&#x7684;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x3002;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x8282;&#x4E4B;&#x540E;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(get-char textual-input-port)</code>
+&#x8FD4;&#x56DE;: <em>textual-input-port</em> &#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C; <em>textual-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E0B;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x5B57;&#x7B26;&#xFF0C;&#x4E14;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x4F1A;&#x540E;&#x79FB;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x5982;&#x679C; <em>textual-input-port</em> &#x662F;&#x4E00;&#x4E2A;&#x7ECF;&#x8FC7;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x5E95;&#x5C42;&#x5B57;&#x8282;&#x6D41;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x53EF;&#x80FD;&#x540E;&#x79FB;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(lookahead-char textual-input-port)</code>
+&#x8FD4;&#x56DE;: <em>textual-input-port</em> &#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C; <em>textual-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E0B;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x5B57;&#x7B26;&#x3002;&#x4E0E; <code>get-char</code> &#x76F8;&#x6BD4;&#xFF0C; <code>lookahead-char</code> &#x4E0D;&#x6D88;&#x8017;&#x5B83;&#x4ECE;&#x7AEF;&#x53E3;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;&#x4E0B;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#x4E0A;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x5BF9; <code>lookahead-char</code> &#x6216; <code>get-char</code> &#x7684;&#x8C03;&#x7528;&#xFF0C;&#x5219;&#x4F1A;&#x8FD4;&#x56DE;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x7B26;&#x3002;</p>
+<p><code>lookahead-char</code> &#x662F;&#x4E3A;&#x9700;&#x8981;&#x9884;&#x77E5;&#x540E;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x5E94;&#x7528;&#x800C;&#x63D0;&#x4F9B;&#x7684;&#x3002;&#x4E0B;&#x65B9;&#x5B9A;&#x4E49;&#x7684; <code>get-word</code> &#x8FC7;&#x7A0B;&#xFF0C;&#x628A;&#x6587;&#x672C;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x4F5C;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x8FD4;&#x56DE;&#xFF0C;&#x5176;&#x4E2D;&#x5355;&#x8BCD;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x5B57;&#x7B26;&#x7684;&#x5E8F;&#x5217;&#x3002;&#x7531;&#x4E8E; <code>get-word</code> &#x5728;&#x770B;&#x5230;&#x5355;&#x8BCD;&#x7684;&#x540E;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E4B;&#x524D;&#xFF0C;&#x5B83;&#x5E76;&#x4E0D;&#x77E5;&#x9053;&#x5B83;&#x8BFB;&#x5165;&#x4E86;&#x6574;&#x4E2A;&#x5355;&#x8BCD;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x4F7F;&#x7528; <code>lookahead-char</code> &#x4EE5;&#x786E;&#x5B9A;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x800C;&#x4F7F;&#x7528; <code>get-char</code> &#x4EE5;&#x8BFB;&#x5165;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x3002;</p>
+<pre><code>(define get-word
+  (lambda (p)
+    (list-&gt;string
+      (let f ()
+        (let ([c (lookahead-char p)])
+          (cond
+            [(eof-object? c) &apos;()]
+            [(char-alphabetic? c) (get-char p) (cons c (f))]
+            [else &apos;()]))))))
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(get-string-n textual-input-port n)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x5305;&#x542B;&#x81F3;&#x591A; <em>n</em> &#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>n</em> &#x5FC5;&#x987B;&#x662F;&#x7CBE;&#x786E;&#x7684;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x3002;&#x5982;&#x679C; <em>textual-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C; <code>get-string-n</code> &#x8BFB;&#x53D6;&#xFF08;&#x548C; <code>get-char</code> &#x4E00;&#x6837;&#xFF09;&#x5728;&#x7AEF;&#x53E3;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x524D;&#x53EF;&#x7528;&#x7684;&#x5C3D;&#x53EF;&#x80FD;&#x591A;&#x7684;&#xFF0C;&#x81F3;&#x591A; <em>n</em> &#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#xFF08;&#x975E;&#x7A7A;&#xFF09;&#x7684;&#x5305;&#x542B;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x7B26;&#x4E4B;&#x540E;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(get-string-n! textual-input-port string start n)</code>
+&#x8FD4;&#x56DE;: &#x8BFB;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x6570;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>start</em> &#x548C; <em>n</em> &#x5FC5;&#x987B;&#x662F;&#x7CBE;&#x786E;&#x7684;&#x975E;&#x8D1F;&#x6574;&#x6570;&#xFF0C;&#x4E14; <em>start</em> &#x548C; <em>n</em> &#x7684;&#x548C;&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7; <em>string</em> &#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<p>&#x5982;&#x679C; <em>textual-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C; <code>get-string-n!</code> &#x8BFB;&#x53D6;&#xFF08;&#x548C; <code>get-char</code> &#x4E00;&#x6837;&#xFF09;&#x5728;&#x7AEF;&#x53E3;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x524D;&#x53EF;&#x7528;&#x7684;&#x5C3D;&#x53EF;&#x80FD;&#x591A;&#x7684;&#xFF0C;&#x81F3;&#x591A; <em>n</em> &#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x628A;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x5B58;&#x50A8;&#x5728; <em>string</em> &#x8D77;&#x59CB;&#x4E8E; <em>start</em> &#x7684;&#x8FDE;&#x7EED;&#x4F4D;&#x7F6E;&#x4E0A;&#xFF0C;&#x5E76;&#x628A;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x6B63;&#x6574;&#x6570;&#x8FD4;&#x56DE;&#x3002;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x7B26;&#x4E4B;&#x540E;&#x3002;</p>
+<p><code>get-string-n!</code> &#x53EF;&#x88AB;&#x7528;&#x4E8E;&#x5B9E;&#x73B0; <code>string-set!</code> &#x548C; <code>string-fill!</code>, &#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x4E0D;&#x8FC7;&#xFF0C;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x5B83;&#x7684;&#x4E3B;&#x8981;&#x7528;&#x9014;&#x3002;</p>
+<pre><code>(define string-set!
+  (lambda (s i c)
+    (let ([sip (open-string-input-port (string c))])
+      (get-string-n! sip s i 1)
+     ; return &#x672A;&#x6307;&#x5B9A; values:
+      (if #f #f))))
+
+(define string-fill!
+  (lambda (s c)
+    (let ([n (string-length s)])
+      (let ([sip (open-string-input-port (make-string n c))])
+        (get-string-n! sip s 0 n)
+       ; return &#x672A;&#x6307;&#x5B9A; values:
+        (if #f #f)))))
+
+(let ([x (make-string 3)])
+  (string-fill! x #\-)
+  (string-set! x 2 #\))
+  (string-set! x 0 #\;)
+  x) =&gt; &quot;;-)&quot;
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(get-string-all textual-input-port)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C; <em>textual-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C; <code>get-string-all</code> &#x8BFB;&#x53D6;&#xFF08;&#x548C; <code>get-char</code> &#x4E00;&#x6837;&#xFF09;&#x5728;&#x7AEF;&#x53E3;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x524D;&#x53EF;&#x7528;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x7B26;&#x4E4B;&#x540E;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(get-line textual-input-port)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x5982;&#x679C; <em>textual-input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;&#x5426;&#x5219;&#xFF0C; <code>get-line</code> &#x8BFB;&#x53D6;&#xFF08;&#x548C; <code>get-char</code> &#x4E00;&#x6837;&#xFF09;&#x5728;&#x7AEF;&#x53E3;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x524D;&#x6216;&#x8BFB;&#x5230;&#x6362;&#x884C;&#x5B57;&#x7B26;&#x65F6;&#x53EF;&#x7528;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x9664;&#x4E86;&#x6362;&#x884C;&#x5B57;&#x7B26;&#x4EE5;&#x5916;&#x7684;&#x6240;&#x6709;&#x8BFB;&#x5165;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x7B26;&#x4E4B;&#x540E;&#x3002;</p>
+<pre><code>(let ([sip (open-string-input-port &quot;one\ntwo\n&quot;)])
+  (let* ([s1 (get-line sip)] [s2 (get-line sip)])
+    (list s1 s2 (port-eof? sip)))) =&gt; (&quot;one&quot; &quot;two&quot; #t)
+
+(let ([sip (open-string-input-port &quot;one\ntwo&quot;)])
+  (let* ([s1 (get-line sip)] [s2 (get-line sip)])
+    (list s1 s2 (port-eof? sip)))) =&gt; (&quot;one&quot; &quot;two&quot; #t)
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(get-datum textual-input-port)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A; Scheme datum &#x5BF9;&#x8C61;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x626B;&#x63CF;&#x65F6;&#x7565;&#x8FC7;&#x7A7A;&#x767D;&#x548C;&#x6CE8;&#x91CA;&#xFF0C;&#x5BFB;&#x627E;&#x4E00;&#x4E2A; datum &#x5916;&#x90E8;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x7684;&#x8D77;&#x59CB;&#x70B9;&#x3002;&#x5982;&#x679C;&#x5728;&#x627E;&#x5230;&#x4E00;&#x4E2A; datum &#x5916;&#x90E8;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x7684;&#x8D77;&#x59CB;&#x70B9;&#x4E4B;&#x524D;&#xFF0C; <em>textual-input-port</em> &#x5C31;&#x5230;&#x8FBE;&#x4E86;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; eof &#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5426;&#x5219;&#xFF0C; <code>get-datum</code> &#x6839;&#x636E;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x5C3D;&#x53EF;&#x80FD;&#x591A;&#xFF0C;&#x5374;&#x4E0D;&#x8FC7;&#x591A;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x4EE5;&#x89E3;&#x6790;&#x4E00;&#x4E2A;&#x5355;&#x4E2A;&#x7684; datum, &#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x5206;&#x914D;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x7ED3;&#x6784;&#x7531;&#x5916;&#x90E8;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x51B3;&#x5B9A;&#x3002;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x7B26;&#x4E4B;&#x540E;&#x3002;&#x5982;&#x679C;&#x5728; datum &#x7684;&#x5916;&#x90E8;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x5B8C;&#x6210;&#x4E4B;&#x524D;&#x5C31;&#x5230;&#x8FBE;&#x4E86;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x6216;&#x8BFB;&#x53D6;&#x5230;&#x4E00;&#x4E2A;&#x610F;&#x5916;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x5219;&#x4F1A;&#x629B;&#x51FA;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x7684; <code>&amp;lexical</code> &#x548C; <code>i/o-read</code> &#x5F02;&#x5E38;&#x3002;</p>
+<pre><code>(let ([sip (open-string-input-port &quot;; a\n\n one (two)\n&quot;)])
+  (let* ([x1 (get-datum sip)]
+         [c1 (lookahead-char sip)]
+         [x2 (get-datum sip)])
+    (list x1 c1 x2 (port-eof? sip)))) =&gt; (one #\space (two) #f)
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(port-eof? input-port)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <em>input-port</em> &#x5904;&#x4E8E;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x7C7B;&#x4F3C;&#x4E8E;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x4E0A;&#x7684; <code>lookahead-u8</code> &#x8FC7;&#x7A0B;&#xFF0C;&#x6216;&#x6587;&#x672C;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x4E0A;&#x7684; <code>lookahead-char</code> &#x8FC7;&#x7A0B;&#xFF0C;&#x53EA;&#x662F;&#x5B83;&#x5E76;&#x975E;&#x8FD4;&#x56DE;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x8282;/&#x5B57;&#x7B26;&#x6216; eof &#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x4EE5;&#x6307;&#x793A;&#x503C;&#x662F;&#x5426;&#x4E3A; eof &#x5BF9;&#x8C61;&#x3002;</p>
+<h2 id="78-&#x8F93;&#x51FA;&#x64CD;&#x4F5C;">7.8. &#x8F93;&#x51FA;&#x64CD;&#x4F5C;</h2>
+<p>&#x672C;&#x8282;&#x4ECB;&#x7ECD;&#x4E86;&#x4E3B;&#x8981;&#x7528;&#x9014;&#x662F;&#x5411;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(put-u8 binary-output-port octet)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>octet</em> &#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x975E;&#x8D1F;&#x6574;&#x6570;&#xFF0C;&#x4E14;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 255. &#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x628A; <em>octet</em> &#x5199;&#x5165; <em>binary-output-port</em>, &#x5E76;&#x628A;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x540E;&#x79FB;&#x4E00;&#x4E2A;&#x8282;&#x5B57;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(put-bytevector binary-output-port bytevector)</code>
+&#x8FC7;&#x7A0B;: <code>(put-bytevector binary-output-port bytevector start)</code>
+&#x8FC7;&#x7A0B;: <code>(put-bytevector binary-output-port bytevector start n)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>start</em> &#x548C; <em>n</em> &#x5FC5;&#x987B;&#x662F;&#x975E;&#x8D1F;&#x7684;&#x7CBE;&#x786E;&#x6574;&#x6570;&#xFF0C;&#x4E14; <em>start</em> &#x548C; <em>n</em> &#x7684;&#x548C;&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7; <em>bytevector</em> &#x7684;&#x957F;&#x5EA6;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#xFF0C;&#x5219; <em>start</em> &#x9ED8;&#x8BA4;&#x4E3A; 0&#xFF0C;&#x800C; <em>n</em> &#x9ED8;&#x8BA4;&#x4E3A; <em>bytevector</em> &#x7684;&#x957F;&#x5EA6;&#x4E0E; <em>start</em> &#x7684;&#x5DEE;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x628A; <em>bytevector</em> &#x59CB;&#x4E8E; <em>start</em> &#x7684; <em>n</em> &#x4E2A;&#x5B57;&#x8282;&#x5199;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x5E76;&#x628A;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x79FB;&#x52A8;&#x5230;&#x5199;&#x5165;&#x5B57;&#x8282;&#x7684;&#x540E;&#x9762;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(put-char textual-output-port char)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x628A; <em>char</em> &#x5199;&#x5165; <em>textual-output-port</em>, &#x5E76;&#x628A;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x524D;&#x8FDB;&#x4E00;&#x4E2A;&#x8282;&#x7B26;&#x3002;&#x5982;&#x679C; <em>textual-output-port</em> &#x662F;&#x4E00;&#x4E2A;&#x7ECF;&#x8FC7;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x5E95;&#x5C42;&#x5B57;&#x8282;&#x6D41;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x53EF;&#x80FD;&#x540E;&#x79FB;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(put-string textual-output-port string)</code>
+&#x8FC7;&#x7A0B;: <code>(put-string textual-output-port string start)</code>
+&#x8FC7;&#x7A0B;: <code>(put-string textual-output-port string start n)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p><em>start</em> &#x548C; <em>n</em> &#x5FC5;&#x987B;&#x662F;&#x975E;&#x8D1F;&#x7684;&#x7CBE;&#x786E;&#x6574;&#x6570;&#xFF0C;&#x4E14; <em>start</em> &#x548C; <em>n</em> &#x7684;&#x548C;&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7; <em>string</em> &#x7684;&#x957F;&#x5EA6;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#xFF0C;&#x5219; <em>start</em> &#x9ED8;&#x8BA4;&#x4E3A; 0&#xFF0C;&#x800C; <em>n</em> &#x9ED8;&#x8BA4;&#x4E3A; <em>string</em> &#x7684;&#x957F;&#x5EA6;&#x4E0E; <em>start</em> &#x7684;&#x5DEE;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x628A; <em>string</em> &#x59CB;&#x4E8E; <em>start</em> &#x7684; <em>n</em> &#x4E2A;&#x5B57;&#x7B26;&#x5199;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x5E76;&#x628A;&#x7AEF;&#x53E3;&#x4F4D;&#x7F6E;&#x79FB;&#x52A8;&#x5230;&#x5199;&#x5165;&#x5B57;&#x7B26;&#x7684;&#x540E;&#x9762;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(put-datum textual-output-port obj)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x628A; <em>obj</em> &#x7684;&#x5916;&#x90E8;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x5199;&#x5165; <em>textual-output-port</em>. &#x5982;&#x679C; <em>obj</em> &#x6CA1;&#x6709;&#x4F5C;&#x4E3A; datum &#x7684;&#x5916;&#x90E8;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#xFF0C;&#x5219;&#x8FC7;&#x7A0B;&#x7684;&#x884C;&#x4E3A;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x7CBE;&#x786E;&#x7684;&#x5916;&#x90E8;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x662F;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5F53; <em>obj</em> &#x786E;&#x5B9E;&#x6709;&#x4E00;&#x4E2A;&#x4F5C;&#x4E3A; datum &#x7684;&#x5916;&#x90E8;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x65F6;&#xFF0C;&#x5219; <code>put-datum</code> &#x5E94;&#x5F53;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#xFF0C;&#x6B64;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x80FD;&#x591F;&#x5728;&#x4E4B;&#x540E;&#x88AB; <code>get-datum</code> &#x8BFB;&#x53D6;&#x4E3A;&#x4E00;&#x4E2A;&#x4E0E; <em>obj</em> &#x7B49;&#x4EF7;&#xFF08;&#x57FA;&#x4E8E; <code>equal?</code> &#xFF09;&#x7684;&#x5BF9;&#x8C61;&#x3002; <code>put-datum</code>, <code>write</code>, &#x548C; <code>display</code> &#x7684;&#x5B9E;&#x73B0;&#x53EF;&#x53C2;&#x89C1; 12.5 &#x8282;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(flush-output-port output-port)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5F3A;&#x5236;&#x628A;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x4E0E; <em>output-port</em> &#x76F8;&#x5173;&#x8054;&#x7684;&#x4EFB;&#x4F55;&#x5B57;&#x8282;&#x6216;&#x5B57;&#x7B26;&#x7ACB;&#x5373;&#x53D1;&#x9001;&#x5230;&#x5E95;&#x5C42;&#x7684;&#x6D41;&#x3002;</p>
+<h2 id="79-&#x4FBF;&#x6377;-io">7.9. &#x4FBF;&#x6377; I/O</h2>
+<p>&#x672C;&#x8282;&#x4E2D;&#x7684;&#x8FC7;&#x7A0B;&#x88AB;&#x79F0;&#x4E3A;&#x201C;&#x4FBF;&#x6377;&#x201D; I/O &#x64CD;&#x4F5C;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x4E3A;&#x521B;&#x5EFA;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#x53CA;&#x4E0E;&#x6587;&#x672C;&#x7AEF;&#x53E3;&#x4EA4;&#x4E92;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x7A0D;&#x5FAE;&#x7B80;&#x5316;&#x7684;&#x63A5;&#x53E3;&#x3002;&#x5B83;&#x4EEC;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9; R<sup>5</sup>RS&#xFF08;&#x4E0D;&#x652F;&#x6301;&#x72EC;&#x7ACB;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x548C;&#x6587;&#x672C; I/O&#xFF09;&#x7684;&#x5411;&#x540E;&#x517C;&#x5BB9;&#x3002;</p>
+<p>&#x8C03;&#x7528;&#x4FBF;&#x6377;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x8FC7;&#x7A0B;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x6216;&#x4E0D;&#x4F20;&#x5165;&#x663E;&#x5F0F;&#x7684;&#x7AEF;&#x53E3;&#x5B9E;&#x53C2;&#x3002;&#x5982;&#x679C;&#x8C03;&#x7528;&#x65F6;&#x4E0D;&#x5E26;&#x6709;&#x663E;&#x5F0F;&#x7684;&#x7AEF;&#x53E3;&#x5B9E;&#x53C2;&#xFF0C;&#x5219;&#x914C;&#x60C5;&#x4F7F;&#x7528;&#x5F53;&#x524D;&#x7684;&#x8F93;&#x5165;&#x6216;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002;&#x4F8B;&#x5982;&#xFF0C; <code>(read-char)</code> &#x548C; <code>(read-char (current-input-port))</code> &#x5747;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(open-input-file path)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8F93;&#x5165;&#x7AEF;&#x53E3;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p><em>path</em> &#x5FC5;&#x987B;&#x662F;&#x547D;&#x540D;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5176;&#x5B83;&#x67D0;&#x4E9B;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x503C;&#x3002; <code>open-input-file</code> &#x4E3A; <em>path</em> &#x547D;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x672C;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x548C;&#x4EE5;&#x9ED8;&#x8BA4;&#x9009;&#x9879;&#xFF0C;&#x4E00;&#x4E2A;&#x4E0E;&#x5B9E;&#x73B0;&#x76F8;&#x5173;&#x7684;&#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#xFF0C;&#x53CA;&#x4E00;&#x4E2A;&#x4E0E;&#x5B9E;&#x73B0;&#x76F8;&#x5173;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x8C03;&#x7528; <code>open-file-input-port</code> &#x4E00;&#x6837;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x5728;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x5C55;&#x793A;&#x4E86; <code>open-input-file</code>, <code>read</code>, &#x4EE5;&#x53CA; <code>close-port</code> &#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x4ECE;&#x540D;&#x4E3A; &quot;myfile.ss&quot; &#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x6536;&#x96C6;&#x4E86;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5217;&#x8868;&#x3002;</p>
+<pre><code>(let ([p (open-input-file &quot;myfile.ss&quot;)])
+  (let f ([x (read p)])
+    (if (eof-object? x)
+        (begin
+          (close-port p)
+          &apos;())
+        (cons x (f (read p))))))
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(open-output-file path)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p><em>path</em> &#x5FC5;&#x987B;&#x662F;&#x547D;&#x540D;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5176;&#x5B83;&#x67D0;&#x4E9B;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x503C;&#x3002; <code>open-output-file</code> &#x4E3A; <em>path</em> &#x547D;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x672C;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x548C;&#x4EE5;&#x9ED8;&#x8BA4;&#x9009;&#x9879;&#xFF0C;&#x4E00;&#x4E2A;&#x4E0E;&#x5B9E;&#x73B0;&#x76F8;&#x5173;&#x7684;&#x7F13;&#x51B2;&#x6A21;&#x5F0F;&#xFF0C;&#x53CA;&#x4E00;&#x4E2A;&#x4E0E;&#x5B9E;&#x73B0;&#x76F8;&#x5173;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x8C03;&#x7528; <code>open-file-output-port</code> &#x4E00;&#x6837;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x4F7F;&#x7528; <code>open-output-file</code> &#x628A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5217;&#x8868;&#xFF08; <code>list-to-be-printed</code> &#x7684;&#x503C;&#xFF09;&#x5199;&#x5165;&#x540D;&#x4E3A; &quot;myfile.ss&quot; &#x7684;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x4EE5;&#x6362;&#x884C;&#x7B26;&#x5206;&#x9694;&#x3002;</p>
+<pre><code>(let ([p (open-output-file &quot;myfile.ss&quot;)])
+  (let f ([ls list-to-be-printed])
+    (if (not (null? ls))
+        (begin
+          (write (car ls) p)
+          (newline p)
+          (f (cdr ls)))))
+  (close-port p))
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(call-with-input-file path procedure)</code>
+&#x8FD4;&#x56DE;: <em>procedure</em> &#x7684;&#x8FD4;&#x56DE;&#x503C;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p><em>path</em> &#x5FC5;&#x987B;&#x662F;&#x547D;&#x540D;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5176;&#x5B83;&#x67D0;&#x4E9B;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x503C;&#x3002; <em>procedure</em> &#x5E94;&#x5F53;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p><code>call-with-input-file</code> &#x4E3A; <em>path</em> &#x547D;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x548C; <code>open-input-file</code> &#x4E00;&#x6837;&#xFF0C;&#x5E76;&#x628A;&#x8FD9;&#x4E2A;&#x7AEF;&#x53E3;&#x4F20;&#x5165; <em>procedure</em>. &#x5982;&#x679C; <em>procedure</em> &#x8FD4;&#x56DE;&#xFF0C;&#x5219; <code>call-with-input-file</code> &#x5173;&#x95ED;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE; <em>procedure</em> &#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x4E8E; <em>procedure</em> &#x4E4B;&#x5916;&#x7684; continuation &#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5219; <code>call-with-input-file</code> &#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x5173;&#x95ED;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x56E0;&#x4E3A;&#x4E4B;&#x540E;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x53E6;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x4E8E; <em>procedure</em> &#x4E4B;&#x5185;&#x7684; continuation &#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x628A;&#x63A7;&#x5236;&#x6743;&#x8FD4;&#x8FD8;&#x7ED9; <em>procedure</em>. &#x5982;&#x679C; <em>procedure</em> &#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x5728;&#x53EF;&#x4EE5;&#x786E;&#x8BA4;&#x6B64;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x4E0D;&#x518D;&#x53EF;&#x4EE5;&#x88AB;&#x8BBF;&#x95EE;&#x65F6;&#xFF0C;&#x5B9E;&#x73B0;&#x624D;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x5730;&#x5173;&#x95ED;&#x6B64;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x3002;&#x5982; 5.6 &#x8282;&#x4E2D;&#x6240;&#x793A;&#xFF0C;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x4E8E; <em>procedure</em> &#x4E4B;&#x5916;&#x7684; continuation &#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>dynamic-wind</code> &#x6765;&#x786E;&#x4FDD;&#x7AEF;&#x53E3;&#x88AB;&#x5173;&#x95ED;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#x5728;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x5C55;&#x793A;&#x4E86; <code>call-with-input-file</code> &#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x4ECE;&#x540D;&#x4E3A; &quot;myfile.ss&quot; &#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x6536;&#x96C6;&#x4E86;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5217;&#x8868;&#x3002;&#x5B83;&#x5728;&#x529F;&#x80FD;&#x4E0A;&#x7B49;&#x4EF7;&#x4E8E;&#x4E0A;&#x6587;&#x4E2D;&#x4E3A; <code>open-input-file</code> &#x7ED9;&#x51FA;&#x7684;&#x793A;&#x4F8B;&#x3002;</p>
+<pre><code>(call-with-input-file &quot;myfile.ss&quot;
+  (lambda (p)
+    (let f ([x (read p)])
+      (if (eof-object? x)
+          &apos;()
+          (cons x (f (read p)))))))
+</code></pre><p>&#x4E0D;&#x5E26;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#x7684; <code>call-with-input-file</code> &#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>(define call-with-input-file
+  (lambda (filename proc)
+    (let ([p (open-input-file filename)])
+      (let-values ([v* (proc p)])
+        (close-port p)
+        (apply values v*)))))
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(call-with-output-file path procedure)</code>
+&#x8FD4;&#x56DE;: <em>procedure</em> &#x7684;&#x8FD4;&#x56DE;&#x503C;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p><em>path</em> &#x5FC5;&#x987B;&#x662F;&#x547D;&#x540D;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5176;&#x5B83;&#x67D0;&#x4E9B;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x503C;&#x3002; <em>procedure</em> &#x5E94;&#x5F53;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p><code>call-with-output-file</code> &#x4E3A; <em>path</em> &#x547D;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x548C; <code>open-output-file</code> &#x4E00;&#x6837;&#xFF0C;&#x5E76;&#x628A;&#x8FD9;&#x4E2A;&#x7AEF;&#x53E3;&#x4F20;&#x5165; <em>procedure</em>. &#x5982;&#x679C; <em>procedure</em> &#x8FD4;&#x56DE;&#xFF0C;&#x5219; <code>call-with-output-file</code> &#x5173;&#x95ED;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE; <em>procedure</em> &#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x4E8E; <em>procedure</em> &#x4E4B;&#x5916;&#x7684; continuation &#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5219; <code>call-with-output-file</code> &#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x5173;&#x95ED;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x56E0;&#x4E3A;&#x4E4B;&#x540E;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x53E6;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x4E8E; <em>procedure</em> &#x4E4B;&#x5185;&#x7684; continuation &#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x628A;&#x63A7;&#x5236;&#x6743;&#x8FD4;&#x8FD8;&#x7ED9; <em>procedure</em>. &#x5982;&#x679C; <em>procedure</em> &#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x5728;&#x53EF;&#x4EE5;&#x786E;&#x8BA4;&#x6B64;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x4E0D;&#x518D;&#x53EF;&#x4EE5;&#x88AB;&#x8BBF;&#x95EE;&#x65F6;&#xFF0C;&#x5B9E;&#x73B0;&#x624D;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x5730;&#x5173;&#x95ED;&#x6B64;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002;&#x5982; 5.6 &#x8282;&#x4E2D;&#x6240;&#x793A;&#xFF0C;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x4E8E; <em>procedure</em> &#x4E4B;&#x5916;&#x7684; continuation &#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>dynamic-wind</code> &#x6765;&#x786E;&#x4FDD;&#x7AEF;&#x53E3;&#x88AB;&#x5173;&#x95ED;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x4F7F;&#x7528; <code>call-with-output-file</code> &#x628A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5217;&#x8868;&#xFF08; <code>list-to-be-printed</code> &#x7684;&#x503C;&#xFF09;&#x5199;&#x5165;&#x540D;&#x4E3A; &quot;myfile.ss&quot; &#x7684;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x4EE5;&#x6362;&#x884C;&#x7B26;&#x5206;&#x9694;&#x3002;&#x5B83;&#x5728;&#x529F;&#x80FD;&#x4E0A;&#x7B49;&#x4EF7;&#x4E8E;&#x4E0A;&#x6587;&#x4E2D;&#x4E3A; <code>open-output-file</code> &#x7ED9;&#x51FA;&#x7684;&#x793A;&#x4F8B;&#x3002;</p>
+<pre><code>(call-with-output-file &quot;myfile.ss&quot;
+  (lambda (p)
+    (let f ([ls list-to-be-printed])
+      (unless (null? ls)
+        (write (car ls) p)
+        (newline p)
+        (f (cdr ls))))))
+</code></pre><p>&#x4E0D;&#x5E26;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#x7684; <code>call-with-output-file</code> &#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>(define call-with-output-file
+  (lambda (filename proc)
+    (let ([p (open-output-file filename)])
+      (let-values ([v* (proc p)])
+        (close-port p)
+        (apply values v*)))))
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(with-input-from-file path thunk)</code>
+&#x8FD4;&#x56DE;: <em>thunk</em> &#x7684;&#x8FD4;&#x56DE;&#x503C;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p><em>path</em> &#x5FC5;&#x987B;&#x662F;&#x547D;&#x540D;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5176;&#x5B83;&#x67D0;&#x4E9B;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x503C;&#x3002; <em>thunk</em> &#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x4E14;&#x5E94;&#x5F53;&#x63A5;&#x53D7; 0 &#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p><code>with-input-from-file</code> &#x5728;&#x5E94;&#x7528; <em>thunk</em> &#x671F;&#x95F4;&#xFF0C;&#x628A;&#x5F53;&#x524D;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x4E34;&#x65F6;&#x66F4;&#x6539;&#x4E3A;&#x6253;&#x5F00; <em>path</em> &#x547D;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x540C;&#x8C03;&#x7528; <code>open-input-file</code>. &#x5982;&#x679C; <em>thunk</em> &#x8FD4;&#x56DE;&#xFF0C;&#x5219;&#x7AEF;&#x53E3;&#x88AB;&#x5173;&#x95ED;&#xFF0C;&#x5E76;&#x628A;&#x5F53;&#x524D;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x6062;&#x590D;&#x4E3A;&#x5B83;&#x5148;&#x524D;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728; <em>thunk</em> &#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x5728; <em>thunk</em> &#x4E4B;&#x5916;&#x521B;&#x5EFA;&#x7684; continuation, &#x5219; <code>with-input-from-file</code> &#x7684;&#x884C;&#x4E3A;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x4F1A;&#x5173;&#x95ED;&#x7AEF;&#x53E3;&#xFF0C;&#x5E76;&#x628A;&#x5F53;&#x524D;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x6062;&#x590D;&#x4E3A;&#x5B83;&#x5148;&#x524D;&#x7684;&#x503C;&#x2014;&#x2014;&#x4F46;&#x5B83;&#x4E5F;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x8FD9;&#x6837;&#x505A;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(with-output-to-file path thunk)</code>
+&#x8FD4;&#x56DE;: <em>thunk</em> &#x7684;&#x8FD4;&#x56DE;&#x503C;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p><em>path</em> &#x5FC5;&#x987B;&#x662F;&#x547D;&#x540D;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5176;&#x5B83;&#x67D0;&#x4E9B;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x503C;&#x3002; <em>thunk</em> &#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x4E14;&#x5E94;&#x5F53;&#x63A5;&#x53D7; 0 &#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p><code>with-output-to-file</code> &#x5728;&#x5E94;&#x7528; <em>thunk</em> &#x671F;&#x95F4;&#xFF0C;&#x628A;&#x5F53;&#x524D;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x4E34;&#x65F6;&#x66F4;&#x6539;&#x4E3A;&#x6253;&#x5F00; <em>path</em> &#x547D;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x540C;&#x8C03;&#x7528; <code>open-output-file</code>. &#x5982;&#x679C; <em>thunk</em> &#x8FD4;&#x56DE;&#xFF0C;&#x5219;&#x7AEF;&#x53E3;&#x88AB;&#x5173;&#x95ED;&#xFF0C;&#x5E76;&#x628A;&#x5F53;&#x524D;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x6062;&#x590D;&#x4E3A;&#x5B83;&#x5148;&#x524D;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728; <em>thunk</em> &#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x5728; <em>thunk</em> &#x4E4B;&#x5916;&#x521B;&#x5EFA;&#x7684; continuation, &#x5219; <code>with-output-to-file</code> &#x7684;&#x884C;&#x4E3A;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x4F1A;&#x5173;&#x95ED;&#x7AEF;&#x53E3;&#xFF0C;&#x5E76;&#x628A;&#x5F53;&#x524D;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x6062;&#x590D;&#x4E3A;&#x5B83;&#x5148;&#x524D;&#x7684;&#x503C;&#x2014;&#x2014;&#x4F46;&#x5B83;&#x4E5F;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x8FD9;&#x6837;&#x505A;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(read)</code>
+&#x8FC7;&#x7A0B;: <code>(read textual-input-port)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A; Scheme datum &#x5BF9;&#x8C61;&#xFF0C;&#x6216; eof &#x5BF9;&#x8C61;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B; <em>textual-input-port</em>, &#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x3002;&#x5176;&#x5B83;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x7B49;&#x4EF7;&#x4E8E; <code>get-datum</code>.</p>
+<p>&#x8FC7;&#x7A0B;: <code>(read-char)</code>
+&#x8FC7;&#x7A0B;: <code>(read-char textual-input-port)</code>
+&#x8FD4;&#x56DE;: <em>textual-input-port</em> &#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B; <em>textual-input-port</em>, &#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x3002;&#x5176;&#x5B83;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x7B49;&#x4EF7;&#x4E8E; <code>get-char</code>.</p>
+<p>&#x8FC7;&#x7A0B;: <code>(peek-char)</code>
+&#x8FC7;&#x7A0B;: <code>(peek-char textual-input-port)</code>
+&#x8FD4;&#x56DE;: <em>textual-input-port</em> &#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B; <em>textual-input-port</em>, &#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#x3002;&#x5176;&#x5B83;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x7B49;&#x4EF7;&#x4E8E; <code>lookahead-char</code>.</p>
+<p>&#x8FC7;&#x7A0B;: <code>(write obj)</code>
+&#x8FC7;&#x7A0B;: <code>(write obj textual-output-port)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B; <em>textual-output-port</em>, &#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002;&#x5176;&#x5B83;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x7B49;&#x4EF7;&#x4E8E;&#x53C2;&#x6570;&#x987A;&#x5E8F;&#x76F8;&#x53CD;&#x7684; <code>put-datum</code>. <code>put-datum</code>, <code>write</code>, &#x548C; <code>display</code> &#x7684;&#x5B9E;&#x73B0;&#x53EF;&#x53C2;&#x89C1; 12.5 &#x8282;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(display obj)</code>
+&#x8FC7;&#x7A0B;: <code>(display obj textual-output-port)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B; <em>textual-output-port</em>, &#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002;</p>
+<p><code>display</code> &#x548C; <code>write</code> &#x6216; <code>put-datum</code> &#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x76F4;&#x63A5;&#x6253;&#x5370;&#x5728; obj &#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x5B57;&#x7B26;&#x3002;&#x5B57;&#x7B26;&#x4E32;&#x6253;&#x5370;&#x65F6;&#x4E0D;&#x5E26;&#x6709;&#x5F15;&#x53F7;&#x6216;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x7684;&#x8F6C;&#x4E49;&#x7B26;&#xFF0C;&#x548C;&#x4F7F;&#x7528; <code>put-string</code> &#x65F6;&#x4E00;&#x6837;&#xFF0C;&#x800C;&#x5B57;&#x7B26;&#x6253;&#x5370;&#x65F6;&#x4E0D;&#x5E26;&#x6709; <code>#\</code> &#x6807;&#x8BB0;&#xFF0C;&#x548C;&#x4F7F;&#x7528; <code>put-char</code> &#x65F6;&#x4E00;&#x6837;&#x3002;&#x4F7F;&#x7528; <code>display</code> &#x65F6;&#xFF0C;&#x4E09;&#x5143;&#x7D20;&#x5217;&#x8868; <code>(a b c)</code> &#x548C;&#x4E24;&#x5143;&#x7D20;&#x5217;&#x8868; <code>(&quot;a b&quot; c)</code> &#x5747;&#x6253;&#x5370;&#x4E3A; <code>(a b c)</code>. &#x56E0;&#x6B64;&#xFF0C; <code>display</code> &#x4E0D;&#x5E94;&#x88AB;&#x7528;&#x4E8E;&#x6253;&#x5370;&#x5C06;&#x88AB; <code>read</code> &#x8BFB;&#x53D6;&#x7684;&#x5BF9;&#x8C61;&#x3002; <code>display</code> &#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6253;&#x5370;&#x6D88;&#x606F;&#xFF0C;&#x5176;&#x4E2D; <em>obj</em> &#x591A;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002; <code>put-datum</code>, <code>write</code>, &#x548C; <code>display</code> &#x7684;&#x5B9E;&#x73B0;&#x53EF;&#x53C2;&#x89C1; 12.5 &#x8282;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(write-char char)</code>
+&#x8FC7;&#x7A0B;: <code>(write-char char textual-output-port)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B; <em>textual-output-port</em>, &#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002;&#x5176;&#x5B83;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x7B49;&#x4EF7;&#x4E8E;&#x53C2;&#x6570;&#x987A;&#x5E8F;&#x76F8;&#x53CD;&#x7684; <code>put-char</code>.</p>
+<p>&#x8FC7;&#x7A0B;: <code>(newline)</code>
+&#x8FC7;&#x7A0B;: <code>(newline textual-output-port)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B; <em>textual-output-port</em>, &#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002; <code>newline</code> &#x5411;&#x7AEF;&#x53E3;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6362;&#x884C;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(close-input-port input-port)</code>
+&#x8FC7;&#x7A0B;: <code>(close-output-port output-port)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs io simple), (rnrs)</p>
+<p><code>close-input-port</code> &#x5173;&#x95ED;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x800C; <code>close-output-port</code> &#x5173;&#x95ED;&#x4E00;&#x4E2A;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3002;&#x63D0;&#x4F9B;&#x8FD9;&#x4E9B;&#x8FC7;&#x7A0B;&#x662F;&#x4E3A;&#x4E86;&#x5411;&#x540E;&#x517C;&#x5BB9; R<sup>5</sup>RS; &#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x5B9E;&#x9645;&#x4E0A;&#x5E76;&#x4E0D;&#x6BD4;&#x4F7F;&#x7528; <code>close-port</code> &#x66F4;&#x4FBF;&#x6377;&#x3002;</p>
+<h2 id="710-&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x64CD;&#x4F5C;">7.10. &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x64CD;&#x4F5C;</h2>
+<p>&#x5BF9;&#x4E8E;&#x548C;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x4EA4;&#x4E92;&#xFF0C;&#x9664;&#x4E86;&#x6587;&#x4EF6;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#xFF0C;Scheme &#x8FD8;&#x6709;&#x4E24;&#x4E2A;&#x6807;&#x51C6;&#x64CD;&#x4F5C;&#xFF1A; <code>file-exists?</code> &#x548C; <code>delete-file</code>. &#x5927;&#x591A;&#x6570;&#x5B9E;&#x73B0;&#x8FD8;&#x652F;&#x6301;&#x66F4;&#x591A;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(file-exists? path)</code>
+&#x8FD4;&#x56DE;: &#x5982;&#x679C; <code>path</code> &#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x4E3A; <code>#t</code>, &#x5426;&#x5219;&#x4E3A; <code>#f</code>.
+&#x5E93;: (rnrs files), (rnrs)</p>
+<p><em>path</em> &#x5FC5;&#x987B;&#x662F;&#x547D;&#x540D;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5176;&#x5B83;&#x67D0;&#x4E9B;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x503C;&#x3002; <code>file-exists?</code> &#x662F;&#x5426;&#x6307;&#x5411;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(delete-file path)</code>
+&#x8FD4;&#x56DE;: &#x672A;&#x6307;&#x5B9A;
+&#x5E93;: (rnrs files), (rnrs)</p>
+<p><em>path</em> &#x5FC5;&#x987B;&#x662F;&#x547D;&#x540D;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5176;&#x5B83;&#x67D0;&#x4E9B;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#x503C;&#x3002;&#x5982;&#x679C; <em>path</em> &#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#xFF0C;&#x4E14;&#x53EF;&#x4EE5;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x5219; <code>delete-file</code> &#x79FB;&#x9664;&#x6B64;&#x6587;&#x4EF6;&#xFF0C;&#x5426;&#x5219;&#xFF0C;&#x5B83;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x7684; <code>&amp;i/o-filename</code> &#x5F02;&#x5E38;&#x3002; <code>delete-file</code> &#x662F;&#x5426;&#x6307;&#x5411;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x3002;</p>
+<h2 id="711-&#x5B57;&#x8282;&#x5411;&#x91CF;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;">7.11. &#x5B57;&#x8282;&#x5411;&#x91CF;/&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;</h2>
+<p>&#x672C;&#x8282;&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#x8FC7;&#x7A0B;&#x7F16;&#x7801;&#x6216;&#x89E3;&#x7801;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#xFF0C;&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#xFF0C;&#x6216;&#x628A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x867D;&#x7136;&#x5B83;&#x4EEC;&#x53EF;&#x80FD;&#x4F7F;&#x7528;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x6D89;&#x53CA;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x524D;&#x4E24;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C; <code>bytevector-&gt;string</code> &#x548C; <code>string-&gt;bytevector</code>, &#x8981;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x663E;&#x5F0F;&#x7684;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x5668;&#x5B9E;&#x53C2;&#xFF0C;&#x4EE5;&#x51B3;&#x5B9A;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF0C;eol &#x98CE;&#x683C;&#xFF0C;&#x548C;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x3002;&#x5176;&#x5B83;&#x8FC7;&#x7A0B;&#x4EE5;&#x9690;&#x542B;&#x7684; eol &#x98CE;&#x683C; <code>none</code> &#x548C;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x6A21;&#x5F0F; <code>replace</code> &#x6267;&#x884C;&#x7279;&#x5B9A;&#x7684; Unicode &#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(bytevector-&gt;string bytevector transcoder)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5305;&#x542B; <em>bytevector</em> &#x4E2D;&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x81F3;&#x5C11;&#x5728;&#x6548;&#x679C;&#x4E0A;&#xFF0C;&#x4EE5;&#x6307;&#x5B9A;&#x7684; <em>transcoder</em> &#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF0C;&#x4ECE;&#x4E2D;&#x8BFB;&#x53D6;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x5982;&#x540C;&#x4F7F;&#x7528; <code>get-string-all</code>, &#x5E76;&#x628A;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x653E;&#x5165;&#x8F93;&#x51FA;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x3002;</p>
+<pre><code>(let ([tx (make-transcoder (utf-8-codec) (eol-style lf)
+            (error-handling-mode replace))])
+  (bytevector-&gt;string #vu8(97 98 99) tx)) =&gt; &quot;abc&quot;
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(string-&gt;bytevector string transcoder)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#xFF0C;&#x5305;&#x542B; <em>string</em> &#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;
+&#x5E93;: (rnrs io ports), (rnrs)</p>
+<p>&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x81F3;&#x5C11;&#x5728;&#x6548;&#x679C;&#x4E0A;&#xFF0C;&#x4EE5;&#x6307;&#x5B9A;&#x7684; <em>transcoder</em> &#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF0C;&#x5411;&#x5176;&#x4E2D;&#x5199;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#xFF0C;&#x7136;&#x540E;&#x63D0;&#x53D6;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x6240;&#x7D2F;&#x79EF;&#x5B57;&#x8282;&#x7684;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x3002;</p>
+<pre><code>(let ([tx (make-transcoder (utf-8-codec) (eol-style none)
+            (error-handling-mode raise))])
+  (string-&gt;bytevector &quot;abc&quot; tx)) =&gt; #vu8(97 98 99)
+</code></pre><p>&#x8FC7;&#x7A0B;: <code>(string-&gt;utf8 string)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#xFF0C;&#x5305;&#x542B; <em>string</em> &#x7684; UTF-8 &#x7F16;&#x7801;
+&#x5E93;: (rnrs bytevectors), (rnrs)</p>
+<p>&#x8FC7;&#x7A0B;: <code>(string-&gt;utf16 string)</code>
+&#x8FC7;&#x7A0B;: <code>(string-&gt;utf16 string endianness)</code>
+&#x8FC7;&#x7A0B;: <code>(string-&gt;utf32 string)</code>
+&#x8FC7;&#x7A0B;: <code>(string-&gt;utf32 string endianness)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5411;&#x91CF;&#xFF0C;&#x5305;&#x542B; <em>string</em> &#x7684;&#x6307;&#x5B9A;&#x7F16;&#x7801;
+&#x5E93;: (rnrs bytevectors), (rnrs)</p>
+<p><em>endianness</em> &#x5FC5;&#x987B;&#x662F;&#x7B26;&#x53F7; <code>big</code> &#x6216; <code>little</code> &#x4E4B;&#x4E00;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A; <em>endianness</em>, &#x6216;&#x4E3A;&#x7B26;&#x53F7; <code>big</code>, &#x5219; <code>string-&gt;utf16</code> &#x8FD4;&#x56DE; <em>string</em> &#x7684; UTF-16BE &#x7F16;&#x7801;&#xFF0C;&#x800C; <code>string-&gt;utf32</code> &#x8FD4;&#x56DE; <em>string</em> &#x7684; UTF-32BE &#x7F16;&#x7801;&#x3002;&#x5982;&#x679C; <em>endianness</em> &#x4E3A;&#x7B26;&#x53F7; <code>little</code>, &#x5219; <code>string-&gt;utf16</code> &#x8FD4;&#x56DE; <em>string</em> &#x7684; UTF-16LE &#x7F16;&#x7801;&#xFF0C;&#x800C; <code>string-&gt;utf32</code> &#x8FD4;&#x56DE; <em>string</em> &#x7684; UTF-32LE &#x7F16;&#x7801;&#x3002;&#x7F16;&#x7801;&#x4E2D;&#x4E0D;&#x5305;&#x542B;&#x5B57;&#x8282;&#x5E8F;&#x6807;&#x8BB0;&#x3002;</p>
+<p>&#x8FC7;&#x7A0B;: <code>(utf8-&gt;string bytevector)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5305;&#x542B; <em>bytevector</em> &#x7684; UTF-8 &#x89E3;&#x7801;
+&#x5E93;: (rnrs bytevectors), (rnrs)</p>
+<p>&#x8FC7;&#x7A0B;: <code>(utf16-&gt;string bytevector endianness)</code>
+&#x8FC7;&#x7A0B;: <code>(utf16-&gt;string bytevector endianness endianness-mandatory?)</code>
+&#x8FC7;&#x7A0B;: <code>(utf32-&gt;string bytevector endianness)</code>
+&#x8FC7;&#x7A0B;: <code>(utf32-&gt;string bytevector endianness endianness-mandatory?)</code>
+&#x8FD4;&#x56DE;: &#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5305;&#x542B; <em>bytevector</em> &#x7684;&#x6307;&#x5B9A;&#x89E3;&#x7801;
+&#x5E93;: (rnrs bytevectors), (rnrs)</p>
+<p><em>endianness</em> &#x5FC5;&#x987B;&#x662F;&#x7B26;&#x53F7; <code>big</code> &#x6216; <code>little</code> &#x4E4B;&#x4E00;&#x3002;&#x8FD9;&#x4E9B;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE; <em>bytevector</em> &#x7684; UTF-16 &#x6216; UTF-32 &#x89E3;&#x7801;&#xFF0C;&#x5176;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#x7684;&#x5B57;&#x8282;&#x5E8F;&#x7531;&#x5B9E;&#x53C2; <em>endianness</em> &#x6216;&#x5B57;&#x8282;&#x5E8F;&#x6807;&#x8BB0;&#xFF08;BOM&#xFF09;&#x51B3;&#x5B9A;&#x3002;&#x5982;&#x679C; <em>endianness-mandatory?</em> &#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x6216;&#x4E3A; <code>#f</code>, &#x5219;&#x5B57;&#x8282;&#x5E8F;&#x7531;&#x5B57;&#x8282;&#x5411;&#x91CF;&#x524D;&#x9762;&#x7684; BOM &#x51B3;&#x5B9A;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709; BOM&#xFF0C;&#x5219;&#x7531; <em>endianness</em> &#x51B3;&#x5B9A;&#x3002;&#x5982;&#x679C; <em>endianness-mandatory?</em> &#x4E3A; <code>#t</code>, &#x5219;&#x5B57;&#x8282;&#x5E8F;&#x7531; <em>endianness</em> &#x51B3;&#x5B9A;&#xFF0C;&#x5E76;&#x4E14;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A; BOM &#x51FA;&#x73B0;&#x5728; <em>bytevector</em> &#x7684;&#x524D;&#x9762;&#xFF0C;&#x5219;&#x5B83;&#x88AB;&#x89C6;&#x4E3A;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x3002;</p>
+<p>UTF-16 BOM &#x4E3A;&#x6307;&#x5B9A; &quot;big&quot; &#x7684;&#x53CC;&#x5B57;&#x8282;&#x5E8F;&#x5217; <code>#xFE,#xFF</code> &#x6216;&#x6307;&#x5B9A; &quot;little&quot; &#x7684;&#x53CC;&#x5B57;&#x8282;&#x5E8F;&#x5217; <code>#xFF,#xFE</code>. UTF-32 BOM &#x4E3A;&#x6307;&#x5B9A; &quot;big&quot; &#x7684;&#x56DB;&#x5B57;&#x8282;&#x5E8F;&#x5217; <code>#x00,#x00,#xFE,#xFF</code> &#x6216;&#x6307;&#x5B9A; &quot;little&quot; &#x7684;&#x56DB;&#x5B57;&#x8282;&#x5E8F;&#x5217; <code>#xFF,#xFE,#x00,#x00</code>.</p>
+<p>R. Kent Dybvig / The Scheme Programming Language, Fourth Edition
+Copyright &#xA9; 2009 The MIT Press. Electronically reproduced by permission.
+Illustrations &#xA9; 2009 Jean-Pierre H&#xE9;bert
+ISBN 978-0-262-51298-5 / LOC QA76.73.S34D93
+to order this book / about this book</p>
+<p><a href="http://www.scheme.com" target="_blank">http://www.scheme.com</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="06.OperationsOnObjects.html" class="navigation navigation-prev " aria-label="Previous page: 06. 对象操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="08.SyntacticExtension.html" class="navigation navigation-next " aria-label="Next page: 08. 语法扩展">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"07. 输入输出","level":"1.9","depth":1,"next":{"title":"08. 语法扩展","level":"1.10","depth":1,"path":"08.SyntacticExtension.md","ref":"08.SyntacticExtension.md","articles":[]},"previous":{"title":"06. 对象操作","level":"1.8","depth":1,"path":"06.OperationsOnObjects.md","ref":"06.OperationsOnObjects.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"07.InputAndOutput.md","mtime":"2020-04-26T22:38:59.451Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-26T22:39:24.216Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

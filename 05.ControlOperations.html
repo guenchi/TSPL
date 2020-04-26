@@ -1,0 +1,1334 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>05. 控制操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06.OperationsOnObjects.html" />
+    
+    
+    <link rel="prev" href="04.ProceduresAndVariableBindings.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="00.Terminology.html">
+            
+                <a href="00.Terminology.html">
+            
+                    
+                    00. 术语表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01.Introduction.html">
+            
+                <a href="01.Introduction.html">
+            
+                    
+                    01. 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02.GettingStarted.html">
+            
+                <a href="02.GettingStarted.html">
+            
+                    
+                    02. 开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03.GoingFurther.html">
+            
+                <a href="03.GoingFurther.html">
+            
+                    
+                    03. 更进一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04.ProceduresAndVariableBindings.html">
+            
+                <a href="04.ProceduresAndVariableBindings.html">
+            
+                    
+                    04. 过程和变量绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="05.ControlOperations.html">
+            
+                <a href="05.ControlOperations.html">
+            
+                    
+                    05. 控制操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06.OperationsOnObjects.html">
+            
+                <a href="06.OperationsOnObjects.html">
+            
+                    
+                    06. 对象操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07.InputAndOutput.html">
+            
+                <a href="07.InputAndOutput.html">
+            
+                    
+                    07. 输入输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08.SyntacticExtension.html">
+            
+                <a href="08.SyntacticExtension.html">
+            
+                    
+                    08. 语法扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09.Records.html">
+            
+                <a href="09.Records.html">
+            
+                    
+                    09. 记录类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10.LibrariesAndTop-LevelPrograms.html">
+            
+                <a href="10.LibrariesAndTop-LevelPrograms.html">
+            
+                    
+                    10. 库和顶层程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11.ExceptionsAndConditions.html">
+            
+                <a href="11.ExceptionsAndConditions.html">
+            
+                    
+                    11. 异常和状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12.ExtendedExamples.html">
+            
+                <a href="12.ExtendedExamples.html">
+            
+                    
+                    12. 例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >05. 控制操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x63A7;&#x5236;&#x64CD;&#x4F5C;">&#x63A7;&#x5236;&#x64CD;&#x4F5C;</h1>
+<p>&#x672C;&#x7AE0;&#x4ECB;&#x7ECD;&#x4E86;&#x4F5C;&#x4E3A;Scheme&#x7A0B;&#x5E8F;&#x63A7;&#x5236;&#x7ED3;&#x6784;&#x7684;&#x8BED;&#x6CD5;&#x5F0F;&#x548C;&#x8FC7;&#x7A0B;&#x3002;&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#x8986;&#x76D6;&#x4E86;&#x6700;&#x57FA;&#x672C;&#x7684;&#x63A7;&#x5236;&#x7ED3;&#x6784;&#x3001;&#x8FC7;&#x7A0B;&#x5E94;&#x7528;&#xFF0C;&#x5176;&#x4F59;&#x90E8;&#x5206;&#x8986;&#x76D6;&#x4E86;&#x987A;&#x5E8F;&#x3001;&#x6761;&#x4EF6;&#x6C42;&#x503C;&#x3001;&#x9012;&#x5F52;&#x3001;&#x6620;&#x5C04;&#x3001;&#x5EF6;&#x7EED;&#x3001;&#x5EF6;&#x8FDF;&#x6C42;&#x503C;&#xFF0C;&#x591A;&#x503C;&#x53CA;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x6784;&#x5EFA;&#x7684;&#x7A0B;&#x5E8F;&#x7684;&#x6C42;&#x503C;&#x3002;</p>
+<h2 id="51-&#x8FC7;&#x7A0B;&#x5E94;&#x7528;">5.1 &#x8FC7;&#x7A0B;&#x5E94;&#x7528;</h2>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(<em>expr0</em> <em>expr1</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x5C06;<em>expr0</em>&#x7684;&#x503C;&#x5E94;&#x7528;&#x4E8E;<em>expr1</em> ... &#x7684;&#x503C;&#x6240;&#x4EA7;&#x751F;&#x7684;&#x503C;</p>
+<p>&#x8FC7;&#x7A0B;&#x5E94;&#x7528;&#x662F;&#x6700;&#x57FA;&#x672C;&#x7684;Scheme&#x7684;&#x63A7;&#x5236;&#x7ED3;&#x6784;&#x3002;&#x4EFB;&#x4F55;&#x7ED3;&#x6784;&#x5316;&#x7684;&#x5F0F;&#x5B50;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x662F;&#x8BED;&#x6CD5;&#x5173;&#x952E;&#x5B57;&#x7684;&#x9664;&#x5916;&#xFF0C;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#x8C03;&#x7528;&#x3002;&#x8868;&#x8FBE;&#x5F0F;<em>expr0</em>&#x548C;<em>expr1</em> ...&#xFF0C;&#x90FD;&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x4E14;&#x6BCF;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x4F1A;&#x5F97;&#x5230;&#x5355;&#x4E2A;&#x503C;&#x3002;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x8868;&#x8FBE;&#x5F0F;&#x6C42;&#x503C;&#x540E;&#xFF0C;<em>expr0</em>&#x7684;&#x503C;&#x4F1A;&#x88AB;&#x5E94;&#x7528;&#x4E8E;<em>expr1</em> ... &#x8FD9;&#x4E9B;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x3002;&#x82E5;<em>expr0</em>&#x6C42;&#x503C;&#x4E4B;&#x540E;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x6216;&#x8005;&#x8BE5;&#x8FC7;&#x7A0B;&#x63A5;&#x53D7;&#x7684;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x8DDF;&#x63D0;&#x4F9B;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x6B64;&#x65F6;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x4E3A;<code>&amp;assertion</code>&#x7684;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x81F3;&#x4E8E;&#x8FC7;&#x7A0B;&#x672C;&#x8EAB;&#x548C;&#x5176;&#x53C2;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6C42;&#x503C;&#x987A;&#x5E8F;&#x662F;&#x4E0D;&#x5B9A;&#x7684;&#x3002;&#x53EF;&#x4EE5;&#x662F;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x3001;&#x4ECE;&#x53F3;&#x5230;&#x5DE6;&#xFF0C;&#x6216;&#x4EFB;&#x610F;&#x5176;&#x4ED6;&#x987A;&#x5E8F;&#x3002;&#x7136;&#x800C;&#x6C42;&#x503C;&#x662F;&#x6709;&#x6B21;&#x5E8F;&#x4FDD;&#x8BC1;&#x7684;&#xFF0C;&#x5373;&#xFF0C;&#x4E0D;&#x7BA1;&#x9009;&#x62E9;&#x4F55;&#x79CD;&#x987A;&#x5E8F;&#xFF0C;&#x6BCF;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x4F1A;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x5F00;&#x59CB;&#x6C42;&#x503C;&#x4E4B;&#x524D;&#x6C42;&#x503C;&#x5B8C;&#x6210;&#x3002;</p>
+<pre><code class="lang-scheme">(+ 3 4) =&gt; 7
+
+((if (odd? 3) + -) 6 2) =&gt; 8
+
+((lambda (x) x) 5) =&gt; 5
+
+(let ([f (lambda (x) (+ x x))])
+  (f 8)) =&gt; 16
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(apply <em>procedure</em> <em>obj</em> ... <em>list</em>)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x5C06;<em>procedure</em>&#x5E94;&#x7528;&#x4E8E;<em>obj</em>... &#x548C;<em>list</em>&#x7684;&#x5143;&#x7D20;&#x800C;&#x5F97;&#x5230;&#x7684;&#x503C;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><code>apply</code>&#x8C03;&#x7528;<em>procedure</em>&#xFF0C;&#x5C06;&#x7B2C;&#x4E00;&#x4E2A;<em>obj</em>&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#xFF0C;&#x5C06;&#x7B2C;&#x4E8C;&#x4E2A;<em>obj</em>&#x4F5C;&#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#xFF0C;&#x6309;&#x7167;&#x6B64;&#x65B9;&#x5F0F;&#x4F9D;&#x6B21;&#x5904;&#x7406;<em>obj</em> ... &#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x5E76;&#x6309;&#x987A;&#x5E8F;&#x4F20;&#x9012;<em>list</em>&#x7684;&#x5143;&#x7D20;&#x4F5C;&#x4E3A;&#x5176;&#x4F59;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x8FC7;&#x7A0B;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x8C03;&#x7528;<em>procedure</em>&#x7684;&#x53C2;&#x6570;&#x4E0E;<em>objs</em>&#x548C;<em>list</em>&#x7684;&#x5143;&#x7D20;&#x4E00;&#x6837;&#x591A;&#x3002;</p>
+<p>&#x5F53;&#x8981;&#x4F20;&#x9012;&#x7ED9;&#x8FC7;&#x7A0B;&#x4E00;&#x4E9B;&#x6216;&#x6240;&#x6709;&#x53C2;&#x6570;&#x90FD;&#x5728;&#x5217;&#x8868;&#x5185;&#x65F6;&#xFF0C;<code>apply</code>&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4F1A;&#x8BA9;&#x7A0B;&#x5E8F;&#x5458;&#x514D;&#x4E8E;&#x663E;&#x5F0F;&#x5730;&#x5BF9;&#x5217;&#x8868;&#x8FDB;&#x884C;&#x89E3;&#x6784;&#x3002;</p>
+<pre><code class="lang-scheme">(apply + &apos;(4 5)) =&gt; 9
+
+(apply min &apos;(6 8 3 2 5)) =&gt; 2
+
+(apply min  5 1 3 &apos;(6 8 3 2 5)) =&gt; 1
+
+(apply vector &apos;a &apos;b &apos;(c d e)) =&gt; #(a b c d e)
+
+(define first
+  (lambda (ls)
+    (apply (lambda (x . y) x) ls)))
+(define rest
+  (lambda (ls)
+    (apply (lambda (x . y) y) ls)))
+(first &apos;(a b c d)) =&gt; a
+(rest &apos;(a b c d)) =&gt; (b c d)
+
+(apply append
+  &apos;(1 2 3)
+  &apos;((a b) (c d e) (f))) =&gt; (1 2 3 a b c d e f)
+</code></pre>
+<h2 id="52-&#x987A;&#x5E8F;">5.2 &#x987A;&#x5E8F;</h2>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(begin <em>expr1</em> <em>expr2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p>&#x8868;&#x8FBE;&#x5F0F;<em>expr1</em> <em>expr2</em> ... &#x4F1A;&#x4F9D;&#x6B21;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x88AB;&#x6C42;&#x503C;&#x3002;<code>begin</code>&#x5E38;&#x7528;&#x6765;&#x987A;&#x5E8F;&#x5316;&#x8D4B;&#x503C;&#x3001;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#xFF0C;&#x6216;&#x5176;&#x4ED6;&#x5BFC;&#x81F4;&#x526F;&#x4F5C;&#x7528;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-scheme">(define x 3)
+(begin
+  (set! x (+ x 1))
+  (+ x x)) =&gt; 8
+</code></pre>
+<p><code>begin</code>&#x5F0F;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B9A;&#x4E49;&#x6765;&#x4EE3;&#x66FF;&#x8868;&#x8FBE;&#x5F0F;<em>expr1</em> <em>expr2</em> ...&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B83;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x4E00;&#x4E2A;&#x5B9A;&#x4E49;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x5B9A;&#x4E49;&#x6709;&#x6548;&#x7684;&#x4F4D;&#x7F6E;&#x624D;&#x4F1A;&#x51FA;&#x73B0;&#x3002;</p>
+<pre><code class="lang-scheme">(let ()
+  (begin (define x 3) (define y 4))
+  (+ x y)) =&gt; 7
+</code></pre>
+<p>&#x8FD9;&#x79CD;&#x5F62;&#x5F0F;&#x7684;<code>begin</code>&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5FC5;&#x987B;&#x6269;&#x5C55;&#x4E3A;&#x591A;&#x4E2A;&#x5B9A;&#x4E49;&#x7684;&#x8BED;&#x6CD5;&#x6269;&#x5C55;&#x3002;&#xFF08;&#x53C2;&#x89C1;<a href="https://scheme.com/tspl4/binding.html#multi-define-syntax" target="_blank">101</a> &#x9875;&#xFF09;</p>
+<p>&#x5F88;&#x591A;&#x8BED;&#x6CD5;&#x5F0F;&#x7684;&#x4E3B;&#x4F53;&#xFF0C;&#x5305;&#x62EC;<code>lambda</code>&#x3001;<code>case-lambda</code>&#x3001;<code>let</code>&#x3001;<code>let*</code>&#x548C;<code>letrec</code>&#xFF0C;&#x4EE5;&#x53CA;<code>cond</code>&#x3001;<code>case</code>&#x548C;<code>do</code>&#x7684;&#x7ED3;&#x679C;&#x5B50;&#x53E5;&#xFF0C;&#x90FD;&#x88AB;&#x89C6;&#x4E3A;&#x5728;&#x4E00;&#x4E2A;&#x9690;&#x542B;&#x7684;<code>begin</code>&#x5185;&#x90E8;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x7EC4;&#x6210;&#x4E3B;&#x4F53;&#x6216;&#x7ED3;&#x679C;&#x5B50;&#x53E5;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x6309;&#x987A;&#x5E8F;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> swap-pair!
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x)
+    (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">temp</span> (<span class="hljs-name"><span class="hljs-builtin-name">car</span></span> x)])
+      (<span class="hljs-name"><span class="hljs-builtin-name">set-car!</span></span> x (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> x))
+      (<span class="hljs-name"><span class="hljs-builtin-name">set-cdr!</span></span> x temp)
+      x)))
+(<span class="hljs-name">swap-pair!</span> (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> <span class="hljs-symbol">&apos;a</span> <span class="hljs-symbol">&apos;b</span>)) =&gt; (<span class="hljs-name">b</span> . a)
+</code></pre>
+<h2 id="53-&#x6761;&#x4EF6;&#x5F0F;">5.3 &#x6761;&#x4EF6;&#x5F0F;</h2>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(if <em>test</em> <em>consequent</em> <em>alternative</em>)<br>
+<strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(if <em>test</em> <em>consequent</em>)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x53D6;&#x51B3;&#x4E8E;<em>test</em>&#x7684;&#x503C;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x5176;&#x4E2D;<em>consequent</em>&#x6216;<em>alternative</em>&#x7684;&#x503C;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><em>test</em>&#x3001;<em>consequent</em>&#x548C;<em>alternative</em>&#x5B50;&#x5F0F;&#x5FC5;&#x987B;&#x4E3A;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x82E5;<em>test</em>&#x6C42;&#x503C;&#x540E;&#x4E3A;&#x771F;&#x503C;&#xFF08;&#x9664;<code>#f</code>&#x4E4B;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x503C;&#xFF09;&#xFF0C;<em>consequent</em>&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#x5E76;&#x8FD4;&#x56DE;&#x5176;&#x503C;&#x3002;&#x5426;&#x5219;&#xFF0C;<em>alternative</em>&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#x5E76;&#x8FD4;&#x56DE;&#x5176;&#x503C;&#x3002;&#x4F7F;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#x6CA1;&#x6709;<em>alternative</em>&#x7684;&#x5355;&#x652F;&#x5F0F;&#x5B50;&#xFF0C;&#x82E5;<em>test</em>&#x6C42;&#x503C;&#x4E4B;&#x540E;&#x4E3A;&#x5047;&#x503C;&#xFF0C;&#x6B64;&#x65F6;&#x7ED3;&#x679C;&#x672A;&#x6307;&#x5B9A;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">ls</span> &apos;(a b c)])
+  (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">null?</span></span> ls)
+      &apos;()
+      (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls))) =&gt; (<span class="hljs-name">b</span> c)
+
+(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">ls</span> &apos;()])
+  (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">null?</span></span> ls)
+      &apos;()
+      (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls))) =&gt; ()
+
+(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name"><span class="hljs-builtin-name">abs</span></span>
+       (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x)
+         (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">&lt;</span></span> x <span class="hljs-number">0</span>)
+             (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> <span class="hljs-number">0</span> x)
+             x))])
+  (<span class="hljs-name"><span class="hljs-builtin-name">abs</span></span> <span class="hljs-number">-4</span>)) =&gt; <span class="hljs-number">4</span>
+
+(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-number">-4</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">&lt;</span></span> x <span class="hljs-number">0</span>)
+      (<span class="hljs-name"><span class="hljs-builtin-name">list</span></span> <span class="hljs-symbol">&apos;minus</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> <span class="hljs-number">0</span> x))
+      (<span class="hljs-name"><span class="hljs-builtin-name">list</span></span> <span class="hljs-symbol">&apos;plus</span> <span class="hljs-number">4</span>))) =&gt; (<span class="hljs-name">minus</span> <span class="hljs-number">4</span>)
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(not <em>obj</em>)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x82E5;<em>obj</em>&#x4E3A;&#x5047;&#xFF0C;&#x8FD4;&#x56DE;<code>#t</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>#f</code><br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><code>not</code>&#x7B49;&#x4EF7;&#x4E8E;<code>(lambda (x) (if x #f #t))</code>&#x3002;</p>
+<pre><code class="lang-scheme">(not #f) =&gt; #t
+(not #t) =&gt; #f
+(not &apos;()) =&gt; #f
+(not (&lt; 4 5)) =&gt; #f
+</code></pre>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(and <em>expr</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)<br></p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x5305;&#x542B;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5373;<code>(and)</code>&#xFF0C;<code>and</code>&#x5F0F;&#x503C;&#x4E3A;<code>#t</code>&#x3002;&#x5426;&#x5219;&#xFF0C;<code>and</code>&#x4F1A;&#x4F9D;&#x6B21;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x5BF9;&#x6BCF;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x6C42;&#x503C;&#xFF0C;&#x76F4;&#x5230;&#x5269;&#x4F59;&#x4E00;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x6216;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x8FD4;&#x56DE;<code>#f</code>&#x3002;&#x5982;&#x679C;&#x5269;&#x4F59;&#x4E00;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x5176;&#x503C;&#x3002;&#x82E5;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x8FD4;&#x56DE;<code>#f</code>&#xFF0C;<code>and</code>&#x76F4;&#x63A5;&#x8FD4;&#x56DE;<code>#f</code>&#xFF0C;&#x540E;&#x7EED;&#x7684;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#x3002;<a href="https://scheme.com/tspl4/further.html#defn:and" target="_blank">62</a> &#x9875;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x79CD;<code>and</code>&#x7684;&#x8BED;&#x6CD5;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-number">3</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">&gt;</span></span> x <span class="hljs-number">2</span>) (<span class="hljs-name"><span class="hljs-builtin-name">&lt;</span></span> x <span class="hljs-number">4</span>))) =&gt; <span class="hljs-literal">#t</span>
+
+(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-number">5</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">&gt;</span></span> x <span class="hljs-number">2</span>) (<span class="hljs-name"><span class="hljs-builtin-name">&lt;</span></span> x <span class="hljs-number">4</span>))) =&gt; <span class="hljs-literal">#f</span>
+
+(<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> <span class="hljs-literal">#f</span> &apos;(a b) &apos;(c d)) =&gt; <span class="hljs-literal">#f</span>
+(<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> &apos;(a b) &apos;(c d) &apos;(e f)) =&gt; (<span class="hljs-name">e</span> f)
+</code></pre>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(or <em>expr</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)<br></p>
+<p>&#x82E5;&#x4E0D;&#x5305;&#x542B;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5373;<code>(or)</code>&#xFF0C;<code>or</code>&#x5F0F;&#x503C;&#x4E3A;<code>#f</code>&#x3002;&#x5426;&#x5219;&#xFF0C;<code>or</code>&#x4F1A;&#x4F9D;&#x6B21;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x5BF9;&#x6BCF;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x6C42;&#x503C;&#xFF0C;&#x76F4;&#x5230;&#x5269;&#x4F59;&#x4E00;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x6216;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x8FD4;&#x56DE;&#x975E;<code>#f</code>&#x7684;&#x503C;&#x3002;&#x5982;&#x679C;&#x5269;&#x4F59;&#x4E00;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x5176;&#x503C;&#x3002;&#x82E5;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x8FD4;&#x56DE;&#x975E;<code>#f</code>&#x7684;&#x503C;&#xFF0C;<code>or</code>&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x8BE5;&#x503C;&#xFF0C;&#x540E;&#x7EED;&#x7684;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#x3002;<a href="https://scheme.com/tspl4/further.html#defn:or" target="_blank">63</a> &#x9875;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x79CD;<code>or</code>&#x7684;&#x8BED;&#x6CD5;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-number">3</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">or</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">&lt;</span></span> x <span class="hljs-number">2</span>) (<span class="hljs-name"><span class="hljs-builtin-name">&gt;</span></span> x <span class="hljs-number">4</span>))) =&gt; <span class="hljs-literal">#f</span>
+
+(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-number">5</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">or</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">&lt;</span></span> x <span class="hljs-number">2</span>) (<span class="hljs-name"><span class="hljs-builtin-name">&gt;</span></span> x <span class="hljs-number">4</span>))) =&gt; <span class="hljs-literal">#t</span>
+
+(<span class="hljs-name"><span class="hljs-builtin-name">or</span></span> <span class="hljs-literal">#f</span> &apos;(a b) &apos;(c d)) =&gt; (<span class="hljs-name">a</span> b)
+</code></pre>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(cond <em>clause1</em> <em>clause2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p>&#x9664;&#x4E86;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#xFF0C;&#x6BCF;&#x4E2A;<em>clause</em>&#x5FC5;&#x987B;&#x7B26;&#x5408;&#x4EE5;&#x4E0B;&#x5176;&#x4E2D;&#x4E4B;&#x4E00;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<p>(<em>test</em>)
+(<em>test</em> <em>expr1</em> <em>expr2</em> ...)
+(<em>test</em> =&gt; <em>expr</em>)</p>
+<p>&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x5F0F;&#x53EF;&#x4EE5;&#x662F;&#x4EE5;&#x4E0A;&#x5176;&#x4E2D;&#x4EFB;&#x610F;&#x4E4B;&#x4E00;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x6216;&#x662F;&#x4E00;&#x4E2A;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#x7684;&#x201C;<code>else</code>&#x5B50;&#x5F0F;&#x201D;
+(<code>else</code> <em>expr1</em> <em>expr2</em> ...)</p>
+<p>&#x6BCF;&#x4E2A;<em>test</em>&#x4F9D;&#x6B21;&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x76F4;&#x5230;&#x5176;&#x4E2D;&#x4E4B;&#x4E00;&#x6C42;&#x503C;&#x4E3A;&#x771F;&#xFF0C;&#x6216;&#x6240;&#x6709;&#x7684;&#x6D4B;&#x8BD5;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x5DF2;&#x88AB;&#x6C42;&#x503C;&#x3002;&#x82E5;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x5F0F;&#x7684;<em>test</em>&#x6C42;&#x503C;&#x4E3A;&#x771F;&#x4E14;&#x7B26;&#x5408;&#x4EE5;&#x4E0A;&#x7B2C;&#x4E00;&#x4E2A;&#x5F62;&#x5F0F;&#xFF0C;&#x6B64;&#x65F6;&#x4F1A;&#x8FD4;&#x56DE;<em>test</em>&#x7684;&#x503C;&#x3002;</p>
+<p>&#x82E5;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x5F0F;&#x7684;<em>test</em>&#x6C42;&#x503C;&#x4E3A;&#x771F;&#xFF0C;&#x4E14;&#x7B26;&#x5408;&#x4EE5;&#x4E0A;&#x7B2C;&#x4E8C;&#x4E2A;&#x5F62;&#x5F0F;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;<em>expr1 expr2...</em>&#x4F1A;&#x4F9D;&#x6B21;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x82E5;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x5F0F;&#x7684;<em>test</em>&#x6C42;&#x503C;&#x4E3A;&#x771F;&#xFF0C;&#x4E14;&#x7B26;&#x5408;&#x4EE5;&#x4E0A;&#x7B2C;&#x4E09;&#x4E2A;&#x5F62;&#x5F0F;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;<em>expr</em>&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#x3002;&#x5B83;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x8BE5;&#x8FC7;&#x7A0B;&#x4F1A;&#x5E94;&#x7528;&#x4E8E;<em>test</em>&#x7684;&#x503C;&#x3002;&#x4F1A;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x8C03;&#x7528;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x82E5;&#x6CA1;&#x6709;&#x6D4B;&#x8BD5;&#x8868;&#x8FBE;&#x5F0F;&#x6C42;&#x503C;&#x4E3A;&#x771F;&#xFF0C;&#x4E14;&#x6709;<code>else</code>&#x5B50;&#x53E5;&#xFF0C;<code>else</code>&#x5B50;&#x5F0F;&#x7684;&#x8868;&#x8FBE;&#x5F0F;<em>expr1</em> <em>expr2</em> ... &#x4F1A;&#x4F9D;&#x6B21;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x3002; </p>
+<p>&#x82E5;&#x6CA1;&#x6709;&#x6D4B;&#x8BD5;&#x8868;&#x8FBE;&#x5F0F;&#x6C42;&#x503C;&#x4E3A;&#x771F;&#xFF0C;&#x5E76;&#x4E14;&#x6CA1;&#x6709;<code>else</code>&#x5B50;&#x53E5;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x503C;&#x4E0D;&#x786E;&#x5B9A;&#x3002;</p>
+<p><a href="https://scheme.com/tspl4/syntax.html#defn:cond" target="_blank">305</a> &#x9875;&#x63D0;&#x4F9B;&#x4E86;<code>cond</code>&#x7684;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-number">0</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">cond</span></span>
+    [(<span class="hljs-name"><span class="hljs-builtin-name">&lt;</span></span> x <span class="hljs-number">0</span>) (<span class="hljs-name"><span class="hljs-builtin-name">list</span></span> <span class="hljs-symbol">&apos;minus</span> (<span class="hljs-name"><span class="hljs-builtin-name">abs</span></span> x))]
+    [(<span class="hljs-name"><span class="hljs-builtin-name">&gt;</span></span> x <span class="hljs-number">0</span>) (<span class="hljs-name"><span class="hljs-builtin-name">list</span></span> <span class="hljs-symbol">&apos;plus</span> x)]
+    [<span class="hljs-name"><span class="hljs-builtin-name">else</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">list</span></span> <span class="hljs-symbol">&apos;zero</span> x)])) =&gt; (<span class="hljs-name">zero</span> <span class="hljs-number">0</span>)
+
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> select
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x)
+    (<span class="hljs-name"><span class="hljs-builtin-name">cond</span></span>
+      [(<span class="hljs-name"><span class="hljs-builtin-name">not</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">symbol?</span></span> x))]
+      [(<span class="hljs-name"><span class="hljs-builtin-name">assq</span></span> x &apos;((a . <span class="hljs-number">1</span>) (b . <span class="hljs-number">2</span>) (c . <span class="hljs-number">3</span>))) =&gt; cdr]
+      [<span class="hljs-name"><span class="hljs-builtin-name">else</span></span> <span class="hljs-number">0</span>])))
+
+(<span class="hljs-name">select</span> <span class="hljs-number">3</span>) =&gt; <span class="hljs-literal">#t</span>
+(<span class="hljs-name">select</span> <span class="hljs-symbol">&apos;b</span>) =&gt; <span class="hljs-number">2</span>
+(<span class="hljs-name">select</span> <span class="hljs-symbol">&apos;e</span>) =&gt; <span class="hljs-number">0</span>
+</code></pre>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;else<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;=&gt;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs exceptions), (rnrs)</p>
+<p>&#x8FD9;&#x4E9B;&#x6807;&#x8BC6;&#x7B26;&#x90FD;&#x662F;<code>cond</code>&#x7684;&#x8F85;&#x52A9;&#x5173;&#x952E;&#x5B57;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x90FD;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;<code>guard</code>&#x7684;&#x8F85;&#x52A9;&#x5173;&#x952E;&#x5B57;&#xFF0C;<code>else</code>&#x4E5F;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;<code>case</code>&#x7684;&#x8F85;&#x52A9;&#x5173;&#x952E;&#x5B57;&#x3002;&#x5F15;&#x7528;&#x8FD9;&#x4E9B;&#x6807;&#x8BC6;&#x7B26;&#x662F;&#x8FDD;&#x6CD5;&#x8BED;&#x6CD5;&#x7684;&#xFF0C;&#x9664;&#x975E;&#x5728;&#x5B83;&#x4EEC;&#x88AB;&#x8BC6;&#x522B;&#x4E3A;&#x8F85;&#x52A9;&#x5173;&#x952E;&#x5B57;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x3002;</p>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(when <em>test-expr</em> <em>expr1</em> <em>expr2</em> ...)<br>
+<strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(unless <em>test-expr</em> <em>expr1</em> <em>expr2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs control), (rnrs)</p>
+<p>&#x5BF9;&#x4E8E;<code>when</code>&#xFF0C;&#x5982;&#x679C;<em>test-expr</em>&#x6C42;&#x503C;&#x4E3A;&#x771F;&#xFF0C;&#x5219;&#x8868;&#x8FBE;&#x5F0F;<em>expr1</em> <em>expr2</em> ... &#x4F1A;&#x4F9D;&#x6B21;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x3002;&#x5982;&#x679C;<em>test-expr</em>&#x6C42;&#x503C;&#x4E3A;&#x5047;&#xFF0C;&#x5219;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x4E0D;&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x4E14;<code>when</code>&#x7684;&#x503C;&#x672A;&#x6307;&#x5B9A;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;<code>unless</code>&#xFF0C;&#x82E5;<em>test-expr</em>&#x6C42;&#x503C;&#x4E3A;&#x5047;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;<em>expr1</em> <em>expr2</em> ...  &#x4F1A;&#x4F9D;&#x6B21;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x4E14;&#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x3002;&#x82E5;<em>test-expr</em>&#x6C42;&#x503C;&#x4E3A;&#x771F;&#xFF0C;&#x5219;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x4E0D;&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x4E14;<code>unless</code>&#x7684;&#x503C;&#x672A;&#x6307;&#x5B9A;&#x3002;</p>
+<p><code>when</code>&#x6216;<code>unless</code>&#x8868;&#x8FBE;&#x5F0F;&#x901A;&#x5E38;&#x6BD4;&#x76F8;&#x5E94;&#x7684;&#x5355;&#x5206;&#x652F;<code>if</code>&#x8868;&#x8FBE;&#x5F0F;&#x66F4;&#x4E3A;&#x6E05;&#x6670;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-number">-4</span>] [<span class="hljs-name">sign</span> <span class="hljs-symbol">&apos;plus</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">when</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">&lt;</span></span> x <span class="hljs-number">0</span>)
+    (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> x (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> <span class="hljs-number">0</span> x))
+    (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> sign <span class="hljs-symbol">&apos;minus</span>))
+  (<span class="hljs-name"><span class="hljs-builtin-name">list</span></span> sign x)) =&gt; (<span class="hljs-name">minus</span> <span class="hljs-number">4</span>)
+
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> check-pair
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x)
+    (<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">pair?</span></span> x)
+      (<span class="hljs-name">syntax-violation</span> <span class="hljs-symbol">&apos;check-pair</span> <span class="hljs-string">&quot;invalid argument&quot;</span> x))
+    x))
+
+(<span class="hljs-name">check-pair</span> &apos;(a b c)) =&gt; (<span class="hljs-name">a</span> b c)
+</code></pre>
+<p><code>when</code>&#x53EF;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-scheme">define-syntax when
+  (syntax-rules ()
+    [(_ e0 e1 e2 ...)
+     (if e0 (begin e1 e2 ...))]))
+</code></pre>
+<p><code>unless</code>&#x53EF;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define-syntax</span></span> unless
+  (<span class="hljs-name"><span class="hljs-builtin-name">syntax-rules</span></span> ()
+    [(<span class="hljs-name">_</span> e0 e1 e2 ...)
+     (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">not</span></span> e0) (<span class="hljs-name"><span class="hljs-builtin-name">begin</span></span> e1 e2 ...))]))
+</code></pre>
+<p><code>unless</code>&#x4F7F;&#x7528;<code>when</code>&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define-syntax</span></span> unless
+  (<span class="hljs-name"><span class="hljs-builtin-name">syntax-rules</span></span> ()
+    [(<span class="hljs-name">_</span> e0 e1 e2 ...)
+     (<span class="hljs-name"><span class="hljs-builtin-name">when</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">not</span></span> e0) e1 e2 ...)]))
+</code></pre>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(case <em>expr0</em> <em>clause1</em> <em>clause2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p>&#x9664;&#x4E86;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x5F0F;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B50;&#x5F0F;&#x5FC5;&#x987B;&#x7B26;&#x5408;&#x5F62;&#x5F0F;</p>
+<p>((<em>key</em> ...) <em>expr1</em> <em>expr2</em> ...)</p>
+<p>&#x5176;&#x4E2D;&#xFF0C;&#x4E0E;&#x5176;&#x4ED6;&#x952E;&#x4E0D;&#x540C;&#xFF0C;<em>key</em>&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x3002;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x5F0F;&#x53EF;&#x4EE5;&#x662F;&#x4E0A;&#x8FF0;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x6216;&#x662F;&#x5177;&#x6709;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;&#x7684;&#x4E00;&#x4E2A;<code>else</code>&#x5B50;&#x5F0F;</p>
+<p>(else <em>expr1</em> <em>expr2</em> ...)</p>
+<p><em>expr0</em>&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5176;&#x503C;&#x4F1A;&#x4E0E;&#x6BCF;&#x4E2A;&#x5B50;&#x5F0F;&#x7684;&#x952E;&#x4F9D;&#x6B21;&#x6BD4;&#x8F83;&#xFF08;&#x4F7F;&#x7528;<code>eqv?</code>&#xFF09;&#x3002;&#x5982;&#x679C;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5339;&#x914D;&#x952E;&#x7684;&#x5B50;&#x5F0F;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;<em>expr1</em> <em>expr2</em> ... &#x4F1A;&#x88AB;&#x4F9D;&#x6B21;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x4E14;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5305;&#x542B;&#x5339;&#x914D;&#x952E;&#x7684;&#x5B50;&#x5F0F;&#xFF0C;&#x4E14;&#x5305;&#x542B;<code>else</code>&#x5B50;&#x5F0F;&#xFF0C;<code>else</code>&#x7684;&#x8868;&#x8FBE;&#x5F0F;<em>expr1</em> <em>expr2</em> ... &#x4F1A;&#x88AB;&#x4F9D;&#x6B21;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x4E14;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5305;&#x542B;&#x5339;&#x914D;&#x952E;&#x7684;&#x5B50;&#x5F0F;&#xFF0C;&#x4E14;&#x4E0D;&#x5B58;&#x5728;<code>else</code>&#x5B50;&#x5F0F;&#xFF0C;&#x5219;&#x5176;&#x503C;&#x672A;&#x6307;&#x5B9A;&#x3002;</p>
+<p>&#x53C2;&#x89C1;<a href="https://scheme.com/tspl4/syntax.html#defn:case" target="_blank">306</a> &#x9875;<code>case</code>&#x7684;&#x4E00;&#x4E2A;&#x8BED;&#x6CD5;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-number">4</span>] [<span class="hljs-name">y</span> <span class="hljs-number">5</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">case</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> x y)
+    [(<span class="hljs-name">1</span> <span class="hljs-number">3</span> <span class="hljs-number">5</span> <span class="hljs-number">7</span> <span class="hljs-number">9</span>) <span class="hljs-symbol">&apos;odd</span>]
+    [(<span class="hljs-name">0</span> <span class="hljs-number">2</span> <span class="hljs-number">4</span> <span class="hljs-number">6</span> <span class="hljs-number">8</span>) <span class="hljs-symbol">&apos;even</span>]
+    [<span class="hljs-name"><span class="hljs-builtin-name">else</span></span> <span class="hljs-symbol">&apos;out-of-range</span>])) =&gt; odd
+</code></pre>
+<h2 id="54-&#x9012;&#x5F52;&#x548C;&#x8FED;&#x4EE3;">5.4 &#x9012;&#x5F52;&#x548C;&#x8FED;&#x4EE3;</h2>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(<code>let</code> <em>name</em> ((<em>var</em> <em>expr</em>) ...) <em>body1</em> <em>body2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4E3B;&#x4F53;&#xFF08;<em>body</em>&#xFF09;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p>&#x8FD9;&#x79CD;&#x5F62;&#x5F0F;&#x7684;<code>let</code>&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A;<em>&#x547D;&#x540D;&#x7684;</em><code>let</code>&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x901A;&#x7528;&#x7684;&#x8FED;&#x4EE3;&#x548C;&#x9012;&#x5F52;&#x7ED3;&#x6784;&#x3002;&#x5B83;&#x7C7B;&#x4F3C;&#x4E8E;&#x66F4;&#x5E38;&#x89C1;&#x7684;<code>let</code>&#x5F0F;&#xFF08;&#x89C1;<a href="https://scheme.com/tspl4/binding.html#g92" target="_blank">4.4</a> &#x90E8;&#x5206;&#xFF09;&#x7684;<em>body1</em> <em>body2</em> ... &#x5185;&#x7684;&#x53D8;&#x91CF;<em>var</em> ... &#x5230;<em>expr</em> ... &#x7684;&#x7ED1;&#x5B9A;&#xFF0C;&#x8FD9;&#x4E9B;&#x7ED1;&#x5B9A;&#x7684;&#x5904;&#x7406;&#x548C;&#x6C42;&#x503C;&#x7C7B;&#x4F3C;&#x4E8E;<code>lambda</code>&#x7684;&#x4E3B;&#x4F53;&#x3002;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x5728;&#x8FC7;&#x7A0B;&#x4E3B;&#x4F53;&#x5185;&#x7ED1;&#x5B9A;&#x7684;&#x53D8;&#x91CF;<em>name</em>&#x53EF;&#x4EE5;&#x88AB;&#x8C03;&#x7528;&#x4EE5;&#x5B9E;&#x73B0;&#x5FAA;&#x73AF;&#x6216;&#x8FED;&#x4EE3;&#x3002;&#x8FC7;&#x7A0B;&#x7684;&#x53C2;&#x6570;&#x4F1A;&#x53D8;&#x6210;&#x53D8;&#x91CF;<em>var</em> .... &#x65B0;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#x7684;&#x547D;&#x540D;&#x7684;<code>let</code>&#x8868;&#x8FBE;&#x5F0F;</p>
+<p>(let <em>name</em> ((<em>var</em> <em>expr</em>) ...)
+  <em>body1</em> <em>body2</em> ...)</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>letrec</code>&#x91CD;&#x5199;&#x4E3A;&#xFF1A;
+((letrec ((<em>name</em> (lambda (<em>var</em> ...) <em>body1</em> <em>body2</em> ...)))
+   <em>name</em>)
+ <em>expr</em> ...)</p>
+<p> &#x53EF;&#x4EE5;&#x5728;<a href="https://scheme.com/tspl4/syntax.html#defn:let" target="_blank">312</a> &#x9875;&#x627E;&#x5230;&#x5B9E;&#x73B0;&#x6B64;&#x8F6C;&#x6362;&#x5E76;&#x5904;&#x7406;&#x672A;&#x547D;&#x540D;&#x7684; <code>let</code>&#x7684;<code>let</code>&#x7684;&#x8BED;&#x6CD5;&#x5B9A;&#x4E49;&#x3002;</p>
+<p> &#x4E0B;&#x9762;&#x5B9A;&#x4E49;&#x7684;<code>divisors</code>&#x8FC7;&#x7A0B;&#x4F7F;&#x7528;&#x4E86;&#x547D;&#x540D;&#x7684;<code>let</code>&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x7684;&#x975E;&#x5E73;&#x51E1;&#x9664;&#x6570;&#x3002;</p>
+<pre><code class="lang-scheme"> (<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> divisors
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (n)
+    (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> f ([<span class="hljs-name">i</span> <span class="hljs-number">2</span>])
+      (<span class="hljs-name"><span class="hljs-builtin-name">cond</span></span>
+        [(<span class="hljs-name"><span class="hljs-builtin-name">&gt;=</span></span> i n) &apos;()]
+        [(<span class="hljs-name"><span class="hljs-builtin-name">integer?</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">/</span></span> n i)) (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> i (<span class="hljs-name">f</span> (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> i <span class="hljs-number">1</span>)))]
+        [<span class="hljs-name"><span class="hljs-builtin-name">else</span></span> (<span class="hljs-name">f</span> (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> i <span class="hljs-number">1</span>))]))))
+
+(<span class="hljs-name">divisors</span> <span class="hljs-number">5</span>) =&gt; ()
+(<span class="hljs-name">divisors</span> <span class="hljs-number">32</span>) =&gt; (<span class="hljs-name">2</span> <span class="hljs-number">4</span> <span class="hljs-number">8</span> <span class="hljs-number">16</span>)
+</code></pre>
+<p>&#x5F53;&#x627E;&#x5230;&#x9664;&#x6570;&#x65F6;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x7248;&#x672C;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5C3E;&#x9012;&#x5F52;&#xFF0C;&#x800C;&#x5F53;&#x627E;&#x4E0D;&#x5230;&#x9664;&#x6570;&#x65F6;&#xFF0C;&#x5219;&#x662F;&#x4E00;&#x4E2A;&#x5C3E;&#x9012;&#x5F52;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x7248;&#x672C;&#x662F;&#x5B8C;&#x5168;&#x5C3E;&#x9012;&#x5F52;&#x7684;&#x3002;&#x5B83;&#x4EE5;&#x76F8;&#x53CD;&#x7684;&#x987A;&#x5E8F;&#x6784;&#x5EFA;&#x5217;&#x8868;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x9700;&#x8981;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x9000;&#x51FA;&#x65F6;&#x53CD;&#x8F6C;&#x5217;&#x8868;&#x6765;&#x8F7B;&#x677E;&#x4FEE;&#x590D;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> divisors
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (n)
+    (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> f ([<span class="hljs-name">i</span> <span class="hljs-number">2</span>] [<span class="hljs-name">ls</span> &apos;()])
+      (<span class="hljs-name"><span class="hljs-builtin-name">cond</span></span>
+        [(<span class="hljs-name"><span class="hljs-builtin-name">&gt;=</span></span> i n) ls]
+        [(<span class="hljs-name"><span class="hljs-builtin-name">integer?</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">/</span></span> n i)) (<span class="hljs-name">f</span> (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> i <span class="hljs-number">1</span>) (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> i ls))]
+        [<span class="hljs-name"><span class="hljs-builtin-name">else</span></span> (<span class="hljs-name">f</span> (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> i <span class="hljs-number">1</span>) ls)]))))
+</code></pre>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(do ((<em>var</em> <em>init</em> <em>update</em>) ...) (<em>test</em> <em>result</em> ...) <em>expr</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x6700;&#x540E;&#x4E00;&#x4E2A;<em>result</em>&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs control), (rnrs)</p>
+<p><code>do</code>&#x5141;&#x8BB8;&#x7B80;&#x6D01;&#x5730;&#x8868;&#x8FBE;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x53D7;&#x9650;&#x5F62;&#x5F0F;&#x7684;&#x8FED;&#x4EE3;&#x3002;&#x53D8;&#x91CF;<em>var</em> ... &#x521D;&#x59CB;&#x65F6;&#x4F1A;&#x7ED1;&#x5B9A;<em>init</em> ... &#x7684;&#x503C;&#xFF0C;&#x5E76;&#x968F;&#x7740;&#x6BCF;&#x6B21;&#x7684;&#x8FED;&#x4EE3;&#x91CD;&#x65B0;&#x7ED1;&#x5B9A;&#x4E3A;<em>update</em> ... &#x7684;&#x503C;&#x3002;&#x8868;&#x8FBE;&#x5F0F;<em>test</em>&#x3001;<em>update</em> ...&#xFF0C; <em>expr</em> ...&#xFF0C;&#x548C;<em>result</em>... &#x90FD;&#x5728;<em>var</em> ... &#x5EFA;&#x7ACB;&#x7684;&#x7ED1;&#x5B9A;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x3002;</p>
+<p>&#x5728;&#x6BCF;&#x4E2A;&#x6B65;&#x9AA4;&#x4E2D;&#xFF0C;&#x6D4B;&#x8BD5;&#x8868;&#x8FBE;&#x5F0F;<em>test</em>&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#x3002;&#x5982;&#x679C;<em>test</em>&#x7684;&#x503C;&#x4E3A;&#x771F;&#xFF0C;&#x5219;&#x8FED;&#x4EE3;&#x505C;&#x6B62;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;<em>result</em> ... &#x4F1A;&#x4F9D;&#x6B21;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x3002;&#x82E5;&#x4E0D;&#x5B58;&#x5728;&#x7ED3;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5219;<code>do</code>&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x662F;&#x672A;&#x6307;&#x5B9A;&#x7684;&#x3002;</p>
+<p>&#x5982;&#x679C;<em>test</em>&#x7684;&#x503C;&#x4E3A;&#x5047;&#xFF0C;&#x5219;&#x8868;&#x8FBE;&#x5F0F;<em>expr</em> ... &#x4F1A;&#x4F9D;&#x6B21;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x8BA1;&#x7B97;&#x8868;&#x8FBE;&#x5F0F;<em>update</em> ...&#xFF0C;&#x6B64;&#x65F6;&#x4F1A;&#x521B;&#x5EFA;&#x53D8;&#x91CF;<em>var</em> ... &#x5230;<em>update</em> ... &#x7684;&#x65B0;&#x7ED1;&#x5B9A;&#xFF0C;&#x5E76;&#x7EE7;&#x7EED;&#x8FED;&#x4EE3;&#x3002;</p>
+<p>&#x8868;&#x8FBE;&#x5F0F;<em>expr</em> ... &#x6C42;&#x503C;&#x4EC5;&#x4EC5;&#x4E3A;&#x4E86;&#x526F;&#x4F5C;&#x7528;&#xFF0C;&#x901A;&#x5E38;&#x53EF;&#x4EE5;&#x5168;&#x90E8;&#x7701;&#x7565;&#x3002;&#x4EFB;&#x4F55;&#x7684;<em>update</em>&#x8868;&#x8FBE;&#x5F0F;&#x4E5F;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6548;&#x679C;&#x7B49;&#x540C;&#x4E8E;<em>update</em>&#x4EC5;&#x4EC5;&#x5C31;&#x662F;&#x5BF9;&#x5E94;&#x7684;<em>var</em>&#x3002;</p>
+<p>&#x5C3D;&#x7BA1;&#x5728;&#x5927;&#x591A;&#x6570;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x5FAA;&#x73AF;&#x7ED3;&#x6784;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x8D4B;&#x503C;&#x66F4;&#x65B0;&#x5FAA;&#x73AF;&#x64CD;&#x4F5C;&#x6570;&#xFF0C;&#x800C;<code>do</code>&#x9700;&#x8981;&#x5FAA;&#x73AF;&#x64CD;&#x4F5C;&#x6570;<em>var</em> ... &#x901A;&#x8FC7;&#x91CD;&#x65B0;&#x7ED1;&#x5B9A;&#x5F97;&#x4EE5;&#x66F4;&#x65B0;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x5728;<code>do</code>&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6C42;&#x503C;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x6D89;&#x53CA;&#x4EFB;&#x4F55;&#x526F;&#x4F5C;&#x7528;&#xFF0C;&#x9664;&#x975E;&#x5176;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x6709;&#x663E;&#x5F0F;&#x5730;&#x6267;&#x884C;&#x526F;&#x4F5C;&#x7528;&#x3002;</p>
+<p><a href="https://scheme.com/tspl4/syntax.html#defn:do" target="_blank">313</a> &#x9875;&#x6709;<code>do</code>&#x7684;&#x8BED;&#x6CD5;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;<code>factorial</code>&#x548C;<code>fibonacci</code>&#x7684;&#x5B9A;&#x4E49;&#x662F;<a href="https://scheme.com/tspl4/further.html#g55" target="_blank">3.2</a> &#x8282;&#x4E2D;&#x7ED9;&#x51FA;&#x7684;&#x5C3E;&#x9012;&#x5F52;&#x7684;&#x547D;&#x540D;<code>let</code>&#x7248;&#x672C;&#x7684;&#x76F4;&#x63A5;&#x8F6C;&#x6362;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> factorial
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (n)
+    (<span class="hljs-name"><span class="hljs-builtin-name">do</span></span> ([<span class="hljs-name">i</span> n (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> i <span class="hljs-number">1</span>)] [<span class="hljs-name">a</span> <span class="hljs-number">1</span> (<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> a i)])
+        ((<span class="hljs-name"><span class="hljs-builtin-name">zero?</span></span> i) a))))
+
+(<span class="hljs-name">factorial</span> <span class="hljs-number">10</span>) =&gt; <span class="hljs-number">3628800</span>
+
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> fibonacci
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (n)
+    (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> n <span class="hljs-number">0</span>)
+        <span class="hljs-number">0</span>
+        (<span class="hljs-name"><span class="hljs-builtin-name">do</span></span> ([<span class="hljs-name">i</span> n (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> i <span class="hljs-number">1</span>)] [<span class="hljs-name">a1</span> <span class="hljs-number">1</span> (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> a1 a2)] [<span class="hljs-name">a2</span> <span class="hljs-number">0</span> a1])
+            ((<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> i <span class="hljs-number">1</span>) a1)))))
+
+(<span class="hljs-name">fibonacci</span> <span class="hljs-number">6</span>) =&gt; <span class="hljs-number">8</span>
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7684;<code>divisors</code>&#x7684;&#x5B9A;&#x4E49;&#x7C7B;&#x4F3C;&#x4E8E;&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x547D;&#x540D;<code>let</code>&#x63CF;&#x8FF0;&#x7684;&#x5C3E;&#x9012;&#x5F52;&#x7248;&#x672C;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> divisors
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (n)
+    (<span class="hljs-name"><span class="hljs-builtin-name">do</span></span> ([<span class="hljs-name">i</span> <span class="hljs-number">2</span> (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> i <span class="hljs-number">1</span>)]
+         [<span class="hljs-name">ls</span> &apos;()
+             (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">integer?</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">/</span></span> n i))
+                 (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> i ls)
+                 ls)])
+        ((<span class="hljs-name"><span class="hljs-builtin-name">&gt;=</span></span> i n) ls))))
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7684;<code>scale-vector!</code>&#x5B9A;&#x4E49;&#x5C55;&#x793A;&#x4E86;&#x975E;&#x7A7A;<code>do</code>&#x4E3B;&#x4F53;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x5176;&#x5BF9;&#x5411;&#x91CF;<em>v</em>&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6309;&#x5E38;&#x6570;<em>k</em>&#x8FDB;&#x884C;&#x7F29;&#x653E;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> scale-vector!
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (v k)
+    (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">n</span> (<span class="hljs-name"><span class="hljs-builtin-name">vector-length</span></span> v)])
+      (<span class="hljs-name"><span class="hljs-builtin-name">do</span></span> ([<span class="hljs-name">i</span> <span class="hljs-number">0</span> (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> i <span class="hljs-number">1</span>)])
+          ((<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> i n))
+        (<span class="hljs-name"><span class="hljs-builtin-name">vector-set!</span></span> v i (<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">vector-ref</span></span> v i) k))))))
+
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> vec (<span class="hljs-name"><span class="hljs-builtin-name">vector</span></span> <span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span> <span class="hljs-number">5</span>))
+(<span class="hljs-name">scale-vector!</span> vec <span class="hljs-number">2</span>)
+vec =&gt; #(<span class="hljs-name">2</span> <span class="hljs-number">4</span> <span class="hljs-number">6</span> <span class="hljs-number">8</span> <span class="hljs-number">10</span>)
+</code></pre>
+<h2 id="55-&#x6620;&#x5C04;&#x548C;&#x6298;&#x53E0;">5.5 &#x6620;&#x5C04;&#x548C;&#x6298;&#x53E0;</h2>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x5FC5;&#x987B;&#x5FAA;&#x73AF;&#x6216;&#x8FED;&#x4EE3;&#x5217;&#x8868;&#x5143;&#x7D20;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x6620;&#x5C04;&#x6216;&#x6298;&#x53E0;&#x8FD0;&#x7B97;&#x7B26;&#x5E38;&#x5E38;&#x4F1A;&#x66F4;&#x65B9;&#x4FBF;&#x3002;&#x8FD9;&#x4E9B;&#x8FD0;&#x7B97;&#x7B26;&#x901A;&#x8FC7;&#x5C06;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#x9010;&#x4E2A;&#x5E94;&#x7528;&#x4E8E;&#x5217;&#x8868;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x4ECE;&#x800C;&#x62BD;&#x8C61;&#x4E86;&#x7A7A;&#x5217;&#x8868;&#x7684;&#x5224;&#x65AD;&#x548C;&#x663E;&#x5F0F;&#x7684;&#x9012;&#x5F52;&#x3002;&#x4E00;&#x4E9B;&#x6620;&#x5C04;&#x8FD0;&#x7B97;&#x7B26;&#x4E5F;&#x53EF;&#x7528;&#x4E8E;&#x5411;&#x91CF;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(map <em>procedure</em> <em>list1</em> <em>list2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x7684;&#x7ED3;&#x679C;&#x7EC4;&#x6210;&#x7684;&#x5217;&#x8868;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><code>map</code>&#x5C06;<em>procedure</em>&#x5E94;&#x7528;&#x5728;&#x5217;&#x8868;<em>list1</em> <em>list2</em> ... &#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x4E0A;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x503C;&#x7684;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x3002;&#x5217;&#x8868;<em>list1</em> <em>list2</em> ... &#x5FC5;&#x987B;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x957F;&#x5EA6;&#x3002;<em>procedure</em>&#x63A5;&#x6536;&#x7684;&#x53C2;&#x6570;&#x7684;&#x6570;&#x76EE;&#x5E94;&#x4E0E;&#x5217;&#x8868;&#x7684;&#x6570;&#x76EE;&#x76F8;&#x540C;&#xFF0C;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x503C;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#x4F20;&#x5165;&#x7684;<em>list</em>&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-scheme">(map abs &apos;(1 -2 3 -4 5 -6)) =&gt; (1 2 3 4 5 6)
+
+(map (lambda (x y) (* x y))
+     &apos;(1 2 3 4)
+     &apos;(8 7 6 5)) =&gt; (8 14 18 20)
+</code></pre>
+<p>&#x867D;&#x7136;&#x8FC7;&#x7A0B;&#x5E94;&#x7528;&#x672C;&#x8EAB;&#x53D1;&#x751F;&#x7684;&#x987A;&#x5E8F;&#x662F;&#x672A;&#x6307;&#x5B9A;&#x7684;&#xFF0C;&#x4F46;&#x8F93;&#x51FA;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x503C;&#x7684;&#x987A;&#x5E8F;&#x4E0E;&#x8F93;&#x5165;&#x5217;&#x8868;&#x91CC;&#x7684;&#x76F8;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x503C;&#x7684;&#x987A;&#x5E8F;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;</p>
+<p><code>map</code>&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> map
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (f ls . more)
+    (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">null?</span></span> more)
+        (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> map1 ([<span class="hljs-name">ls</span> ls])
+          (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">null?</span></span> ls)
+              &apos;()
+              (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> (<span class="hljs-name">f</span> (<span class="hljs-name"><span class="hljs-builtin-name">car</span></span> ls))
+                    (<span class="hljs-name">map1</span> (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls)))))
+        (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> map-more ([<span class="hljs-name">ls</span> ls] [<span class="hljs-name">more</span> more])
+          (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">null?</span></span> ls)
+              &apos;()
+              (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span>
+                (<span class="hljs-name"><span class="hljs-builtin-name">apply</span></span> f (<span class="hljs-name"><span class="hljs-builtin-name">car</span></span> ls) (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> car more))
+                (<span class="hljs-name">map-more</span> (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls) (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> cdr more))))))))
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x7684;<code>map</code>&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#xFF0C;<code>f</code>&#x5047;&#x5B9A;&#x662F;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x4E14;&#x5176;&#x4ED6;&#x53C2;&#x6570;&#x5047;&#x5B9A;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x957F;&#x5EA6;&#x7684;&#x6B63;&#x89C4;&#x5217;&#x8868;&#x3002;&#x8FD9;&#x4E2A;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x4E2A;&#x6709;&#x8DA3;&#x7684;&#x7279;&#x70B9;&#x662F;<code>map</code>&#x4F7F;&#x7528;&#x5176;&#x81EA;&#x8EAB;&#x53D6;&#x51FA;&#x8F93;&#x5165;&#x5217;&#x8868;&#x7EC4;&#x6210;&#x7684;&#x5217;&#x8868;&#x7684;&#x5934;&#x548C;&#x5C3E;&#xFF0C;&#x4E4B;&#x6240;&#x4EE5;&#x80FD;&#x5DE5;&#x4F5C;&#x662F;&#x56E0;&#x4E3A;&#x6709;&#x4E86;&#x5355;&#x4E2A;&#x5217;&#x8868;&#x60C5;&#x51B5;&#x7684;&#x7279;&#x6B8A;&#x5904;&#x7406;&#x3002;</p>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(for-each <em>procedure</em> <em>list1</em> <em>list2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x672A;&#x6307;&#x5B9A;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><code>for-each</code>&#x7C7B;&#x4F3C;&#x4E8E;<code>map</code>&#xFF0C;&#x9664;&#x4E86;<code>for-each</code>&#x4E0D;&#x521B;&#x5EFA;&#x548C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x503C;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x5E76;&#x4E14;<code>for-each</code>&#x4FDD;&#x8BC1;&#x6309;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x7684;&#x987A;&#x5E8F;&#x5E94;&#x7528;&#x5217;&#x8868;&#x5143;&#x7D20;&#x3002;<em>procedure</em>&#x63A5;&#x6536;&#x7684;&#x53C2;&#x6570;&#x7684;&#x6570;&#x76EE;&#x5E94;&#x8BE5;&#x4E0E;&#x5217;&#x8868;&#x7684;&#x6570;&#x76EE;&#x76F8;&#x540C;&#xFF0C;&#x4E14;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#x4F20;&#x5165;&#x7684;<em>list</em>&#x53C2;&#x6570;&#x3002;&#x6CA1;&#x6709;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#x7684;<code>for-each</code>&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-scheme">define for-each
+  (lambda (f ls . more)
+    (do ([ls ls (cdr ls)] [more more (map cdr more)])
+        ((null? ls))
+      (apply f (car ls) (map car more)))))
+
+(let ([same-count 0])
+  (for-each
+    (lambda (x y)
+      (when (= x y)
+        (set! same-count (+ same-count 1))))
+    &apos;(1 2 3 4 5 6)
+    &apos;(2 3 3 4 7 6))
+  same-count) =&gt; 3
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(exists <em>procedure</em> <em>list1</em> <em>list2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs lists), (rnrs)</p>
+<p><em>list1</em> <em>list2</em> ...  &#x5217;&#x8868;&#x5FC5;&#x987B;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x957F;&#x5EA6;&#x3002;<em>procedure</em>&#x63A5;&#x6536;&#x7684;&#x53C2;&#x6570;&#x7684;&#x6570;&#x76EE;&#x5E94;&#x8BE5;&#x4E0E;&#x5217;&#x8868;&#x7684;&#x6570;&#x76EE;&#x76F8;&#x540C;&#xFF0C;&#x4E14;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#x4F20;&#x5165;&#x7684;<em>list</em>&#x53C2;&#x6570;&#x3002;&#x82E5;&#x4F20;&#x5165;&#x7684;&#x5217;&#x8868;&#x4E3A;&#x7A7A;&#xFF08;&#x6CA1;&#x6709;<em>list</em>&#xFF09;&#xFF0C;<code>exists</code>&#x8FD4;&#x56DE;<code>#f</code>&#x3002;&#x5426;&#x5219;&#xFF0C;<code>exists</code>&#x4F1A;&#x5C06;<em>procedure</em>&#x4F9D;&#x6B21;&#x5E94;&#x7528;&#x5728;&#x5217;&#x8868;<em>list1</em> <em>list2</em> ... &#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x4E0A;&#xFF0C;&#x76F4;&#x5230;&#x6BCF;&#x4E2A;&#x5217;&#x8868;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x6216;<code>procedure</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x771F;&#x503C;<em>t</em>&#x3002;&#x5728;&#x524D;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>exists</code>&#x5C3E;&#x8C03;&#x7528;<code>procedure</code>&#xFF0C;&#x5C06;&#x5176;&#x5E94;&#x7528;&#x4E8E;&#x6BCF;&#x4E2A;&#x5217;&#x8868;&#x7684;&#x5269;&#x4F59;&#x5143;&#x7D20;&#x3002;&#x5728;&#x540E;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>exists</code>&#x8FD4;&#x56DE;<em>t</em>&#x3002;</p>
+<pre><code class="lang-scheme">(exists symbol? &apos;(1.0 #\a &quot;hi&quot; &apos;())) =&gt; #f
+
+(exists member
+        &apos;(a b c)
+        &apos;((c b) (b a) (a c))) =&gt; (b a)
+
+(exists (lambda (x y z) (= (+ x y) z))
+        &apos;(1 2 3 4)
+        &apos;(1.2 2.3 3.4 4.5)
+        &apos;(2.3 4.4 6.4 8.6)) =&gt; #t
+</code></pre>
+<p><code>exists</code>&#x53EF;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF08;&#x6709;&#x4E9B;&#x4F4E;&#x6548;&#x4E14;&#x6CA1;&#x6709;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> exists
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (f ls . more)
+    (<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">not</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">null?</span></span> ls))
+      (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> exists ([<span class="hljs-name">x</span> (<span class="hljs-name"><span class="hljs-builtin-name">car</span></span> ls)] [<span class="hljs-name">ls</span> (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls)] [<span class="hljs-name">more</span> more])
+        (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">null?</span></span> ls)
+            (<span class="hljs-name"><span class="hljs-builtin-name">apply</span></span> f x (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> car more))
+            (<span class="hljs-name"><span class="hljs-builtin-name">or</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">apply</span></span> f x (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> car more))
+                (<span class="hljs-name">exists</span> (<span class="hljs-name"><span class="hljs-builtin-name">car</span></span> ls) (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls) (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> cdr more))))))))
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(for-all <em>procedure</em> <em>list1</em> <em>list2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs lists), (rnrs)</p>
+<p><em>list1</em> <em>list2</em> ...  &#x5217;&#x8868;&#x5FC5;&#x987B;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x957F;&#x5EA6;&#x3002;<em>procedure</em>&#x63A5;&#x6536;&#x7684;&#x53C2;&#x6570;&#x7684;&#x6570;&#x76EE;&#x5E94;&#x8BE5;&#x4E0E;&#x5217;&#x8868;&#x7684;&#x6570;&#x76EE;&#x76F8;&#x540C;&#xFF0C;&#x4E14;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#x4F20;&#x5165;&#x7684;<em>list</em>&#x53C2;&#x6570;&#x3002;&#x82E5;&#x4F20;&#x5165;&#x7684;&#x5217;&#x8868;&#x4E3A;&#x7A7A;&#xFF08;&#x6CA1;&#x6709;<em>list</em>&#xFF09;&#xFF0C;<code>for-all</code>&#x8FD4;&#x56DE;<code>#t</code>&#x3002;&#x5426;&#x5219;&#xFF0C;<code>for-all</code>&#x4F1A;&#x5C06;<em>procedure</em>&#x4F9D;&#x6B21;&#x5E94;&#x7528;&#x5728;&#x5217;&#x8868;<em>list1</em> <em>list2</em> ... &#x7684;&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x4E0A;&#xFF0C;&#x76F4;&#x5230;&#x6BCF;&#x4E2A;&#x5217;&#x8868;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x6216;<code>procedure</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5047;&#x503C;<code>#f</code>&#x3002;&#x5728;&#x524D;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>for-all</code>&#x5C3E;&#x8C03;&#x7528;<code>procedure</code>&#xFF0C;&#x5C06;&#x5176;&#x5E94;&#x7528;&#x4E8E;&#x6BCF;&#x4E2A;&#x5217;&#x8868;&#x7684;&#x5269;&#x4F59;&#x5143;&#x7D20;&#x3002;&#x5728;&#x540E;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>for-all</code>&#x8FD4;&#x56DE;<code>#f</code>&#x3002;</p>
+<pre><code class="lang-scheme">(for-all symbol? &apos;(a b c d)) =&gt; #t
+
+(for-all =
+         &apos;(1 2 3 4)
+         &apos;(1.0 2.0 3.0 4.0)) =&gt; #t
+
+(for-all (lambda (x y z) (= (+ x y) z))
+         &apos;(1 2 3 4)
+         &apos;(1.2 2.3 3.4 4.5)
+         &apos;(2.2 4.3 6.5 8.5)) =&gt; #f
+</code></pre>
+<p><code>for-all</code>&#x53EF;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF08;&#x6709;&#x4E9B;&#x4F4E;&#x6548;&#x4E14;&#x6CA1;&#x6709;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> for-all
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (f ls . more)
+    (<span class="hljs-name"><span class="hljs-builtin-name">or</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">null?</span></span> ls)
+      (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> for-all ([<span class="hljs-name">x</span> (<span class="hljs-name"><span class="hljs-builtin-name">car</span></span> ls)] [<span class="hljs-name">ls</span> (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls)] [<span class="hljs-name">more</span> more])
+        (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">null?</span></span> ls)
+            (<span class="hljs-name"><span class="hljs-builtin-name">apply</span></span> f x (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> car more))
+            (<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">apply</span></span> f x (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> car more))
+                 (<span class="hljs-name">for-all</span> (<span class="hljs-name"><span class="hljs-builtin-name">car</span></span> ls) (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls) (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> cdr more))))))))
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(fold-left <em>procedure</em>  <em>obj</em> <em>list1</em> <em>list2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs lists), (rnrs)</p>
+<p><em>list</em>&#x53C2;&#x6570;&#x5E94;&#x8BE5;&#x90FD;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x957F;&#x5EA6;&#x3002;<em>procedure</em>&#x5E94;&#x8BE5;&#x63A5;&#x6536;&#x6BD4;<em>list</em>&#x53C2;&#x6570;&#x7684;&#x6570;&#x76EE;&#x591A;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5E76;&#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x503C;&#x3002;&#x5B83;&#x4E0D;&#x5E94;&#x8BE5;&#x4FEE;&#x6539;<em>list</em>&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x5982;&#x679C;<em>list</em>&#x53C2;&#x6570;&#x4E3A;&#x7A7A;&#xFF0C;<code>fold-left</code>&#x8FD4;&#x56DE;<em>obj</em>&#x3002;&#x5982;&#x679C;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;<code>fold-left</code>&#x4F1A;&#x5C06;<em>procedure</em>&#x5E94;&#x7528;&#x5728;<em>obj</em>&#x548C;&#x6BCF;&#x4E2A;&#x5217;&#x8868;<em>list1</em> <em>list2</em> ... &#x7684;&#x5934;&#xFF08;car&#xFF09;&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;<em>procedure</em>&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x4EE3;&#x66FF;<em>obj</em>&#xFF0C;&#x5E76;&#x7528;<em>list</em>&#x5404;&#x5217;&#x8868;&#x7684;&#x5C3E;&#xFF08;cdr&#xFF09;&#x66FF;&#x6362;<em>list</em>&#x3002;</p>
+<pre><code class="lang-scheme">(fold-left cons &apos;() &apos;(1 2 3 4)) =&gt; ((((() . 1) . 2) . 3) . 4)
+
+(fold-left
+  (lambda (a x) (+ a (* x x)))
+  0 &apos;(1 2 3 4 5)) =&gt; 55
+
+(fold-left
+  (lambda (a . args) (append args a))
+  &apos;(question)
+  &apos;(that not to)
+  &apos;(is to be)
+  &apos;(the be: or)) =&gt; (to be or not to be: that is the question)
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(fold-right <em>procedure</em>  <em>obj</em> <em>list1</em> <em>list2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs lists), (rnrs)</p>
+<p><em>list</em>&#x53C2;&#x6570;&#x5E94;&#x8BE5;&#x90FD;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x957F;&#x5EA6;&#x3002;<em>procedure</em>&#x5E94;&#x8BE5;&#x63A5;&#x6536;&#x6BD4;<em>list</em>&#x53C2;&#x6570;&#x7684;&#x6570;&#x76EE;&#x591A;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5E76;&#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x503C;&#x3002;&#x5B83;&#x4E0D;&#x5E94;&#x8BE5;&#x4FEE;&#x6539;<em>list</em>&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x5982;&#x679C;<em>list</em>&#x53C2;&#x6570;&#x4E3A;&#x7A7A;&#xFF0C;<code>fold-right</code>&#x8FD4;&#x56DE;<em>obj</em>&#x3002;&#x82E5;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;<code>fold-right</code>&#x4F1A;&#x53CD;&#x590D;&#x4F7F;&#x7528;<code>list</code>&#x5404;&#x5217;&#x8868;&#x7684;&#x5C3E;&#xFF08;cdr&#xFF09;&#x66FF;&#x6362;<code>list</code>&#xFF0C;&#x7136;&#x540E;&#x5C06;<em>procedure</em>&#x5E94;&#x7528;&#x4E8E;&#x5217;&#x8868;<em>list1</em> <em>list2</em> ... &#x7684;&#x5934;&#xFF08;car&#xFF09;&#x548C;&#x9012;&#x5F52;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<pre><code class="lang-scheme">(fold-right cons &apos;() &apos;(1 2 3 4)) =&gt; (1 2 3 4)
+
+(fold-right
+  (lambda (x a) (+ a (* x x)))
+  0 &apos;(1 2 3 4 5)) =&gt; 55
+
+(fold-right
+  (lambda (x y a) (cons* x y a))   =&gt; (parting is such sweet sorrow
+  &apos;((with apologies))                  gotta go see ya tomorrow
+  &apos;(parting such sorrow go ya)         (with apologies))
+  &apos;(is sweet gotta see tomorrow))
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(vector-map <em>procedure</em>  <em>vector1</em> <em>vector2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x5404;&#x7ED3;&#x679C;&#x503C;&#x7EC4;&#x6210;&#x7684;&#x5411;&#x91CF;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><code>vector-map</code>&#x5C06;<em>procedure</em>&#x5E94;&#x7528;&#x5728;<em>vector1</em> <em>vector2</em> ... &#x5BF9;&#x5E94;&#x7684;&#x5404;&#x5143;&#x7D20;&#x4E0A;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x503C;&#x7684;&#x5411;&#x91CF;&#x3002;&#x5404;&#x5411;&#x91CF;<em>vector1</em> <em>vector2</em> ... &#x5FC5;&#x987B;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x9664;&#x6B64;&#x4EE5;&#x5916;<em>procedure</em>&#x63A5;&#x6536;&#x7684;&#x53C2;&#x6570;&#x7684;&#x6570;&#x76EE;&#x5E94;&#x8BE5;&#x4E0E;&#x53C2;&#x6570;&#x4E2D;&#x5411;&#x91CF;&#x7684;&#x4E2A;&#x6570;&#x76F8;&#x540C;&#xFF0C;&#x4E14;<em>procedure</em>&#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x503C;&#x3002;</p>
+<pre><code class="lang-scheme">(vector-map abs &apos;#(1 -2 3 -4 5 -6)) =&gt; #(1 2 3 4 5 6)
+(vector-map (lambda (x y) (* x y))
+  &apos;#(1 2 3 4)
+  &apos;#(8 7 6 5)) =&gt; #(8 14 18 20)
+</code></pre>
+<p>&#x867D;&#x7136;&#x5E94;&#x7528;&#x672C;&#x8EAB;&#x7684;&#x987A;&#x5E8F;&#x672A;&#x6307;&#x5B9A;&#xFF0C;&#x4F46;&#x8F93;&#x51FA;&#x5411;&#x91CF;&#x7684;&#x5404;&#x5143;&#x7D20;&#x503C;&#x7684;&#x987A;&#x5E8F;&#x4E0E;&#x8F93;&#x5165;&#x5411;&#x91CF;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x503C;&#x7684;&#x987A;&#x5E8F;&#x76F8;&#x540C;&#x3002;</p>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(vector-for-each <em>procedure</em>  <em>vector1</em> <em>vector2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x672A;&#x6307;&#x5B9A;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><code>vector-for-each</code>&#x7C7B;&#x4F3C;&#x4E8E;<code>vector-map</code>&#xFF0C;&#x9664;&#x4E86;<code>vector-for-each</code>&#x6CA1;&#x6709;&#x521B;&#x5EFA;&#x548C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x503C;&#x7684;&#x5411;&#x91CF;&#xFF0C;&#x4E14;<code>vector-for-each</code>&#x4FDD;&#x8BC1;&#x6309;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x7684;&#x987A;&#x5E8F;&#x5E94;&#x7528;&#x5217;&#x8868;&#x5143;&#x7D20;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">same-count</span> <span class="hljs-number">0</span>])
+  (<span class="hljs-name">vector-for-each</span>
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x y)
+      (<span class="hljs-name"><span class="hljs-builtin-name">when</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> x y)
+        (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> same-count (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> same-count <span class="hljs-number">1</span>))))
+    &apos;#(<span class="hljs-name">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span> <span class="hljs-number">5</span> <span class="hljs-number">6</span>)
+    &apos;#(<span class="hljs-name">2</span> <span class="hljs-number">3</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span> <span class="hljs-number">7</span> <span class="hljs-number">6</span>))
+  same-count) =&gt; <span class="hljs-number">3</span>
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(string-for-each <em>procedure</em>  <em>string1</em> <em>string2</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x672A;&#x6307;&#x5B9A;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><code>string-for-each</code>&#x7C7B;&#x4F3C;&#x4E8E;<code>for-each</code>&#x548C;<code>vector-for-each</code>&#xFF0C;&#x9664;&#x4E86;&#x8F93;&#x5165;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x800C;&#x4E0D;&#x662F;&#x5217;&#x8868;&#x6216;&#x5411;&#x91CF;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">ls</span> &apos;()])
+  (<span class="hljs-name">string-for-each</span>
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> <span class="hljs-name">r</span> (set! ls (cons r ls)))
+    <span class="hljs-string">&quot;abcd&quot;</span>
+    <span class="hljs-string">&quot;====&quot;</span>
+    <span class="hljs-string">&quot;1234&quot;</span>)
+  (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> list-&gt;string (<span class="hljs-name"><span class="hljs-builtin-name">reverse</span></span> ls))) =&gt; (<span class="hljs-string">&quot;a=1&quot;</span> <span class="hljs-string">&quot;b=2&quot;</span> <span class="hljs-string">&quot;c=3&quot;</span> <span class="hljs-string">&quot;d=4&quot;</span>)
+</code></pre>
+<h2 id="56-&#x5EF6;&#x7EED;">5.6 &#x5EF6;&#x7EED;</h2>
+<p>Scheme&#x4E2D;&#x7684;&#x5EF6;&#x7EED;&#x5728;&#x8BA1;&#x7B97;&#x4E2D;&#x4EE3;&#x8868;&#x4ECE;&#x67D0;&#x4E2A;&#x70B9;&#x5F00;&#x59CB;&#x7684;&#x5269;&#x4F59;&#x90E8;&#x5206;&#x8BA1;&#x7B97;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;<code>call-with-current-continuation</code>&#x83B7;&#x5F97;&#xFF0C;&#x53EF;&#x7B80;&#x5199;&#x4E3A;<code>call/cc</code>&#x3002;</p>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(call/cc <em>procedure</em>)<br>
+<strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(call-with-current-continuation <em>procedure</em>)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p>&#x8FD9;&#x4E9B;&#x8FC7;&#x7A0B;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;&#x77ED;&#x540D;&#x5B57;&#x5E38;&#x88AB;&#x4F7F;&#x7528;&#x7684;&#x660E;&#x663E;&#x539F;&#x56E0;&#x662F;&#x5B83;&#x9700;&#x8981;&#x66F4;&#x5C11;&#x7684;&#x51FB;&#x952E;&#x6B21;&#x6570;&#x3002;</p>
+<p><code>call/cc</code>&#x83B7;&#x5F97;&#x5B83;&#x7684;&#x5EF6;&#x7EED;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4F20;&#x7ED9;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7684;<em>procedure</em>&#x8FC7;&#x7A0B;&#x3002;&#x5EF6;&#x7EED;&#x672C;&#x8EAB;&#x7531;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#x8868;&#x793A;&#x3002;&#x6BCF;&#x6B21;&#x5C06;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5E94;&#x7528;&#x4E8E;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x503C;&#x65F6;&#xFF0C;&#x5B83;&#x5C06;&#x503C;&#x8FD4;&#x56DE;&#x7ED9;<code>call/cc</code>&#x5E94;&#x7528;&#x7684;&#x5EF6;&#x7EED;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5F53;&#x5EF6;&#x7EED;&#x8FC7;&#x7A0B;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06;&#x5176;&#x53C2;&#x6570;&#x8FD4;&#x56DE;&#x4F5C;&#x4E3A;<code>call/cc</code>&#x5E94;&#x7528;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x82E5;&#x4F20;&#x9012;&#x5EF6;&#x7EED;&#x8FC7;&#x7A0B;&#x7ED9;<em>procedure</em>&#x65F6;&#xFF0C;&#x4E14;<em>procedure</em>&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#xFF0C;<em>procedure</em>&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x5C31;&#x662F;<em>call/cc</em>&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5EF6;&#x7EED;&#x5141;&#x8BB8;&#x5B9E;&#x73B0;&#x975E;&#x5C40;&#x90E8;&#x9000;&#x51FA;&#xFF0C;&#x56DE;&#x6EAF; [<a href="https://scheme.com/tspl4/bibliography.html#g232" target="_blank">14</a> ,<a href="https://scheme.com/tspl4/bibliography.html#g247" target="_blank">29</a> ], &#x534F;&#x7A0B;[<a href="https://scheme.com/tspl4/bibliography.html#g234" target="_blank">16</a> ]&#xFF0C;&#x548C;&#x591A;&#x4EFB;&#x52A1;[<a href="https://scheme.com/tspl4/bibliography.html#g228" target="_blank">10</a> ,<a href="https://scheme.com/tspl4/bibliography.html#g250" target="_blank">32</a> ]. </p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x8BF4;&#x660E;&#x4E86;&#x4F7F;&#x7528;&#x5EF6;&#x7EED;&#x4ECE;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x91CC;&#x6267;&#x884C;&#x975E;&#x5C40;&#x90E8;&#x9000;&#x51FA;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> member
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x ls)
+    (<span class="hljs-name"><span class="hljs-builtin-name">call/cc</span></span>
+      (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (break)
+        (<span class="hljs-name"><span class="hljs-builtin-name">do</span></span> ([<span class="hljs-name">ls</span> ls (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls)])
+            ((<span class="hljs-name"><span class="hljs-builtin-name">null?</span></span> ls) <span class="hljs-literal">#f</span>)
+          (<span class="hljs-name"><span class="hljs-builtin-name">when</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">equal?</span></span> x (<span class="hljs-name"><span class="hljs-builtin-name">car</span></span> ls))
+            (<span class="hljs-name">break</span> ls)))))))
+
+(<span class="hljs-name"><span class="hljs-builtin-name">member</span></span> <span class="hljs-symbol">&apos;d</span> &apos;(a b c)) =&gt; <span class="hljs-literal">#f</span>
+(<span class="hljs-name"><span class="hljs-builtin-name">member</span></span> <span class="hljs-symbol">&apos;b</span> &apos;(a b c)) =&gt; (<span class="hljs-name">b</span> c)
+</code></pre>
+<p>&#x5176;&#x4ED6;&#x793A;&#x4F8B;&#x5728;<a href="https://scheme.com/tspl4/further.html#g63" target="_blank">3.3</a> &#x548C;<a href="https://scheme.com/tspl4/examples.html#g208" target="_blank">12.11</a> &#x7AE0;&#x8282;&#x7ED9;&#x51FA;&#x3002;</p>
+<p>&#x5F53;&#x524D;&#x5EF6;&#x7EED;&#x901A;&#x5E38;&#x5728;&#x5185;&#x90E8;&#x8868;&#x793A;&#x4E3A;&#x8FC7;&#x7A0B;&#x6FC0;&#x6D3B;&#x8BB0;&#x5F55;&#x7684;&#x5806;&#x6808;&#xFF0C;&#x5E76;&#x4E14;&#x83B7;&#x5F97;&#x5EF6;&#x7EED;&#x6D89;&#x53CA;&#x5C06;&#x6808;&#x5C01;&#x88C5;&#x5230;&#x8FC7;&#x7A0B;&#x5BF9;&#x8C61;&#x91CC;&#x3002;&#x7531;&#x4E8E;&#x4E00;&#x4E2A;&#x5C01;&#x88C5;&#x7684;&#x5806;&#x6808;&#x53EF;&#x6709;&#x65E0;&#x9650;&#x7684;&#x6269;&#x5C55;&#x6027;&#xFF0C;&#x56E0;&#x6B64;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x673A;&#x5236;&#x6765;&#x65E0;&#x9650;&#x671F;&#x5730;&#x4FDD;&#x6301;&#x5806;&#x6808;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x8FD9;&#x9700;&#x8981;&#x6709;&#x53EF;&#x89C2;&#x7684;&#x6613;&#x7528;&#x6027;&#x548C;&#x6548;&#x7387;&#xFF0C;&#x4E14;&#x4E0D;&#x4F1A;&#x5BF9;&#x4E0D;&#x4F7F;&#x7528;&#x5EF6;&#x7EED;&#x7684;&#x7A0B;&#x5E8F;&#x9020;&#x6210;&#x5F71;&#x54CD;<a href="https://scheme.com/tspl4/bibliography.html#g235" target="_blank">17</a> &#x3002;</p>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(dynamic-wind <em>in</em> <em>body</em> <em>out</em>)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;<em>body</em>&#x8868;&#x8FBE;&#x5F0F;&#x4EA7;&#x751F;&#x7684;&#x503C;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><code>dynamic-wind</code>&#x4F1A;&#x4E3A;&#x5EF6;&#x7EED;&#x7684;&#x8C03;&#x7528;&#x63D0;&#x4F9B;&#x201C;&#x4FDD;&#x62A4;&#x201D;&#x3002;&#x5F53;&#x8FDB;&#x5165;&#x6216;&#x79BB;&#x5F00;<em>body</em>&#x65F6;&#x5FC5;&#x987B;&#x8981;&#x6267;&#x884C;&#x4E00;&#x5B9A;&#x4EFB;&#x52A1;&#x65F6;&#xFF0C;<code>dynamic-wind</code>&#x5BF9;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x5904;&#x7406;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x8FD9;&#x79CD;&#x8FDB;&#x5165;&#x6216;&#x79BB;&#x5F00;&#x53EF;&#x4EE5;&#x662F;&#x6B63;&#x5E38;&#x7684;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x7531;&#x5EF6;&#x7EED;&#x5E94;&#x7528;&#x9020;&#x6210;&#x7684;&#x3002;</p>
+<p><em>in</em>&#x3001;<em>body</em>&#x3001;<em>out</em>&#x8FD9;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x662F;&#x8FC7;&#x7A0B;&#xFF0C;&#x5E76;&#x4E14;&#x63A5;&#x6536;&#x96F6;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B83;&#x4EEC;&#x5E94;&#x8BE5;&#x662F;<em>thunks</em>&#xFF08;&#x4EFB;&#x52A1;&#x76D2;&#xFF09;&#x3002;&#x5728;&#x5E94;&#x7528;<code>body</code>&#x4E4B;&#x524D;&#xFF0C;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x901A;&#x8FC7;<em>body</em>&#x5185;&#x90E8;&#x521B;&#x5EFA;&#x7684;&#x5EF6;&#x7EED;&#x968F;&#x540E;&#x8FDB;&#x5165;<em>body</em>&#x65F6;&#xFF0C;<em>in</em>&#x4EFB;&#x52A1;&#x76D2;&#x4F1A;&#x88AB;&#x5E94;&#x7528;&#x3002;&#x6BCF;&#x6B21;&#x4ECE;<em>body</em>&#x6B63;&#x5E38;&#x9000;&#x51FA;&#x6216;&#x8C03;&#x7528;<em>body</em>&#x5916;&#x521B;&#x5EFA;&#x7684;&#x5EF6;&#x7EED;&#x5BFC;&#x81F4;<em>body</em>&#x9000;&#x51FA;&#x65F6;&#xFF0C;<em>out</em>&#x4EFB;&#x52A1;&#x76D2;&#x4F1A;&#x88AB;&#x5E94;&#x7528;&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x80FD;&#x4FDD;&#x8BC1;<em>in</em>&#x81F3;&#x5C11;&#x88AB;&#x8C03;&#x7528;&#x4E00;&#x6B21;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x82E5;<em>body</em>&#x8FD4;&#x56DE;&#xFF0C;<em>out</em>&#x81F3;&#x5C11;&#x88AB;&#x8C03;&#x7528;&#x4E00;&#x6B21;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x7684;&#x793A;&#x4F8B;&#x5C55;&#x793A;&#x4E86;&#x4F7F;&#x7528;<code>dynamic-wind</code>&#x786E;&#x4FDD;&#x8F93;&#x5165;&#x7AEF;&#x53E3;&#xFF08;port&#xFF09;&#x5728;&#x5904;&#x7406;&#x540E;&#x5173;&#x95ED;&#xFF0C;&#x65E0;&#x8BBA;&#x5904;&#x7406;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x5B8C;&#x6210;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">p</span> (<span class="hljs-name"><span class="hljs-builtin-name">open-input-file</span></span> <span class="hljs-string">&quot;input-file&quot;</span>)])
+  (<span class="hljs-name"><span class="hljs-builtin-name">dynamic-wind</span></span>
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () <span class="hljs-literal">#f</span>)
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () (<span class="hljs-name">process</span> p))
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () (<span class="hljs-name">close-port</span> p))))
+</code></pre>
+<p>Common Lisp&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x7C7B;&#x4F3C;&#x7684;&#x5DE5;&#x5177;(<code>unwind-protect</code>) &#x4EE5;&#x9632;&#x6B62;&#x975E;&#x5C40;&#x90E8;&#x9000;&#x51FA;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#x3002;<code>unwind-protect</code>&#x4EC5;&#x63D0;&#x4F9B;&#x4E86;&#x4E0E;<em>out</em>&#x7B49;&#x4EF7;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x56E0;&#x4E3A;Common Lisp&#x4E0D;&#x652F;&#x6301;&#x5B8C;&#x5168;&#x901A;&#x7528;&#x7684;&#x5EF6;&#x7EED;&#x3002;&#x8FD9;&#x91CC;&#x662F;&#x4F7F;&#x7528;<code>dynamic-wind</code>&#x5B9E;&#x73B0;<code>unwind-protect</code>&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define-syntax</span></span> unwind-protect
+  (<span class="hljs-name"><span class="hljs-builtin-name">syntax-rules</span></span> ()
+    [(<span class="hljs-name">_</span> body cleanup ...)
+     (<span class="hljs-name"><span class="hljs-builtin-name">dynamic-wind</span></span>
+       (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () <span class="hljs-literal">#f</span>)
+       (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () body)
+       (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () cleanup ...))]))
+
+((<span class="hljs-name"><span class="hljs-builtin-name">call/cc</span></span>
+   (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-symbol">&apos;a</span>])
+     (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (k)
+       (<span class="hljs-name">unwind-protect</span>
+         (<span class="hljs-name">k</span> (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () x))
+         (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> x <span class="hljs-symbol">&apos;b</span>)))))) =&gt; b
+</code></pre>
+<p>&#x4E00;&#x4E9B;Scheme&#x5B9E;&#x73B0;&#x652F;&#x6301;&#x4E00;&#x79CD;&#x53D7;&#x63A7;&#x5F62;&#x5F0F;&#x7684;&#x8D4B;&#x503C;-<em>fluid binding</em>&#xFF1B;&#x5728;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#x91CC;&#xFF0C;&#x67D0;&#x53D8;&#x91CF;&#x4F1A;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x8BA1;&#x7B97;&#x91CC;&#x91C7;&#x53D6;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x7684;&#x503C;&#xFF0C;&#x5E76;&#x5728;&#x8BA1;&#x7B97;&#x5B8C;&#x6210;&#x65F6;&#x6062;&#x590D;&#x5230;&#x539F;&#x6709;&#x7684;&#x503C;&#x3002;&#x4E0B;&#x9762;<code>fluid-let</code>&#x8BED;&#x6CD5;&#x5F0F;&#x4F7F;&#x7528;<code>dynamic-wind</code>&#x5B9A;&#x4E49;&#xFF0C;&#x5141;&#x8BB8;&#x5728;<em>b1</em> <em>b2</em> .... &#x4F53;&#x91CC;&#x5355;&#x4E2A;&#x53D8;&#x91CF;x&#x6D41;&#x52A8;&#x7ED1;&#x5B9A;&#x5230;&#x8868;&#x8FBE;&#x5F0F;<em>e</em>&#x7684;&#x503C;&#x4E0A;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define-syntax</span></span> fluid-let
+  (<span class="hljs-name"><span class="hljs-builtin-name">syntax-rules</span></span> ()
+    [(<span class="hljs-name">_</span> ((<span class="hljs-name">x</span> e)) b1 b2 ...)
+     (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">y</span> e])
+       (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">swap</span> (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">t</span> x]) (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> x y) (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> y t)))])
+         (<span class="hljs-name"><span class="hljs-builtin-name">dynamic-wind</span></span> swap (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () b1 b2 ...) swap)))]))
+</code></pre>
+<p>&#x652F;&#x6301;<code>fluid-let</code>&#x7684;&#x5B9E;&#x73B0;&#x901A;&#x5E38;&#x5C06;&#x5176;&#x6269;&#x5C55;&#x4E3A;&#x63A5;&#x6536;&#x65E0;&#x9650;&#x591A;&#x5BF9;<code>(x e)</code>&#xFF0C;&#x5C31;&#x50CF;<code>let</code>&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x82E5;&#x5728;<code>fluid-let</code>&#x4F53;&#x5185;&#x6CA1;&#x6709;&#x5EF6;&#x7EED;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5176;&#x884C;&#x4E3A;&#x7B49;&#x4EF7;&#x4E8E;&#x53D8;&#x91CF;&#x5728;&#x8FDB;&#x5165;&#x65F6;&#x8D4B;&#x65B0;&#x503C;&#x5E76;&#x5728;&#x9000;&#x51FA;&#x65F6;&#x8D4B;&#x65E7;&#x503C;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-number">3</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> (<span class="hljs-name">fluid-let</span> ([<span class="hljs-name">x</span> <span class="hljs-number">5</span>])
+       x)
+     x)) =&gt; <span class="hljs-number">8</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x5728;<code>fluid-let</code>&#x5916;&#x521B;&#x5EFA;&#x7684;&#x5EF6;&#x7EED;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5219;&#x6D41;&#x52A8;&#x7ED1;&#x5B9A;&#x7684;&#x53D8;&#x91CF;&#x4E5F;&#x4F1A;&#x6062;&#x590D;&#x5230;&#x65E7;&#x503C;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> <span class="hljs-symbol">&apos;a</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">f</span> (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () x)])
+    (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">call/cc</span></span>
+            (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (k)
+              (<span class="hljs-name">fluid-let</span> ([<span class="hljs-name">x</span> <span class="hljs-symbol">&apos;b</span>])
+                (<span class="hljs-name">k</span> (<span class="hljs-name">f</span>)))))
+          (<span class="hljs-name">f</span>)))) =&gt; (<span class="hljs-name">b</span> . a)
+</code></pre>
+<p>&#x5982;&#x679C;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x79BB;&#x5F00;&#x4E86;<code>fluid-let</code>&#x4F53;&#xFF0C;&#x4E0D;&#x7BA1;&#x6B63;&#x5E38;&#x6216;&#x662F;&#x7531;&#x4E8E;&#x5EF6;&#x7EED;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x5F53;&#x5EF6;&#x7EED;&#x8C03;&#x7528;&#x5BFC;&#x81F4;&#x63A7;&#x5236;&#x91CD;&#x65B0;&#x8FDB;&#x5165;&#x4E86;&#x4EE3;&#x7801;&#x4F53;&#x65F6;&#xFF0C;&#x5219;&#x6D41;&#x52A8;&#x7ED1;&#x5B9A;&#x53D8;&#x91CF;&#x7684;&#x4E34;&#x65F6;&#x503C;&#x4F1A;&#x6062;&#x590D;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x4EFB;&#x4F55;&#x5BF9;&#x4E34;&#x65F6;&#x503C;&#x7684;&#x66F4;&#x6539;&#x90FD;&#x4F1A;&#x4FDD;&#x6301;&#x5E76;&#x5728;&#x5728;&#x91CD;&#x65B0;&#x8FDB;&#x5165;&#x65F6;&#x53CD;&#x6620;&#x51FA;&#x6765;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> reenter <span class="hljs-literal">#f</span>)
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> x <span class="hljs-number">0</span>)
+(<span class="hljs-name">fluid-let</span> ([<span class="hljs-name">x</span> <span class="hljs-number">1</span>])
+  (<span class="hljs-name"><span class="hljs-builtin-name">call/cc</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (k) (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> reenter k)))
+  (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> x (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> x <span class="hljs-number">1</span>))
+  x) =&gt; <span class="hljs-number">2</span>
+x =&gt; <span class="hljs-number">0</span>
+(<span class="hljs-name">reenter</span> <span class="hljs-symbol">&apos;*</span>) =&gt; <span class="hljs-number">3</span>
+(<span class="hljs-name">reenter</span> <span class="hljs-symbol">&apos;*</span>) =&gt; <span class="hljs-number">4</span>
+x =&gt; <span class="hljs-number">0</span>
+</code></pre>
+<p>&#x5047;&#x8BBE;<code>dynamic-wind</code>&#x6CA1;&#x6709;&#x5185;&#x5EFA;&#x5728;&#x5B9E;&#x73B0;&#x91CC;&#xFF0C;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5C55;&#x793A;&#x5176;&#x5B9E;&#x73B0;&#x7684;&#x5E93;&#x5982;&#x4E0B;&#x3002;&#x9664;&#x4E86;&#x5B9A;&#x4E49;&#x4E86;<code>dynamic-wind</code>&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x8FD8;&#x5B9A;&#x4E49;&#x4E86;<code>call/cc</code>&#x7684;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x5176;&#x4F5C;&#x7528;&#x662F;&#x652F;&#x6301;<code>dynamic-wind</code>&#x3002; </p>
+<pre><code class="lang-scheme">(<span class="hljs-name">library</span> (<span class="hljs-name"><span class="hljs-builtin-name">dynamic-wind</span></span>)
+  (<span class="hljs-name">export</span> dynamic-wind call/cc
+    (<span class="hljs-name"><span class="hljs-builtin-name">rename</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">call/cc</span></span> call-with-current-continuation)))
+  (<span class="hljs-name"><span class="hljs-builtin-name">import</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">rename</span></span> (<span class="hljs-name">except</span> (<span class="hljs-name">rnrs</span>) dynamic-wind) (<span class="hljs-name"><span class="hljs-builtin-name">call/cc</span></span> rnrs:call/cc)))
+
+  (<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> winders &apos;())
+
+  (<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> common-tail
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x y)
+      (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">lx</span> (<span class="hljs-name"><span class="hljs-builtin-name">length</span></span> x)] [<span class="hljs-name">ly</span> (<span class="hljs-name"><span class="hljs-builtin-name">length</span></span> y)])
+        (<span class="hljs-name"><span class="hljs-builtin-name">do</span></span> ([<span class="hljs-name">x</span> (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">&gt;</span></span> lx ly) (<span class="hljs-name"><span class="hljs-builtin-name">list-tail</span></span> x (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> lx ly)) x) (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> x)]
+             [<span class="hljs-name">y</span> (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">&gt;</span></span> ly lx) (<span class="hljs-name"><span class="hljs-builtin-name">list-tail</span></span> y (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> ly lx)) y) (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> y)])
+            ((<span class="hljs-name"><span class="hljs-builtin-name">eq?</span></span> x y) x)))))
+
+  (<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> do-wind
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (new)
+      (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">tail</span> (<span class="hljs-name">common-tail</span> new winders)])
+        (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> f ([<span class="hljs-name">ls</span> winders])
+          (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">not</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">eq?</span></span> ls tail))
+              (<span class="hljs-name"><span class="hljs-builtin-name">begin</span></span>
+                (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> winders (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls))
+                ((<span class="hljs-name">cdar</span> ls))
+                (<span class="hljs-name">f</span> (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls)))))
+        (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> f ([<span class="hljs-name">ls</span> new])
+          (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">not</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">eq?</span></span> ls tail))
+              (<span class="hljs-name"><span class="hljs-builtin-name">begin</span></span>
+                (<span class="hljs-name">f</span> (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> ls))
+                ((<span class="hljs-name"><span class="hljs-builtin-name">caar</span></span> ls))
+                (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> winders ls)))))))
+
+  (<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> call/cc
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (f)
+      (<span class="hljs-name">rnrs:call/cc</span>
+        (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (k)
+          (<span class="hljs-name">f</span> (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">save</span> winders])
+               (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x)
+                 (<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">eq?</span></span> save winders) (<span class="hljs-name">do-wind</span> save))
+                 (<span class="hljs-name">k</span> x))))))))
+
+  (<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> dynamic-wind
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (in body out)
+      (<span class="hljs-name">in</span>)
+      (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> winders (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> in out) winders))
+      (<span class="hljs-name"><span class="hljs-builtin-name">let-values</span></span> ([<span class="hljs-name">ans*</span> (<span class="hljs-name">body</span>)])
+        (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> winders (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> winders))
+        (<span class="hljs-name">out</span>)
+        (<span class="hljs-name"><span class="hljs-builtin-name">apply</span></span> values ans*)))))
+</code></pre>
+<p>&#x540C;&#x65F6;&#xFF0C;<code>dynamic-wind</code>&#x548C;<code>call/cc</code>&#x7BA1;&#x7406;&#x4E00;&#x4E2A;<em>winders</em>&#x7684;&#x5217;&#x8868;&#x3002;&#x4E00;&#x4E2A;<em>winder</em>&#x662F;&#x8C03;&#x7528;<code>dynamic-wind</code>&#x521B;&#x5EFA;&#x7684;<em>in</em>&#x548C;<em>out</em>&#x7684;&#x4EFB;&#x52A1;&#x76D2;&#x7684;&#x5E8F;&#x5BF9;&#x3002;&#x5F53;<code>dynamic-wind</code>&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;<em>in</em>&#x4EFB;&#x52A1;&#x76D2;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4E00;&#x4E2A;&#x5305;&#x542B;<em>in</em>&#x548C;<em>out</em>&#x4EFB;&#x52A1;&#x76D2;&#x7684;&#x65B0;&#x7684;<em>winder</em>&#x4F1A;&#x653E;&#x7F6E;&#x5728;<em>winders</em>&#x5217;&#x8868;&#x7684;&#x5934;&#x4E0A;&#xFF0C;<code>body</code>&#x4EFB;&#x52A1;&#x76D2;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x8BE5;<em>winder</em>&#x4F1A;&#x4ECE;&#x5217;&#x8868;&#x4E2D;&#x79FB;&#x9664;&#xFF0C;&#x5E76;&#x4E14;<code>out</code>&#x4EFB;&#x52A1;&#x76D2;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x4E2A;&#x987A;&#x5E8F;&#x786E;&#x4FDD;&#x4E86;&#x53EA;&#x6709;&#x5F53;&#x63A7;&#x5236;&#x7ECF;&#x8FC7;<em>in</em>&#x8FD8;&#x6CA1;&#x8FDB;&#x5165;<em>out</em>&#x65F6;&#xFF0C;&#x8BE5;<em>winder</em>&#x624D;&#x4F1A;&#x5728;<em>winders</em>&#x5217;&#x8868;&#x5185;&#x3002;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x83B7;&#x5F97;&#x5EF6;&#x7EED;&#x65F6;&#xFF0C;<em>winders</em>&#x5217;&#x8868;&#x4F1A;&#x88AB;&#x4FDD;&#x5B58;&#xFF1B;&#x5F53;&#x8BE5;&#x5EF6;&#x7EED;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x4F1A;&#x6062;&#x590D;&#x88AB;&#x4FDD;&#x5B58;&#x7684;<em>winders</em>&#x5217;&#x8868;&#x3002;&#x5728;<em>winders</em>&#x5217;&#x8868;&#x6062;&#x590D;&#x671F;&#x95F4;&#xFF0C;&#x6240;&#x6709;&#x5728;&#x5F53;&#x524D;<em>winders</em>&#x5217;&#x8868;&#x4E14;&#x4E0D;&#x5728;&#x4FDD;&#x5B58;&#x7684;<em>winders</em>&#x5217;&#x8868;&#x5185;&#x7684;<em>winder</em>&#x7684;<em>out</em>&#x4EFB;&#x52A1;&#x76D2;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x968F;&#x540E;&#x6240;&#x6709;&#x5728;&#x4FDD;&#x5B58;&#x7684;<code>winders</code>&#x5217;&#x8868;&#x5185;&#x4E14;&#x4E0D;&#x5728;&#x5F53;&#x524D;<em>winders</em>&#x5217;&#x8868;&#x5185;&#x7684;<em>winder</em>&#x7684;<em>in</em>&#x4EFB;&#x52A1;&#x76D2;&#x88AB;&#x8C03;&#x7528;&#x3002;<em>winders</em>&#x5217;&#x8868;&#x4F1A;&#x9012;&#x589E;&#x7684;&#x66F4;&#x65B0;&#xFF0C;&#x540C;&#x6837;&#x4E5F;&#x662F;&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x53EA;&#x6709;&#x5F53;&#x63A7;&#x5236;&#x7ECF;&#x8FC7;<em>in</em>&#x8FD8;&#x6CA1;&#x8FDB;&#x5165;<em>out</em>&#x65F6;&#xFF0C;&#x8BE5;<em>winder</em>&#x624D;&#x4F1A;&#x5728;&#x5F53;&#x524D;<em>winders</em>&#x5217;&#x8868;&#x5185;&#x3002;</p>
+<p><code>call/cc</code>&#x5185;&#x6267;&#x884C;&#x7684;&#x6D4B;&#x8BD5;&#x8868;&#x8FBE;&#x5F0F;<code>(not (eq? save winders))</code>&#x4E0D;&#x662F;&#x4E25;&#x683C;&#x5FC5;&#x9700;&#x7684;&#xFF0C;&#x4F46;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x5728;&#x4FDD;&#x5B58;&#x7684;<em>winders</em>&#x5217;&#x8868;&#x548C;&#x5F53;&#x524D;&#x7684;<em>winders</em>&#x5217;&#x8868;&#x76F8;&#x540C;&#x65F6;&#xFF0C;&#x964D;&#x4F4E;&#x5EF6;&#x7EED;&#x7684;&#x8C03;&#x7528;&#x6210;&#x672C;&#x3002;</p>
+<h2 id="57-&#x5EF6;&#x8FDF;&#x6C42;&#x503C;">5.7 &#x5EF6;&#x8FDF;&#x6C42;&#x503C;</h2>
+<p>&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x8BED;&#x6CD5;&#x5F0F;<code>delay</code>&#x548C;&#x8FC7;&#x7A0B;<code>force</code>&#x4EE5;&#x5B9E;&#x73B0;<em>&#x60F0;&#x6027;&#x6C42;&#x503C;</em>&#x3002;&#x4E00;&#x4E2A;&#x60F0;&#x6027;&#x6C42;&#x503C;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x76F4;&#x5230;&#x5B83;&#x7684;&#x503C;&#x88AB;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x65E6;&#x6C42;&#x503C;&#x8FC7;&#xFF0C;&#x4E0D;&#x4F1A;&#x518D;&#x91CD;&#x65B0;&#x88AB;&#x6C42;&#x503C;&#x3002;</p>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;(delay <em>expr</em>)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x4E00;&#x4E2A;<strong>promise</strong><br>
+<strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(force <em>promise</em>)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x5F3A;&#x5236;&#x6267;&#x884C;<code>promise</code>&#x7684;&#x7ED3;&#x679C;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs r5rs)</p>
+<p>&#x9996;&#x6B21;&#x7528;<code>force</code>&#x5BF9;<code>delay</code>&#x521B;&#x5EFA;&#x7684;<strong>promise</strong>&#x6C42;&#x503C;&#x65F6;&#xFF0C;<em>expr</em>&#x4F1A;&#x88AB;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x201D;&#x8BB0;&#x4F4F;&#x201C;&#x8BE5;&#x7ED3;&#x679C;&#x503C;&#x3002;&#x4ECE;&#x6B64;&#x4E4B;&#x540E;&#xFF0C;&#x6BCF;&#x6B21;<strong>promise</strong>&#x5F3A;&#x5236;&#x6C42;&#x503C;&#xFF0C;&#x90FD;&#x4F1A;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x201C;&#x8BB0;&#x4F4F;&#x201D;&#x7684;&#x503C;&#x800C;&#x975E;&#x91CD;&#x65B0;&#x5BF9;<em>expr</em>&#x6C42;&#x503C;&#x3002;</p>
+<p><code>delay</code>&#x548C;<code>force</code>&#x901A;&#x5E38;&#x4EC5;&#x5728;&#x6CA1;&#x6709;&#x526F;&#x4F5C;&#x7528;&#x65F6;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#xFF0C;&#x6709;&#x8D4B;&#x503C;&#x65F6;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x6C42;&#x503C;&#x7684;&#x987A;&#x5E8F;&#x65F6;&#x65E0;&#x5173;&#x7D27;&#x8981;&#x7684;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>delay</code>&#x548C;<code>force</code>&#x7684;&#x597D;&#x5904;&#x662F;&#x82E5;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x5EF6;&#x8FDF;&#x81F3;&#x7EDD;&#x5BF9;&#x5FC5;&#x8981;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x907F;&#x514D;&#x4E00;&#x4E9B;&#x8BA1;&#x7B97;&#x91CF;&#x3002;&#x5EF6;&#x8FDF;&#x8BA1;&#x7B97;&#x53EF;&#x4EE5;&#x7528;&#x4F5C;&#x6784;&#x5EFA;&#x6982;&#x5FF5;&#x4E0A;&#x65E0;&#x9650;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x6216;<em>&#x6D41;</em>&#xFF08;<em>streams</em>&#xFF09;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5C55;&#x793A;&#x4E86;&#x600E;&#x4E48;&#x4F7F;&#x7528;<code>delay</code>&#x548C;<code>force</code>&#x6784;&#x9020;&#x6D41;&#x62BD;&#x8C61;&#x3002;&#x4E00;&#x4E2A;&#x6D41;&#x662F;&#x4E00;&#x79CD;promise&#xFF0C;&#x5F53;&#x5F3A;&#x5236;&#x6C42;&#x503C;&#x65F6;&#xFF0C;&#x8BE5;promise&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5176;&#x5C3E;&#x662F;&#x6D41;&#x7684;&#x5E8F;&#x5BF9;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> stream-car
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (s)
+    (<span class="hljs-name"><span class="hljs-builtin-name">car</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">force</span></span> s))))
+
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> stream-cdr
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (s)
+    (<span class="hljs-name"><span class="hljs-builtin-name">cdr</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">force</span></span> s))))
+
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> counters
+  (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> next ([<span class="hljs-name">n</span> <span class="hljs-number">1</span>])
+    (<span class="hljs-name"><span class="hljs-builtin-name">delay</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> n (<span class="hljs-name">next</span> (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> n <span class="hljs-number">1</span>))))))
+
+(<span class="hljs-name">stream-car</span> counters) =&gt; <span class="hljs-number">1</span>
+
+(<span class="hljs-name">stream-car</span> (<span class="hljs-name">stream-cdr</span> counters)) =&gt; <span class="hljs-number">2</span>
+
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> stream-add
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (s1 s2)
+    (<span class="hljs-name"><span class="hljs-builtin-name">delay</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span>
+             (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> (<span class="hljs-name">stream-car</span> s1) (<span class="hljs-name">stream-car</span> s2))
+             (<span class="hljs-name">stream-add</span> (<span class="hljs-name">stream-cdr</span> s1) (<span class="hljs-name">stream-cdr</span> s2))))))
+
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> even-counters
+  (<span class="hljs-name">stream-add</span> counters counters))
+
+(<span class="hljs-name">stream-car</span> even-counters) =&gt; <span class="hljs-number">2</span>
+
+(<span class="hljs-name">stream-car</span> (<span class="hljs-name">stream-cdr</span> even-counters)) =&gt; <span class="hljs-number">4</span>
+</code></pre>
+<p><code>delay</code>&#x53EF;&#x5B9A;&#x4E49;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define-syntax</span></span> delay
+  (<span class="hljs-name"><span class="hljs-builtin-name">syntax-rules</span></span> ()
+    [(<span class="hljs-name">_</span> expr) (<span class="hljs-name">make-promise</span> (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () expr))]))
+</code></pre>
+<p>&#x5176;&#x4E2D;&#xFF0C;<code>make-promise</code>&#x53EF;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> make-promise
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (p)
+    (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">val</span> <span class="hljs-literal">#f</span>] [<span class="hljs-name">set?</span> <span class="hljs-literal">#f</span>])
+      (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> ()
+        (<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span> set?
+          (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">x</span> (<span class="hljs-name">p</span>)])
+            (<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span> set?
+              (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> val x)
+              (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> set? <span class="hljs-literal">#t</span>))))
+        val))))
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5B9A;&#x4E49;&#x7684;<code>delay</code>&#xFF0C;<code>force</code>&#x7B80;&#x5355;&#x8C03;&#x7528;promise&#x53BB;&#x5F3A;&#x5236;&#x6C42;&#x503C;&#x6216;&#x53BB;&#x68C0;&#x7D22;&#x4FDD;&#x5B58;&#x7684;&#x503C;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> force
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (promise)
+    (<span class="hljs-name">promise</span>)))
+</code></pre>
+<p>&#x5728;<code>make-promise</code>&#x4E2D;&#x5BF9;&#x53D8;&#x91CF;<code>set?</code>&#x7684;&#x7B2C;&#x4E8C;&#x6B21;&#x68C0;&#x67E5;&#x662F;&#x5FC5;&#x8981;&#x7684;&#xFF0C;&#x82E5;&#x5728;&#x5E94;&#x7528;<em>p</em>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4EA7;&#x751F;promise&#x9012;&#x5F52;&#x5F3A;&#x5236;&#x6C42;&#x503C;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x7531;&#x4E8E;&#x4E00;&#x4E2A;promise&#x5FC5;&#x987B;&#x603B;&#x662F;&#x8FD4;&#x56DE;&#x540C;&#x6837;&#x7684;&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x5C06;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x6B21;&#x5E94;&#x7528;<em>p</em>&#x7684;&#x7ED3;&#x679C;&#x503C;&#x3002;</p>
+<p>&#x81F3;&#x4E8E;<code>delay</code>&#x548C;<code>force</code>&#x662F;&#x5426;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x672A;&#x6307;&#x5B9A;&#x7684;&#xFF1B;&#x4EE5;&#x4E0A;&#x7ED9;&#x51FA;&#x7684;&#x5B9E;&#x73B0;&#x6CA1;&#x6709;&#x5904;&#x7406;&#xFF0C;&#x4F46;&#x4E0B;&#x9762;&#x7684;&#x7248;&#x672C;&#x501F;&#x52A9;<code>call-with-values</code>&#x548C;<code>apply</code>&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> make-promise
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (p)
+    (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">vals</span> <span class="hljs-literal">#f</span>] [<span class="hljs-name">set?</span> <span class="hljs-literal">#f</span>])
+      (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> ()
+        (<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span> set?
+          (<span class="hljs-name"><span class="hljs-builtin-name">call-with-values</span></span> p
+            (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> <span class="hljs-name">x</span>
+              (unless set?
+                (set! vals x)
+                (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> set? <span class="hljs-literal">#t</span>)))))
+        (<span class="hljs-name"><span class="hljs-builtin-name">apply</span></span> values vals)))))
+
+(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> p (<span class="hljs-name"><span class="hljs-builtin-name">delay</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">values</span></span> <span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span>)))
+(<span class="hljs-name"><span class="hljs-builtin-name">force</span></span> p) =&gt; <span class="hljs-number">1</span>
+             <span class="hljs-number">2</span>
+             <span class="hljs-number">3</span>
+(<span class="hljs-name"><span class="hljs-builtin-name">call-with-values</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () (<span class="hljs-name"><span class="hljs-builtin-name">force</span></span> p)) +) =&gt; <span class="hljs-number">6</span>
+</code></pre>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x5B9E;&#x73B0;&#x90FD;&#x4E0D;&#x662F;&#x5F88;&#x6B63;&#x786E;&#xFF0C;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x8003;&#x8651;&#x5230;&#x5F53;&#x5B83;&#x7684;&#x53C2;&#x6570;&#x4E0D;&#x662F;promise&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>force</code>&#x5FC5;&#x987B;&#x629B;&#x51FA;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x4E3A;<code>&amp;assertion</code>&#x7684;&#x5F02;&#x5E38;&#x3002;&#x56E0;&#x4E3A;&#x533A;&#x5206;&#x7531;<code>make-promise</code>&#x521B;&#x5EFA;&#x7684;&#x8FC7;&#x7A0B;&#x4E0E;&#x5176;&#x4ED6;&#x7684;&#x8FC7;&#x7A0B;&#x662F;&#x4E0D;&#x53EF;&#x80FD;&#x7684;&#xFF0C;&#x6240;&#x4EE5;<code>force</code>&#x4E0D;&#x80FD;&#x53EF;&#x9760;&#x5730;&#x5B9E;&#x73B0;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x3002;&#x4E0B;&#x9762;<code>make-promise</code>&#x548C;<code>force</code>&#x7684;&#x91CD;&#x65B0;&#x5B9E;&#x73B0;&#x5C06;promise&#x8868;&#x793A;&#x4E3A;&#x7C7B;&#x578B;&#x4E3A;<code>promise</code>&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x501F;&#x6B64;&#x5141;&#x8BB8;<code>force</code>&#x5BF9;&#x53C2;&#x6570;&#x505A;&#x4E00;&#x4E9B;&#x5FC5;&#x8981;&#x7684;&#x68C0;&#x67E5;&#x3002;</p>
+<pre><code class="lang-scheme">(define-record-type promise
+  (fields (immutable p) (mutable vals) (mutable set?))
+  (protocol (lambda (new) (lambda (p) (new p #f #f)))))
+
+(define force
+  (lambda (promise)
+    (unless (promise? promise)
+      (assertion-violation &apos;promise &quot;invalid argument&quot; promise))
+    (unless (promise-set? promise)
+      (call-with-values (promise-p promise)
+        (lambda x
+          (unless (promise-set? promise)
+            (promise-vals-set! promise x)
+            (promise-set?-set! promise #t)))))
+    (apply values (promise-vals promise))))
+</code></pre>
+<h2 id="58-&#x591A;&#x503C;">5.8 &#x591A;&#x503C;</h2>
+<p>&#x867D;&#x7136;&#x6240;&#x6709;Scheme&#x7684;&#x539F;&#x59CB;&#x8FC7;&#x7A0B;&#x548C;&#x5927;&#x90E8;&#x5206;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8FC7;&#x7A0B;&#x90FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x4F46;&#x901A;&#x8FC7;&#x8FD4;&#x56DE;&#x96F6;&#x4E2A;&#x503C;&#xFF0C;&#x591A;&#x4E2A;&#x503C;&#xFF0C;&#x6216;&#x751A;&#x81F3;&#x53EF;&#x53D8;&#x6570;&#x91CF;&#x7684;&#x503C;&#x80FD;&#x6700;&#x597D;&#x5730;&#x89E3;&#x51B3;&#x4E00;&#x4E9B;&#x7F16;&#x7A0B;&#x95EE;&#x9898;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5C06;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x5217;&#x8868;&#x5206;&#x6210;&#x4E24;&#x4E2A;&#x5B50;&#x5217;&#x8868;&#x7684;&#x8FC7;&#x7A0B;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x503C;&#x3002;&#x867D;&#x7136;&#x751F;&#x4EA7;&#x8005;&#x53EF;&#x4EE5;&#x5C06;&#x591A;&#x4E2A;&#x503C;&#x6253;&#x5305;&#x5230;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x7136;&#x540E;&#x6D88;&#x8D39;&#x8005;&#x4ECE;&#x8BE5;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x63D0;&#x53D6;&#x591A;&#x4E2A;&#x503C;&#x662F;&#x53EF;&#x80FD;&#x7684;&#xFF0C;&#x4F46;&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x7684;&#x591A;&#x503C;&#x63A5;&#x53E3;&#x901A;&#x5E38;&#x66F4;&#x7B80;&#x6D01;&#x3002;&#x8BE5;&#x63A5;&#x53E3;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF1A;<code>values</code>&#x548C;<code>call-with-values</code>&#x3002; &#x524D;&#x8005;&#x4EA7;&#x751F;&#x591A;&#x4E2A;&#x503C;&#xFF0C;&#x540E;&#x8005;&#x94FE;&#x63A5;&#x4EA7;&#x751F;&#x591A;&#x4E2A;&#x503C;&#x7684;&#x8FC7;&#x7A0B;&#x548C;&#x6D88;&#x8017;&#x8FD9;&#x4E9B;&#x503C;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(values <em>obj</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;<em>obj</em> ...<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><code>values</code>&#x8FC7;&#x7A0B;&#x63A5;&#x6536;&#x4EFB;&#x610F;&#x6570;&#x76EE;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x7B80;&#x5355;&#x5730;&#x4F20;&#x9012;&#xFF08;&#x8FD4;&#x56DE;&#xFF09;&#x53C2;&#x6570;&#x7ED9;&#x5B83;&#x7684;&#x5EF6;&#x7EED;&#x3002;</p>
+<pre><code class="lang-scheme">(values) =&gt;
+
+(values 1) =&gt; 1
+
+(values 1 2 3) =&gt; 1
+                  2
+                  3
+
+(define head&amp;tail
+  (lambda (ls)
+    (values (car ls) (cdr ls))))
+
+(head&amp;tail &apos;(a b c)) =&gt; a
+                        (b c)
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(call-with-values <em>producer</em> <em>consumer</em>)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x89C1;&#x4E0B;&#x6587;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs base), (rnrs)</p>
+<p><em>producer</em>&#x548C;<em>consumer</em>&#x5FC5;&#x987B;&#x662F;&#x8FC7;&#x7A0B;&#x3002;<code>call-with-values</code>&#x4F1A;&#x5C06;<em>consumer</em>&#x5E94;&#x7528;&#x4E8E;&#x901A;&#x8FC7;&#x4E0D;&#x5E26;&#x53C2;&#x6570;&#x8C03;&#x7528;<em>producer</em>&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x3002;</p>
+<pre><code class="lang-scheme">(call-with-values
+  (lambda () (values &apos;bond &apos;james))
+  (lambda (x y) (cons y x))) =&gt; (james . bond)
+
+(call-with-values values list) =&gt; &apos;()
+</code></pre>
+<p>&#x5728;&#x7B2C;&#x4E8C;&#x4E2A;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;<code>values</code>&#x672C;&#x8EAB;&#x4F5C;&#x4E3A;&#x751F;&#x4EA7;&#x8005;&#x3002; &#x5B83;&#x4E0D;&#x63A5;&#x6536;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x8FD4;&#x56DE;&#x4EFB;&#x4F55;&#x503C;&#x3002;&#x8FD9;&#x6837;<code>list</code>&#x4E0D;&#x5E94;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x8FD4;&#x56DE;&#x7A7A;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x5B9A;&#x4E49;&#x7684;&#x8FC7;&#x7A0B;<code>dxdy</code>&#x8BA1;&#x7B97;&#x5750;&#x6807;&#x7531;(<em>x</em> . <em>y</em>) &#x5BF9;&#x8868;&#x793A;&#x7684;&#x4E00;&#x5BF9;&#x70B9;&#x7684;<em>x</em>&#x548C;<em>y</em>&#x5750;&#x6807;&#x7684;&#x53D8;&#x5316;&#x3002;</p>
+<pre><code class="lang-scheme">(define dxdy
+  (lambda (p1 p2)
+    (values (- (car p2) (car p1))
+            (- (cdr p2) (cdr p1)))))
+
+(dxdy &apos;(0 . 0) &apos;(0 . 5)) =&gt; 0
+                            5
+</code></pre>
+<p><code>dxdy</code>&#x53EF;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x7531;&#x4E24;&#x4E2A;&#x7AEF;&#x70B9;&#x8868;&#x793A;&#x7684;&#x7EBF;&#x6BB5;&#x7684;&#x957F;&#x5EA6;&#x548C;&#x659C;&#x7387;&#x3002;</p>
+<pre><code class="lang-scheme">(define segment-length
+  (lambda (p1 p2)
+    (call-with-values
+      (lambda () (dxdy p1 p2))
+      (lambda (dx dy) (sqrt (+ (* dx dx) (* dy dy)))))))
+
+(define segment-slope
+  (lambda (p1 p2)
+    (call-with-values
+      (lambda () (dxdy p1 p2))
+      (lambda (dx dy) (/ dy dx)))))
+
+(segment-length &apos;(1 . 4) &apos;(4 . 8)) =&gt; 5
+(segment-slope &apos;(1 . 4) &apos;(4 . 8)) =&gt; 4/3
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5F53;&#x7136;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x4EEC;&#x7EC4;&#x5408;&#x8D77;&#x6765;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x503C;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-scheme">define describe-segment
+  (lambda (p1 p2)
+    (call-with-values
+      (lambda () (dxdy p1 p2))
+      (lambda (dx dy)
+        (values
+          (sqrt (+ (* dx dx) (* dy dy)))
+          (/ dy dx))))))
+
+(describe-segment &apos;(1 . 4) &apos;(4 . 8)) =&gt; 5
+                                                       =&gt; 4/3
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x503C;&#x5C06;&#x5217;&#x8868;&#x975E;&#x7834;&#x574F;&#x6027;&#x5730;&#x5212;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x4EA4;&#x66FF;&#x5143;&#x7D20;&#x7684;&#x5B50;&#x5217;&#x8868;&#x3002;</p>
+<pre><code class="lang-scheme">(define split
+  (lambda (ls)
+    (if (or (null? ls) (null? (cdr ls)))
+        (values ls &apos;())
+        (call-with-values
+          (lambda () (split (cddr ls)))
+          (lambda (odds evens)
+            (values (cons (car ls) odds)
+                    (cons (cadr ls) evens)))))))
+
+(split &apos;(a b c d e f)) =&gt; (a c e)
+                          (b d f)
+</code></pre>
+<p>&#x5728;&#x9012;&#x5F52;&#x7684;&#x6BCF;&#x4E00;&#x5C42;&#xFF0C;&#x8FC7;&#x7A0B;<code>split</code>&#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x503C;&#xFF1A;&#x6765;&#x81EA;&#x4E8E;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5947;&#x6570;&#x7D22;&#x5F15;&#x7684;&#x5143;&#x7D20;&#x5217;&#x8868;&#x548C;&#x5076;&#x6570;&#x7D22;&#x5F15;&#x7684;&#x5143;&#x7D20;&#x5217;&#x8868;&#xFF08;&#x7D22;&#x5F15;&#x4ECE;1&#x5F00;&#x59CB;&#xFF09;&#x3002;</p>
+<p>&#x5BF9;<code>values</code>&#x7684;&#x8C03;&#x7528;&#x7684;&#x5EF6;&#x7EED;&#x4E0D;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>call-with-values</code>&#x6765;&#x5EFA;&#x7ACB;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x4EC5;&#x4F7F;&#x7528;<code>values</code>&#x6765;&#x8FD4;&#x56DE;&#x5230;&#x7531;<code>call-with-values</code>&#x5EFA;&#x7ACB;&#x7684;&#x5EF6;&#x7EED;&#x3002; &#x7279;&#x522B;&#x662F;&#xFF0C;(values <em>e</em>) &#x548C;<em>e</em>&#x662F;&#x7B49;&#x4EF7;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-scheme">(+ (values 2) 4) =&gt; 6
+
+(if (values #t) 1 2) =&gt; 1
+
+(call-with-values
+  (lambda () 4)
+  (lambda (x) x)) =&gt; 4
+</code></pre>
+<p>&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;<code>values</code>&#x53EF;&#x7528;&#x4E8E;&#x5C06;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x503C;&#x4F20;&#x9012;&#x7ED9;&#x5FFD;&#x7565;&#x503C;&#x7684;&#x5EF6;&#x7EED;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<pre><code class="lang-scheme">(begin (values 1 2 3) 4) =&gt; 4
+</code></pre>
+<p>&#x56E0;&#x4E3A;&#x5EF6;&#x7EED;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x8FC7;<code>call/cc</code>&#x83B7;&#x5F97;&#x7684;&#x5EF6;&#x7EED;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-scheme">(call-with-values
+  (lambda ()
+    (call/cc (lambda (k) (k 2 3))))
+  (lambda (x y) (list x y))) =&gt; (2 3)
+</code></pre>
+<p>&#x5F53;&#x671F;&#x671B;&#x6070;&#x597D;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x503C;&#x7684;&#x5EF6;&#x7EED;&#x63A5;&#x6536;&#x96F6;&#x503C;&#x6216;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x503C;&#x65F6;&#xFF0C;&#x5176;&#x884C;&#x4E3A;&#x672A;&#x6307;&#x5B9A;&#x3002; &#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B;&#x6BCF;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x884C;&#x4E3A;&#x90FD;&#x662F;&#x672A;&#x6307;&#x5B9A;&#x7684;&#x3002;&#x67D0;&#x4E9B;&#x5B9E;&#x73B0;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x800C;&#x5176;&#x4ED6;&#x5B9E;&#x73B0;&#x4F1A;&#x9759;&#x9ED8;&#x5FFD;&#x7565;&#x5176;&#x4ED6;&#x503C;&#x6216;&#x4E3A;&#x7F3A;&#x5931;&#x503C;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">values</span></span> <span class="hljs-number">1</span> <span class="hljs-number">2</span>) <span class="hljs-symbol">&apos;x</span> <span class="hljs-symbol">&apos;y</span>)
+
+(<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">values</span></span>) <span class="hljs-number">5</span>)
+</code></pre>
+<p>&#x5E0C;&#x671B;&#x5F3A;&#x5236;&#x5728;&#x7279;&#x5B9A;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x5FFD;&#x7565;&#x989D;&#x5916;&#x503C;&#x7684;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x663E;&#x5F0F;&#x8C03;&#x7528;<code>call-with-values</code>&#x8F7B;&#x677E;&#x5B8C;&#x6210;&#x3002; &#x4E00;&#x4E2A;&#x53EF;&#x79F0;&#x4E4B;&#x4E3A;<code>first</code>&#x7684;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x53EF;&#x4EE5;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x62BD;&#x8C61;&#x201C;&#x5728;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x503C;&#x65F6;&#x62BD;&#x8C61;&#x4E22;&#x5F03;&#x591A;&#x4E2A;&#x503C;&#x201D;&#x8FD9;&#x4E00;&#x884C;&#x4E3A;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define-syntax</span></span> first
+  (<span class="hljs-name"><span class="hljs-builtin-name">syntax-rules</span></span> ()
+    [(<span class="hljs-name">_</span> expr)
+     (<span class="hljs-name"><span class="hljs-builtin-name">call-with-values</span></span>
+       (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () expr)
+       (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x . y) x))]))
+
+(<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">first</span> (<span class="hljs-name"><span class="hljs-builtin-name">values</span></span> <span class="hljs-literal">#t</span> <span class="hljs-literal">#f</span>)) <span class="hljs-symbol">&apos;a</span> <span class="hljs-symbol">&apos;b</span>) =&gt; a
+</code></pre>
+<p>&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x8FC7;&#x7A0B;&#x4E0D;&#x63A5;&#x53D7;&#x4F20;&#x9012;&#x7ED9;&#x5B83;&#x7684;&#x53C2;&#x6570;&#x6570;&#x91CF;&#xFF0C;&#x5B9E;&#x73B0;&#x4F1A;&#x88AB;&#x8981;&#x6C42;&#x629B;&#x51FA;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x4E3A;<code>&amp;assertion</code>&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x56E0;&#x6B64;&#x4EE5;&#x4E0B;&#x6BCF;&#x4E2A;&#x90FD;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">call-with-values</span></span>
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () (<span class="hljs-name"><span class="hljs-builtin-name">values</span></span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span>))
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x y) x))
+
+(<span class="hljs-name"><span class="hljs-builtin-name">call-with-values</span></span>
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () (<span class="hljs-name"><span class="hljs-builtin-name">call/cc</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (k) (<span class="hljs-name">k</span> <span class="hljs-number">0</span>))))
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x y) x))
+</code></pre>
+<p>&#x7531;&#x4E8E;<em>producer</em>&#x901A;&#x5E38;&#x662F;<code>lambda</code>&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x56E0;&#x6B64;&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x9605;&#x8BFB;&#xFF0C;&#x4F7F;&#x7528;&#x6291;&#x5236;<code>lambda</code>&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BED;&#x6CD5;&#x6269;&#x5C55;&#x901A;&#x5E38;&#x5F88;&#x65B9;&#x4FBF;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define-syntax</span></span> with-values
+  (<span class="hljs-name"><span class="hljs-builtin-name">syntax-rules</span></span> ()
+    [(<span class="hljs-name">_</span> expr consumer)
+     (<span class="hljs-name"><span class="hljs-builtin-name">call-with-values</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () expr) consumer)]))
+
+(<span class="hljs-name">with-values</span> (<span class="hljs-name"><span class="hljs-builtin-name">values</span></span> <span class="hljs-number">1</span> <span class="hljs-number">2</span>) list) =&gt; (<span class="hljs-name">1</span> <span class="hljs-number">2</span>)
+(<span class="hljs-name">with-values</span> (<span class="hljs-name">split</span> &apos;(<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span>))
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (odds evens)
+    evens)) =&gt; (<span class="hljs-name">2</span> <span class="hljs-number">4</span>)
+</code></pre>
+<p>&#x5982;&#x679C;<em>consumer</em>&#x4E5F;&#x662F;<code>lambda</code>&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5219;<a href="https://scheme.com/tspl4/binding.html#g93" target="_blank">4.5</a> &#x8282;&#x4E2D;&#x63CF;&#x8FF0;&#x7684;<code>let</code>&#x548C;<code>let*</code>&#x7684;&#x591A;&#x503C;&#x53D8;&#x4F53;&#x901A;&#x5E38;&#x66F4;&#x65B9;&#x4FBF;&#x3002;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">let-values</span></span> ([(<span class="hljs-name">odds</span> evens) (<span class="hljs-name">split</span> &apos;(<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span>))])
+  evens) =&gt; (<span class="hljs-name">2</span> <span class="hljs-number">4</span>)
+
+(<span class="hljs-name"><span class="hljs-builtin-name">let-values</span></span> ([<span class="hljs-name">ls</span> (<span class="hljs-name"><span class="hljs-builtin-name">values</span></span> <span class="hljs-symbol">&apos;a</span> <span class="hljs-symbol">&apos;b</span> <span class="hljs-symbol">&apos;c</span>)])
+  ls) =&gt; (<span class="hljs-name">a</span> b c)
+</code></pre>
+<p>&#x8BB8;&#x591A;&#x6807;&#x51C6;&#x7684;&#x8BED;&#x6CD5;&#x5F0F;&#x548C;&#x8FC7;&#x7A0B;&#x90FD;&#x4F20;&#x9012;&#x591A;&#x4E2A;&#x503C;&#x3002; &#x5176;&#x4E2D;&#x5927;&#x591A;&#x6570;&#x90FD;&#x662F;&#x201C;&#x81EA;&#x52A8;&#x7684;&#x201D;&#xFF0C;&#x4ECE;&#x67D0;&#x79CD;&#x610F;&#x4E49;&#x4E0A;&#x8BF4;&#x5B9E;&#x73B0;&#x4E0D;&#x9700;&#x8981;&#x505A;&#x4EFB;&#x4F55;&#x7279;&#x6B8A;&#x7684;&#x4E8B;&#x60C5;&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#x3002; <code>let</code>&#x901A;&#x5E38;&#x6269;&#x5C55;&#x4E3A;&#x76F4;&#x63A5;&#x7684;<code>lambda</code>&#x8C03;&#x7528;&#xFF0C;&#x8FD9;&#x4F1A;&#x81EA;&#x52A8;&#x4F20;&#x64AD;&#x7531;<code>let</code>&#x4E3B;&#x4F53;&#x4EA7;&#x751F;&#x7684;&#x591A;&#x4E2A;&#x503C;&#x3002; &#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x7B26;&#x5FC5;&#x987B;&#x7ECF;&#x8FC7;&#x7279;&#x6B8A;&#x7F16;&#x7801;&#x624D;&#x80FD;&#x4F20;&#x9012;&#x591A;&#x4E2A;&#x503C;&#x3002; &#x4F8B;&#x5982;&#xFF0C;<code>call-with-port</code>&#x8FC7;&#x7A0B;&#xFF08;<a href="https://scheme.com/tspl4/io.html#g127" target="_blank">7.6</a> &#x8282;&#xFF09;&#x8C03;&#x7528;&#x5176;&#x7C7B;&#x578B;&#x4E3A;&#x8FC7;&#x7A0B;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x8FD4;&#x56DE;&#x8FC7;&#x7A0B;&#x7684;&#x503C;&#x4E4B;&#x524D;&#x5173;&#x95ED;port&#x53C2;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x5FC5;&#x987B;&#x4E34;&#x65F6;&#x4FDD;&#x5B58;&#x503C;&#x3002; &#x8FD9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;let-values&#xFF0C;apply&#x548C;values&#x8F7B;&#x677E;&#x5B8C;&#x6210;&#xFF1A;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> call-with-port
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (port proc)
+    (<span class="hljs-name"><span class="hljs-builtin-name">let-values</span></span> ([<span class="hljs-name">val*</span> (<span class="hljs-name">proc</span> port)])
+      (<span class="hljs-name">close-port</span> port)
+      (<span class="hljs-name"><span class="hljs-builtin-name">apply</span></span> values val*))))
+</code></pre>
+<p>&#x5982;&#x679C;&#x5728;&#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x503C;&#x65F6;&#x8FD9;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x592A;&#x591A;&#x5F00;&#x9500;&#xFF0C;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>call-with-values</code>&#x548C;<code>case-lambda</code>&#x6765;&#x66F4;&#x6709;&#x6548;&#x5730;&#x5904;&#x7406;&#x5355;&#x503C;&#x60C5;&#x51B5;&#xFF1A;</p>
+<pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> call-with-port
+  (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (port proc)
+    (<span class="hljs-name"><span class="hljs-builtin-name">call-with-values</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> () (<span class="hljs-name">proc</span> port))
+      (<span class="hljs-name"><span class="hljs-builtin-name">case-lambda</span></span>
+        [(<span class="hljs-name">val</span>) (<span class="hljs-name">close-port</span> port) val]
+        [<span class="hljs-name">val*</span> (<span class="hljs-name">close-port</span> port) (<span class="hljs-name"><span class="hljs-builtin-name">apply</span></span> values val*)]))))
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7684;&#x5E93;&#x4E2D;<code>values</code>&#x548C;<code>call-with-values</code>&#x7684;&#x5B9A;&#x4E49;&#xFF08;&#x4F34;&#x968F;&#x7740;<code>call/cc</code>&#x7684;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#xFF09;&#x8868;&#x660E;&#xFF1A;&#x5982;&#x679C;&#x591A;&#x8FD4;&#x56DE;&#x503C;&#x63A5;&#x53E3;&#x6CA1;&#x6709;&#x5185;&#x7F6E;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;Scheme&#x4E2D;&#x5B9E;&#x73B0;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5BF9;&#x4E8E;&#x5C06;&#x591A;&#x4E2A;&#x503C;&#x8FD4;&#x56DE;&#x5230;&#x5355;&#x503C;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;&#x4F8B;&#x5982;<code>if</code>&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6D4B;&#x8BD5;&#x90E8;&#x5206;&#xFF09;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#x3002;</p>
+<pre><code class="lang-scheme">(library (mrvs)
+  (export call-with-values values call/cc
+    (rename (call/cc call-with-current-continuation)))
+  (import
+    (rename
+      (except (rnrs) values call-with-values)
+      (call/cc rnrs:call/cc)))
+
+  (define magic (cons &apos;multiple &apos;values))
+
+  (define magic?
+    (lambda (x)
+      (and (pair? x) (eq? (car x) magic))))
+
+  (define call/cc
+    (lambda (p)
+      (rnrs:call/cc
+        (lambda (k)
+          (p (lambda args
+               (k (apply values args))))))))
+
+  (define values
+    (lambda args
+      (if (and (not (null? args)) (null? (cdr args)))
+          (car args)
+          (cons magic args))))
+
+  (define call-with-values
+    (lambda (producer consumer)
+      (let ([x (producer)])
+        (if (magic? x)
+            (apply consumer (cdr x))
+            (consumer x))))))
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x66F4;&#x6709;&#x6548;&#x5730;&#x5B9E;&#x73B0;&#x591A;&#x4E2A;&#x503C;[<a href="https://scheme.com/tspl4/bibliography.html#g220" target="_blank">2</a> ]&#xFF0C;&#x4F46;&#x662F;&#x6B64;&#x4EE3;&#x7801;&#x7528;&#x4E8E;&#x8BF4;&#x660E;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x542B;&#x4E49;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x7528;&#x4E8E;&#x5728;&#x4E0D;&#x652F;&#x6301;&#x5B83;&#x4EEC;&#x7684;&#x8F83;&#x65E7;&#x7684;&#x975E;&#x6807;&#x51C6;&#x5B9E;&#x73B0;&#x4E2D;&#x63D0;&#x4F9B;&#x591A;&#x4E2A;&#x503C;&#x3002;</p>
+<h2 id="59-eval">5.9 Eval</h2>
+<p>Scheme&#x7684;<code>eval</code>&#x8FC7;&#x7A0B;&#x5141;&#x8BB8;&#x7A0B;&#x5E8F;&#x5458;&#x7F16;&#x5199;&#x6784;&#x5EFA;&#x548C;&#x6C42;&#x503C;&#x5176;&#x4ED6;&#x7A0B;&#x5E8F;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x8FD9;&#x79CD;&#x8FD0;&#x884C;&#x65F6;<em>&#x5143;&#x7F16;&#x7A0B;</em>&#x7684;&#x80FD;&#x529B;&#x4E0D;&#x5E94;&#x8FC7;&#x5EA6;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x5728;&#x9700;&#x8981;&#x65F6;&#x5F88;&#x65B9;&#x4FBF;&#x3002;</p>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(eval <em>obj</em> <em>environment</em>)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x5728;<em>environment</em>&#x4E2D;&#x7531;<em>obj</em>&#x8868;&#x793A;&#x7684;Scheme&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs eval)</p>
+<p>&#x5982;&#x679C;<em>obj</em>&#x4E0D;&#x8868;&#x793A;&#x8BED;&#x6CD5;&#x4E0A;&#x6709;&#x6548;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5219;<code>eval</code>&#x4F1A;&#x629B;&#x51FA;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x4E3A;<code>&amp;syntax</code>&#x7684;&#x5F02;&#x5E38;&#x3002;&#x7531;<code>environment</code>&#x3001;<code>scheme-report-environment</code>&#x548C;<code>null-environment</code>&#x8FD4;&#x56DE;&#x7684;&#x73AF;&#x5883;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x3002; &#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#xFF0C;&#x5219;<code>eval</code>&#x8FD8;&#x4F1A;&#x5F15;&#x53D1;&#x6761;&#x4EF6;&#x7C7B;&#x578B;&#x4E3A;<code>&amp;syntax</code>&#x7684;&#x5F02;&#x5E38;&#x3002;</p>
+<pre><code class="lang-scheme">(define cons &apos;not-cons)
+(eval &apos;(let ([x 3]) (cons x 4)) (environment &apos;(rnrs))) =&gt; (3 . 4)
+
+(define lambda &apos;not-lambda)
+(eval &apos;(lambda (x) x) (environment &apos;(rnrs))) =&gt; #&lt;procedure&gt;
+
+(eval &apos;(cons 3 4) (environment)) =&gt; *exception*
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(environment <em>import-spec</em> ...)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x4E00;&#x4E2A;&#x73AF;&#x5883;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs eval)</p>
+<p><code>environment</code>&#x8FD4;&#x56DE;&#x7531;&#x7ED9;&#x5B9A;&#x5BFC;&#x5165;&#x8BF4;&#x660E;&#x7B26;&#x7684;&#x7ED1;&#x5B9A;&#x7EC4;&#x6210;&#x5F62;&#x6210;&#x7684;&#x73AF;&#x5883;&#x3002;&#x6BCF;&#x4E2A;<em>import-spec</em>&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x6709;&#x6548;&#x5BFC;&#x5165;&#x8BF4;&#x660E;&#x7B26;&#x7684;s-&#x8868;&#x8FBE;&#x5F0F;&#xFF08;&#x53C2;&#x89C1;&#x7B2C;<a href="https://scheme.com/tspl4/libraries.html#g142" target="_blank">10</a> &#x7AE0;&#xFF09;&#x3002;</p>
+<pre><code class="lang-scheme">(define env (environment &apos;(rnrs) &apos;(prefix (rnrs lists) $)))
+(eval &apos;($cons* 3 4 (* 5 8)) env) =&gt; (3 4 . 40)
+</code></pre>
+<p><strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(null-environment <em>version</em>)<br>
+<strong>&#x8FC7;&#x7A0B;</strong>&#xFF1A;(scheme-report-environment <em>version</em>)<br>
+<strong>&#x8FD4;&#x56DE;</strong>&#xFF1A;&#x4E00;&#x4E2A;R5RS&#x517C;&#x5BB9;&#x7684;&#x73AF;&#x5883;<br>
+<strong>&#x5E93;</strong>&#xFF1A;(rnrs r5rs)</p>
+<p><em>version</em>&#x5FC5;&#x987B;&#x662F;&#x7CBE;&#x786E;&#x7684;&#x6574;&#x6570; 5&#x3002;</p>
+<p><code>null-environment</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x73AF;&#x5883;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x5173;&#x952E;&#x5B57;&#x7684;&#x7ED1;&#x5B9A;&#xFF0C;&#x5176;&#x542B;&#x4E49;&#x7531;Revised5 Report on Scheme&#x5B9A;&#x4E49;&#xFF0C;&#x4EE5;&#x53CA;&#x8F85;&#x52A9;&#x5173;&#x952E;&#x5B57;<code>else</code>&#xFF0C;<code>=&gt;</code>&#xFF0C;<code>...</code>&#x548C;<code>_</code>&#x7684;&#x7ED1;&#x5B9A;&#x3002;</p>
+<p><code>scheme-report-environment</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x73AF;&#x5883;&#xFF0C;&#x8BE5;&#x73AF;&#x5883;&#x5305;&#x542B;&#x4E0E;<code>null-environment</code>&#x8FD4;&#x56DE;&#x7684;&#x73AF;&#x5883;&#x76F8;&#x540C;&#x7684;&#x5173;&#x952E;&#x5B57;&#x7ED1;&#x5B9A;&#x4EE5;&#x53CA;&#x5176;&#x542B;&#x4E49;&#x7531;Revised5 Report on Scheme&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x7684;&#x7ED1;&#x5B9A;&#xFF0C;&#x9664;&#x4E86;&#x90A3;&#x4E9B;&#x672A;&#x7ECF;Revised6 Report&#x5B9A;&#x4E49;&#x7684;&#x90A3;&#x4E9B;&#xFF1A;<code>load</code>&#xFF0C;<code>interaction -environment</code>&#xFF0C;<code>transcript-on</code>&#xFF0C;<code>transcript-off</code>&#x548C;<code>char-ready&#xFF1F;</code>&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#x6BCF;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#x7684;&#x7ED1;&#x5B9A;&#x90FD;&#x662F;&#x76F8;&#x5E94;&#x7684;Revised6 Report&#x5E93;&#x7684;&#x7ED1;&#x5B9A;&#xFF0C;&#x56E0;&#x6B64;&#x5373;&#x4F7F;&#x672A;&#x4F7F;&#x7528;&#x4F8B;&#x5916;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x7ED1;&#x5B9A;&#xFF0C;&#x4E5F;&#x4E0D;&#x63D0;&#x4F9B;&#x5B8C;&#x5168;&#x5411;&#x540E;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04.ProceduresAndVariableBindings.html" class="navigation navigation-prev " aria-label="Previous page: 04. 过程和变量绑定">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06.OperationsOnObjects.html" class="navigation navigation-next " aria-label="Next page: 06. 对象操作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"05. 控制操作","level":"1.7","depth":1,"next":{"title":"06. 对象操作","level":"1.8","depth":1,"path":"06.OperationsOnObjects.md","ref":"06.OperationsOnObjects.md","articles":[]},"previous":{"title":"04. 过程和变量绑定","level":"1.6","depth":1,"path":"04.ProceduresAndVariableBindings.md","ref":"04.ProceduresAndVariableBindings.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05.ControlOperations.md","mtime":"2020-04-26T22:38:59.451Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-26T22:39:24.216Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
