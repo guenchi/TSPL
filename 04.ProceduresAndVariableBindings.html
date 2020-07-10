@@ -400,7 +400,7 @@
 <pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> substring1
   (<span class="hljs-name"><span class="hljs-builtin-name">case-lambda</span></span>
     [(<span class="hljs-name">s</span>) (<span class="hljs-name">substring1</span> s <span class="hljs-number">0</span> (<span class="hljs-name"><span class="hljs-builtin-name">string-length</span></span> s))]
-    [(<span class="hljs-name">s</span> start) (<span class="hljs-name">substring1</span> s start (<span class="hljs-name">strng-length</span> s))]
+    [(<span class="hljs-name">s</span> start) (<span class="hljs-name">substring1</span> s start (<span class="hljs-name"><span class="hljs-builtin-name">string-length</span></span> s))]
     [(<span class="hljs-name">s</span> start end) (<span class="hljs-name"><span class="hljs-builtin-name">substring</span></span> s start end)]))
 </code></pre>
 <p>&#x5F53;&#x53EA;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;&#x65F6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x9ED8;&#x8BA4;<code>start</code>&#x7D22;&#x5F15;&#x800C;&#x4E0D;&#x662F;<code>end</code>&#x7D22;&#x5F15;:</p>
@@ -558,7 +558,7 @@ x =&gt; 3
       ...)]))
 (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ()
   (<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> plus
-    (<span class="hljs-name">lamdba</span> (<span class="hljs-name">x</span> y)
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> (x y)
       (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">zero?</span></span> x)
         y
         (<span class="hljs-name">plus</span> (<span class="hljs-name">sub1</span> x) (<span class="hljs-name">add1</span> y)))))
@@ -585,8 +585,9 @@ x =&gt; 3
 <p><code>Scheme</code>&#x4E2D;&#x4F7F;&#x7528;&#x8D4B;&#x503C;&#x7684;&#x9891;&#x7387;&#x4E0D;&#x50CF;&#x5927;&#x591A;&#x6570;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x90A3;&#x6837;&#x9AD8;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x5BF9;&#x4E8E;&#x5B9E;&#x73B0;&#x72B6;&#x6001;&#x66F4;&#x6539;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</p>
 <pre><code class="lang-scheme">(<span class="hljs-name"><span class="hljs-builtin-name">define</span></span> flip-flop
   (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> ([<span class="hljs-name">state</span> <span class="hljs-literal">#f</span>])
-    (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> state (<span class="hljs-name"><span class="hljs-builtin-name">not</span></span> state))
-    state))
+    (<span class="hljs-name"><span class="hljs-builtin-name">lambda</span></span> ()
+      (<span class="hljs-name"><span class="hljs-builtin-name">set!</span></span> state (<span class="hljs-name"><span class="hljs-builtin-name">not</span></span> state))
+      state)))
 
 (<span class="hljs-name">flip-flop</span>) =&gt; <span class="hljs-literal">#t</span>
 (<span class="hljs-name">flip-flop</span>) =&gt; <span class="hljs-literal">#f</span>
@@ -656,7 +657,7 @@ x =&gt; 3
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"04. 过程和变量绑定","level":"1.6","depth":1,"next":{"title":"05. 控制操作","level":"1.7","depth":1,"path":"05.ControlOperations.md","ref":"05.ControlOperations.md","articles":[]},"previous":{"title":"03. 更进一步","level":"1.5","depth":1,"path":"03.GoingFurther.md","ref":"03.GoingFurther.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04.ProceduresAndVariableBindings.md","mtime":"2020-04-27T23:33:32.938Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-27T23:34:03.972Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"04. 过程和变量绑定","level":"1.6","depth":1,"next":{"title":"05. 控制操作","level":"1.7","depth":1,"path":"05.ControlOperations.md","ref":"05.ControlOperations.md","articles":[]},"previous":{"title":"03. 更进一步","level":"1.5","depth":1,"path":"03.GoingFurther.md","ref":"03.GoingFurther.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04.ProceduresAndVariableBindings.md","mtime":"2020-07-10T19:40:01.636Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-10T19:40:29.654Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
