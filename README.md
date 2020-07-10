@@ -65,6 +65,23 @@ ISBN 978-0-262-51298-5 / LOC QA76.73.S34D93
 [http://www.scheme.com](http://www.scheme.com)
 
 
+| 章节                                          | 认领人 | 完成情况 | 开始时间 |
+| --------------------------------------------- | ----- | ------ | ------- |
+| Preface                                       ||||
+| Chapter 1. Introduction                       |WongRuoran|100%|2020.4.7|
+| Chapter 2. Getting Started                    ||||
+| Chapter 3. Going Further                      ||||
+| Chapter 4. Procedures and Variable Bindings   |ch|100%|2019.1.3|
+| Chapter 5. Control Operations                 |tclfs|100%|2019.1.26|
+| Chapter 6. Operations on Objects              |xashes|完成|2019.1.23|
+| Chapter 7. Input and Output                   |xashes|完成|2019.2.2|
+| Chapter 8. Syntactic Extension                ||||
+| Chapter 9. Records                            |xashes|initial|2019.4.9|
+| Chapter 10. Libraries and Top-Level Programs  ||||
+| Chapter 11. Exceptions and Conditions         ||||
+| Chapter 12. Extended Examples                 ||||
+
+
 ### 译文授权
 
 ```
