@@ -13,6 +13,12 @@
 编辑：guenchi
 ```
 
+### [前言](Perface.md)
+
+```
+译者：kevin（完成）
+```
+
 ### [00. 术语](00.Terminology.md)
 
 ### [01. 介绍](01.Introduction.md)
@@ -67,7 +73,7 @@ ISBN 978-0-262-51298-5 / LOC QA76.73.S34D93
 
 | 章节                                          | 认领人 | 完成情况 | 开始时间 |
 | --------------------------------------------- | ----- | ------ | ------- |
-| Preface                                       ||||
+| Preface                                       |kevin|100%|2022.8.16|
 | Chapter 1. Introduction                       |WongRuoran|100%|2020.4.7|
 | Chapter 2. Getting Started                    ||||
 | Chapter 3. Going Further                      ||||
