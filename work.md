@@ -6,7 +6,7 @@
 
 | 章节                                          | 认领人 | 完成情况 | 开始时间 |
 | --------------------------------------------- | ----- | ------ | ------- |
-| Preface                                       ||||
+| Preface                                       |kevin|100%|2022.8.16|
 | Chapter 1. Introduction                       ||||
 | Chapter 2. Getting Started                    ||||
 | Chapter 3. Going Further                      ||||
