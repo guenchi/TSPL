@@ -53,6 +53,10 @@
 
 ### [08. 语法扩展](08.SyntacticExtension.md)
 
+```
+译者：Ancker-0
+```
+
 ### [09. 记录类型](09.Records.md)
 
 ### [10. 库和顶层程序](10.LibrariesAndTop-LevelPrograms.md)
